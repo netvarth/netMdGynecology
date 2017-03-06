@@ -1,0 +1,3688 @@
+{
+    "title": "Gynecology",
+    "data": [
+        {
+            "section": "General",
+            "className": "viewsection",
+            "id": "general",
+            "values": [
+                {
+                    "question": "Sl.No",
+                    "id": "slNo",
+                    "qstnNmbr": 1,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox common ans",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Patient Id",
+                    "id": "ipNumber",
+                    "qstnNmbr": 2,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Booked/Unbooked/Referred",
+                    "id": "bookedUnbooked",
+                    "required": true,
+                    "qstnNmbr": 3,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "correlationRule": null,
+                            "attribute": [
+                                {
+                                    "option": "Booked"
+                                },
+                                {
+                                    "option": "Unbooked"
+                                },
+                                {
+                                    "option": "Referred"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Unit",
+                    "id": "unit",
+                    "qstnNmbr": 4,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Doctor Incharge",
+                    "id": "doctorIncharge",
+                    "qstnNmbr": 5,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Personal Details",
+            "className": "viewsection",
+            "id": "personalDetails",
+            "values": [
+                {
+                    "question": "Name",
+                    "id": "name",
+                    "qstnNmbr": 6,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Age",
+                    "id": "age",
+                    "qstnNmbr": 7,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "Integer",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Height (in meters)",
+                    "id": "height",
+                    "qstnNmbr": 8,
+                    "answer": [
+                        {
+                            "format": "centimeter",
+                            "type": "Integer",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Weight (in kilograms)",
+                    "id": "weight",
+                    "qstnNmbr": 9,
+                    "answer": [
+                        {
+                            "format": "kilogram",
+                            "type": "Integer",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox common ans"
+                        }
+                    ]
+                },
+                {
+                    "question": "Body Mass Index (BMI)",
+                    "id": "bodymassIndex",
+                    "qstnNmbr": 10,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "Integer",
+                            "className": "newBox ans",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Blood Group",
+                    "id": "bloodgroup",
+                    "qstnNmbr": 11,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "correlationRule": null,
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "A"
+                                },
+                                {
+                                    "option": "B"
+                                },
+                                {
+                                    "option": "AB"
+                                },
+                                {
+                                    "option": "O"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Rh",
+                    "id": "rh",
+                    "qstnNmbr": 12,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "correlationRule": null,
+                            "readonly": "readonly",
+                            "className": "newBox view"
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "className": "select edit ans",
+                            "style": "display:none",
+                            "correlationRule": null,
+                            "attribute": [
+                                {
+                                    "option": "+ve"
+                                },
+                                {
+                                    "option": "-ve"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Education",
+                    "id": "education",
+                    "qstnNmbr": 13,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox view"
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "correlationRule": null,
+                            "attribute": [
+                                {
+                                    "option": "Primary"
+                                },
+                                {
+                                    "option": "Secondary"
+                                },
+                                {
+                                    "option": "HigherSecondary"
+                                },
+                                {
+                                    "option": "Graduation"
+                                },
+                                {
+                                    "option": "None"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Name Of Husband",
+                    "id": "husbandName",
+                    "qstnNmbr": 14,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox common ans"
+                        }
+                    ]
+                },
+                {
+                    "question": "Address",
+                    "id": "address",
+                    "qstnNmbr": 15,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "textarea",
+                            "correlationRule": null,
+                            "readonly": "readonly",
+                            "className": "newBox common ans"
+                        }
+                    ]
+                },
+                {
+                    "question": "Phone Number (land/mobile)",
+                    "id": "phoneNumber",
+                    "qstnNmbr": 16,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox common ans"
+                        }
+                    ]
+                },
+                {
+                    "question": "Religion",
+                    "id": "religion",
+                    "qstnNmbr": 17,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox view"
+                        },
+                        {
+                            "format": null,
+                            "className": "select edit ans",
+                            "type": "select",
+                            "style": "display:none",
+                            "correlationRule": null,
+                            "attribute": [
+                                {
+                                    "option": "Hindu"
+                                },
+                                {
+                                    "option": "Muslim"
+                                },
+                                {
+                                    "option": "Christian"
+                                },
+                                {
+                                    "option": "Others"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Tribal",
+                    "id": "isTribal",
+                    "qstnNmbr": 18,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": "null"
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "className": "select edit ans",
+                            "style": "display:none",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Which tribal",
+                                            "id": "tribal",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "correlationRule": null,
+                                                    "readonly": "readonly",
+                                                    "className": "newBox view"
+                                                },
+                                                {
+                                                    "format": null,
+                                                    "type": "select",
+                                                    "className": "select edit ans",
+                                                    "correlationRule": null,
+                                                    "style": "display:none",
+                                                    "attribute": [
+                                                        {
+                                                            "option": "Adiyan"
+                                                        },
+                                                        {
+                                                            "option": "Irulan"
+                                                        },
+                                                        {
+                                                            "option": "Kochu velan"
+                                                        },
+                                                        {
+                                                            "option": "Malayan"
+                                                        },
+                                                        {
+                                                            "option": "Mannan"
+                                                        },
+                                                        {
+                                                            "option": "Parayan"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Hospital Info",
+            "className": "section",
+            "id": "hospitalInfo",
+            "values": [
+                {
+                    "question": "Date & Time of Admission in Hospital",
+                    "id": "dateofAdmissionHospital",
+                    "qstnNmbr": 19,
+                    "answer": [
+                        {
+                            "format": "YYYY-MM-DD HH:mm a",
+                            "type": "String",
+                            "correlationRule": null,
+                            "readonly": "readonly",
+                            "className": "newBox common ans dateTime"
+                        }
+                    ]
+                },
+                {
+                    "question": "Is Previous Caesarean ?",
+                    "id": "ispreviousCS",
+                    "qstnNmbr": 85,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "No: of Previous CS:",
+                    "qstnNmbr": 20,
+                    "id": "previousCS",
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "0"
+                                },
+                                {
+                                    "option": "1"
+                                },
+                                {
+                                    "option": "2"
+                                },
+                                {
+                                    "option": "3"
+                                },
+                                {
+                                    "option": "4"
+                                },
+                                {
+                                    "option": "5"
+                                },
+                                {
+                                    "option": "6"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "In the same hospital",
+                    "qstnNmbr": 21,
+                    "id": "sameHospital",
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "0"
+                                },
+                                {
+                                    "option": "1"
+                                },
+                                {
+                                    "option": "2"
+                                },
+                                {
+                                    "option": "3"
+                                },
+                                {
+                                    "option": "4"
+                                },
+                                {
+                                    "option": "5"
+                                },
+                                {
+                                    "option": "6"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "In other hospital",
+                    "qstnNmbr": 22,
+                    "id": "otherHospital",
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "0"
+                                },
+                                {
+                                    "option": "1"
+                                },
+                                {
+                                    "option": "2"
+                                },
+                                {
+                                    "option": "3"
+                                },
+                                {
+                                    "option": "4"
+                                },
+                                {
+                                    "option": "5"
+                                },
+                                {
+                                    "option": "6"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Last Menstrual Period (LMP)",
+                    "id": "lmp",
+                    "qstnNmbr": 23,
+                    "answer": [
+                        {
+                            "format": "YYYY-MM-DD",
+                            "type": "Integer",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox common ans date"
+                        }
+                    ]
+                },
+                {
+                    "question": "Expected Date of Confinement (EDC assigned)",
+                    "id": "confinementDate",
+                    "qstnNmbr": 24,
+                    "answer": [
+                        {
+                            "format": "YYYY-MM-DD",
+                            "type": "Integer",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox common ans date"
+                        }
+                    ]
+                },
+                {
+                    "question": "Gest.Age (WKS&DAYS)",
+                    "type": "multipleSelectBox",
+                    "firstSelect": "gestationWeek",
+                    "firstSelectBoxText": "Weeks",
+                    "secondSelect": "gestationDay",
+                    "secondSelectBoxText": "Days"
+                }
+            ]
+        },
+        {
+            "section": "Obstetric Score",
+            "id": "obstetrics",
+            "className": "viewsection",
+            "values": [
+                {
+                    "question": "Gravidity",
+                    "id": "gravidity",
+                    "qstnNmbr": 26,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view ",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans gravidity ",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Parity",
+                    "id": "parity",
+                    "qstnNmbr": 27,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view ",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans parity",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Abortions",
+                    "id": "abortion",
+                    "qstnNmbr": 28,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans abortion",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Living children",
+                    "id": "livingChildren",
+                    "qstnNmbr": 29,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans livingChild",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Molar Pregnancy",
+                    "id": "molarPregnancy",
+                    "qstnNmbr": 30,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Ectopic Pregnancy",
+                    "id": "ectopicPregnancy",
+                    "qstnNmbr": 31,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Last child birth in",
+                    "type": "multipleSelectBox",
+                    "firstSelect": "lcb",
+                    "firstSelectBoxText": "Years",
+                    "secondSelect": "lcbMonths",
+                    "secondSelectBoxText": "Months"
+                }
+            ]
+        },
+        {
+            "section": "Maternal A/N problems",
+            "className": "viewsection",
+            "id": "maternal",
+            "values": [
+                {
+                    "question": "Multiple Pregnancy",
+                    "id": "multiplePregnancy",
+                    "qstnNmbr": 33,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "correlationRule": null,
+                            "readonly": "readonly",
+                            "className": "newBox view"
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "className": "select edit ans",
+                            "style": "display:none",
+                            "attribute": [
+                                {
+                                    "option": "Twins"
+                                },
+                                {
+                                    "option": "Triplets"
+                                },
+                                {
+                                    "option": "Others"
+                                },
+                                {
+                                    "option": "Nil"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Type",
+                                            "id": "multiplePregnancyType",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": "Y/N",
+                                                    "type": "String",
+                                                    "readonly": "readonly",
+                                                    "correlationRule": null,
+                                                    "className": "newBox view"
+                                                },
+                                                {
+                                                    "format": "Y/N",
+                                                    "type": "select",
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "attribute": [
+                                                        {
+                                                            "option": "MCDA"
+                                                        },
+                                                        {
+                                                            "option": "MCMA"
+                                                        },
+                                                        {
+                                                            "option": "DCDA"
+                                                        },
+                                                        {
+                                                            "option": "Nil"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ],
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Anemia",
+                    "id": "anemia",
+                    "qstnNmbr": 34,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox view"
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Gestational Diabetes Mellitus (GDM)",
+                    "id": "gestationalDiabetes",
+                    "qstnNmbr": 35,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Pre Gestational Diabetes Mellitus (DM)",
+                    "id": "diabetesMellitus",
+                    "qstnNmbr": 36,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox view"
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": " Heart Disease",
+                    "id": "heartDisease",
+                    "qstnNmbr": 37,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Select related disease",
+                                            "id": "heartRelatedDisease",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "readonly": "readonly",
+                                                    "correlationRule": null,
+                                                    "className": "newBox view"
+                                                },
+                                                {
+                                                    "format": null,
+                                                    "type": "select",
+                                                    "correlationRule": null,
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "attribute": [
+                                                        {
+                                                            "option": "Mitral stinosis"
+                                                        },
+                                                        {
+                                                            "option": "Aortic stinosis"
+                                                        },
+                                                        {
+                                                            "option": "Pulmonary stinosis"
+                                                        },
+                                                        {
+                                                            "option": "Congenital heart diseases"
+                                                        },
+                                                        {
+                                                            "option": "Others"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": " Mild HyperTension /Pre ecl",
+                    "id": "mildHyperTension",
+                    "qstnNmbr": 38,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Which anti hypertensive",
+                                            "id": "antiMildHyper",
+                                            "qstnNmbr": "a",
+                                            "multiselect": true,
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox view",
+                                                    "correlationRule": null
+                                                },
+                                                {
+                                                    "format": null,
+                                                    "type": "select",
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "attribute": [
+                                                        {
+                                                            "option": "Alphadopa"
+                                                        },
+                                                        {
+                                                            "option": "Ca.ch.blockers"
+                                                        },
+                                                        {
+                                                            "option": "Labetalol"
+                                                        },
+                                                        {
+                                                            "option": "Hydralazine"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ],
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": " Severe HyperTension /Pre ecl",
+                    "id": "severeHyper",
+                    "qstnNmbr": 39,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Which anti hypertensive",
+                                            "id": "antiSevereHyper",
+                                            "multiselect": true,
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": "Y/N",
+                                                    "type": "String",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox view",
+                                                    "correlationRule": null
+                                                },
+                                                {
+                                                    "format": null,
+                                                    "type": "select",
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "attribute": [
+                                                        {
+                                                            "option": "Alphadopa"
+                                                        },
+                                                        {
+                                                            "option": "Ca.ch.blockers"
+                                                        },
+                                                        {
+                                                            "option": "Labetalol oral"
+                                                        },
+                                                        {
+                                                            "option": "Labetalol iv"
+                                                        },
+                                                        {
+                                                            "option": "Hydralazine"
+                                                        },
+                                                        {
+                                                            "option": "Nil"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ],
+                                                    "correlationRule": [
+                                                        {
+                                                            "data": [
+                                                                {
+                                                                    "question": "Detection Treatment Interval",
+                                                                    "id": "detectionTreatmentInterval",
+                                                                    "qstnNmbr": "b",
+                                                                    "answer": [
+                                                                        {
+                                                                            "format": "Y/N",
+                                                                            "type": "String",
+                                                                            "readonly": "readonly",
+                                                                            "className": "newBox view",
+                                                                            "correlationRule": null
+                                                                        },
+                                                                        {
+                                                                            "format": null,
+                                                                            "type": "select",
+                                                                            "style": "display:none",
+                                                                            "className": "select edit ans",
+                                                                            "attribute": [
+                                                                                {
+                                                                                    "option": "Within 10 mins"
+                                                                                },
+                                                                                {
+                                                                                    "option": "More than 10 mins"
+                                                                                },
+                                                                                {
+                                                                                    "option": "Nil"
+                                                                                },
+                                                                                {
+                                                                                    "option": "Not Entered"
+                                                                                }
+                                                                            ],
+                                                                            "correlationRule": null
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "HELP",
+                    "id": "help",
+                    "qstnNmbr": 40,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Did she receive blood products",
+                    "id": "IsReceivedBloodProducts",
+                    "qstnNmbr": "41",
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "className": "select edit ans",
+                            "style": "display:none",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Did she receive ICU",
+                    "id": "IsReceivedICU",
+                    "qstnNmbr": "42",
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "className": "select edit ans",
+                            "style": "display:none",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Did she receive induction",
+                    "id": "IsReceivedInduction",
+                    "qstnNmbr": "43",
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "className": "select edit ans",
+                            "style": "display:none",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": " Eclampsia",
+                    "id": "eclampsia",
+                    "qstnNmbr": 44,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Did she receive MgSO4 as recommended",
+                                            "id": "isMgso4",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": "Y/N",
+                                                    "type": "String",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox view",
+                                                    "correlationRule": null
+                                                },
+                                                {
+                                                    "format": "Y/N",
+                                                    "type": "select",
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "attribute": [
+                                                        {
+                                                            "option": "Yes"
+                                                        },
+                                                        {
+                                                            "option": "No"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ],
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": " Any Previous surgery Y/N",
+                    "id": "previousSurgery",
+                    "qstnNmbr": 45,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "prevSurgeryDescription",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": " Cerclage Y/N",
+                    "qstnNmbr": 46,
+                    "id": "isCerclage",
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Type",
+                                            "id": "cerclageType",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": "Y/N",
+                                                    "type": "String",
+                                                    "className": "newBox view",
+                                                    "readonly": "readonly",
+                                                    "correlationRule": null
+                                                },
+                                                {
+                                                    "format": "Y/N",
+                                                    "type": "select",
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "attribute": [
+                                                        {
+                                                            "option": "McDonald"
+                                                        },
+                                                        {
+                                                            "option": "Shirodkar"
+                                                        },
+                                                        {
+                                                            "option": "Abdominal open"
+                                                        },
+                                                        {
+                                                            "option": "laproscopic"
+                                                        },
+                                                        {
+                                                            "option": "Transvaginal intraperitonial"
+                                                        },
+                                                        {
+                                                            "option": "Nil"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ],
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": " Others",
+                    "id": "others",
+                    "qstnNmbr": 47,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "textarea",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Labour Induced",
+            "className": "viewsection",
+            "id": "labour",
+            "values": [
+                {
+                    "question": " Induced Y/N",
+                    "id": "islabourInduced",
+                    "qstnNmbr": 48,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "labourDescription",
+                                            "qstnNmbr": "a",
+                                            "className": " edit ans",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": " Indication for induction",
+                    "id": "induction",
+                    "qstnNmbr": 49,
+                    "multiselect": true,
+                    "answer": [
+                        {
+                            "format": "null",
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "null",
+                            "type": "select",
+                            "className": "select edit ans",
+                            "style": "display:none",
+                            "attribute": [
+                                {
+                                    "option": "Hypertensive disorders"
+                                },
+                                {
+                                    "option": "Intra-amniotic infection"
+                                },
+                                {
+                                    "option": "PROM"
+                                },
+                                {
+                                    "option": "PPROM"
+                                },
+                                {
+                                    "option": "Elective induction"
+                                },
+                                {
+                                    "option": "Postdated pregnancy"
+                                },
+                                {
+                                    "option": "Others"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "inductionDesc",
+                                            "qstnNmbr": " a",
+                                            "className": "newBox edit ans",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": " Type of induction",
+                    "id": "inductionType",
+                    "qstnNmbr": 50,
+                    "multiselect": true,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Foleys Catheter"
+                                },
+                                {
+                                    "option": "Foleys Catheter+ EAS"
+                                },
+                                {
+                                    "option": "Misoprostrol"
+                                },
+                                {
+                                    "option": "Prostagladin Gel"
+                                },
+                                {
+                                    "option": "Pitocin"
+                                },
+                                {
+                                    "option": "Others"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "inductionTypeDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": " Outcome",
+                    "id": "outCome",
+                    "qstnNmbr": 51,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "textarea",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox view"
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Vaginal"
+                                },
+                                {
+                                    "option": "Cs"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": " Induction delivery Interval (from ripening) (hrs) ",
+                    "id": "indDelInterval",
+                    "qstnNmbr": 52,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Date & Time of Delivery",
+            "className": "viewsection",
+            "required": true,
+            "id": "dateTimeOfDelivery",
+            "values": [
+                {
+                    "question": "Date of delivery",
+                    "required": true,
+                    "id": "dateTimeDelivery",
+                    "qstnNmbr": 53,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox common ans date"
+                        }
+                    ]
+                },
+                {
+                    "question": " Type Of Delivery",
+                    "required": true,
+                    "id": "typeOfDelivery",
+                    "qstnNmbr": 88,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "textarea",
+                            "readonly": "readonly",
+                            "correlationRule": null,
+                            "className": "newBox view"
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Vaginal"
+                                },
+                                {
+                                    "option": "Cs"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Episiotomy",
+                    "qstnNmbr": 54,
+                    "id": "episiotomy",
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Midline Episiotomy"
+                                },
+                                {
+                                    "option": "Medio-Lateral Episiotomy"
+                                },
+                                {
+                                    "option": "Nil"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "No of babies",
+                    "id": "numberOfbaby",
+                    "qstnNmbr": 55,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view ",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans numberOfbaby ",
+                            "correlationRule": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Baby",
+            "className": "viewsection",
+            "id": "baby"
+        },
+        {
+            "section": " 3<sup>rd</sup> Stage Management",
+            "className": "viewsection",
+            "id": "thirdStageManagement",
+            "values": [
+                {
+                    "question": "Oxytoxin 5 units IV bolus within 1 min",
+                    "id": "oxytoxinBolus",
+                    "qstnNmbr": "56",
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": " Extra Oxytoxin Used ",
+                    "id": "extraOxytoxinUsed",
+                    "multiselect": true,
+                    "qstnNmbr": 57,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "IV"
+                                },
+                                {
+                                    "option": "IM"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "oxytoxinDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Other Oxytocics Used",
+                    "id": "otherOxytoxinUsed",
+                    "qstnNmbr": 58,
+                    "multiselect": true,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Methergin"
+                                },
+                                {
+                                    "option": "Methergin IV"
+                                },
+                                {
+                                    "option": "Carboprost"
+                                },
+                                {
+                                    "option": "Rectal Misoprostol"
+                                },
+                                {
+                                    "option": "Intra Uterine"
+                                },
+                                {
+                                    "option": "Pitocin"
+                                },
+                                {
+                                    "option": "Others"
+                                },
+                                {
+                                    "option": "Nil"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "otherOxytoxinDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Mechanical Management",
+                    "qstnNmbr": 86,
+                    "id": "mechanicalManagement",
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Condom tamponade"
+                                },
+                                {
+                                    "option": "Others"
+                                },
+                                {
+                                    "option": "Nil"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "3 rd stage duration (in mins)",
+                    "id": "thirdStageDuration",
+                    "qstnNmbr": 59,
+                    "answer": [
+                        {
+                            "format": "null",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "thirdStageDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Manual removal",
+                    "id": "manualRml",
+                    "qstnNmbr": 60,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "manualRmlDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Placental Weight (in grams)",
+                    "id": "placentalWght",
+                    "qstnNmbr": 61,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "plwghtDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Did she develop Hypotension Y/N",
+                    "id": "isHypotension",
+                    "qstnNmbr": 62,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view ",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "hypotensionDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Amounts of IV Fluids used ( in ml )",
+                    "id": "amtFluids",
+                    "qstnNmbr": 63,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "amtFluidsDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "4<sup>th</sup> Stage Monitoring",
+            "className": "viewsection",
+            "id": "fourthStageMonitoring",
+            "values": [
+                {
+                    "question": "4<sup>th</sup> stage monitoring Y/N",
+                    "id": "isfourthStageMon",
+                    "qstnNmbr": 64,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "fourthStageDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Problem Noted",
+                    "id": "prblmNoted",
+                    "qstnNmbr": 65,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Excess Bleeding"
+                                },
+                                {
+                                    "option": "Hematoma"
+                                },
+                                {
+                                    "option": "Urinary Retention"
+                                },
+                                {
+                                    "option": "Nil"
+                                },
+                                {
+                                    "option": "Others"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "prblmNotedDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Blood Loss and Transfusion",
+            "className": "viewsection",
+            "id": "bloodloss",
+            "values": [
+                {
+                    "question": "Bloodloss (ml)",
+                    "id": "bloodLoss",
+                    "qstnNmbr": 66,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "bldlosDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Blood  and Blood Product (Quantity)",
+                    "id": "bloodProduct",
+                    "qstnNmbr": 67,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "PRBC+whole blood (units)",
+                                            "id": "prbcwholebld",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "question": "FFP( units )",
+                                            "id": "FFP",
+                                            "qstnNmbr": "b",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "question": "Platelets( units )",
+                                            "id": "platelets",
+                                            "qstnNmbr": "c",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Admission to ICU in same hospital",
+                    "id": "icuAdminSameHsp",
+                    "qstnNmbr": 68,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "className": "select edit ans",
+                            "style": "display:none",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "icuAdminDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "common ans newBox",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Transferred for ICU care in ALS ambulance",
+                    "id": "isALSAmbulance",
+                    "qstnNmbr": 69,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "alsAmbulanceDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "common ans newBox",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Any fetal problem NICU admission",
+            "id": "foetus",
+            "className": "viewsection"
+        },
+        {
+            "section": "Maternal Complications",
+            "id": "maternalComplications",
+            "className": "viewsection",
+            "values": [
+                {
+                    "question": "Placenta prev.accreta (Managed locally)",
+                    "id": "plprevAclocal",
+                    "qstnNmbr": 70,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "qstnNmbr": "a",
+                                            "id": "plprevAclocalDesc",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "common ans newBox",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Placenta prev.accreta (Referred from outside)",
+                    "id": "plprevAcReffered",
+                    "qstnNmbr": 71,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "plprevAcRefDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "common ans newBox",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Perineal tear with degree",
+                    "id": "perinealTear",
+                    "qstnNmbr": 72,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Type",
+                                            "qstnNmbr": "a",
+                                            "id": "perinealTearType",
+                                            "answer": [
+                                                {
+                                                    "format": "Y/N",
+                                                    "type": "String",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox view",
+                                                    "correlationRule": null
+                                                },
+                                                {
+                                                    "type": "select",
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "attribute": [
+                                                        {
+                                                            "option": "1"
+                                                        },
+                                                        {
+                                                            "option": "2"
+                                                        },
+                                                        {
+                                                            "option": "3a"
+                                                        },
+                                                        {
+                                                            "option": "3b"
+                                                        },
+                                                        {
+                                                            "option": "3c"
+                                                        },
+                                                        {
+                                                            "option": "4"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ],
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Cerebro Vascular problems",
+                    "id": "cerebroVasPrb",
+                    "qstnNmbr": 73,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "qstnNmbr": "a",
+                                            "id": "cerebroVasPrbDesc",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "common ans newBox",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Severe maternal morbidility with cause",
+                    "id": "sevMatMorbidility",
+                    "qstnNmbr": 74,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "sevMatMorbidilityDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "common ans newBox",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Maternal Death with cause",
+                    "id": "maternalDeath",
+                    "qstnNmbr": 75,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Death Cause",
+                                            "id": "maternalDeathType",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "correlationRule": null,
+                                                    "readonly": "readonly",
+                                                    "className": "newBox view"
+                                                },
+                                                {
+                                                    "format": null,
+                                                    "type": "select",
+                                                    "className": "select edit ans",
+                                                    "correlationRule": null,
+                                                    "style": "display:none",
+                                                    "attribute": [
+                                                        {
+                                                            "option": "Haemorrhage"
+                                                        },
+                                                        {
+                                                            "option": "Severe Hypertension"
+                                                        },
+                                                        {
+                                                            "option": "Mild Hypertension"
+                                                        },
+                                                        {
+                                                            "option": "Af embolism"
+                                                        },
+                                                        {
+                                                            "option": "Sepsis"
+                                                        },
+                                                        {
+                                                            "option": "Heart Disease"
+                                                        },
+                                                        {
+                                                            "option": "Others"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Any other",
+                    "id": "anyOther",
+                    "qstnNmbr": 76,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "qstnNmbr": "a",
+                                            "id": "anyOtherDesc",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "common ans newBox",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "section": "Details of Labour Remarks,Treatment",
+            "id": "labourRemarks",
+            "className": "viewsection",
+            "values": [
+                {
+                    "question": "Details Of Delivery",
+                    "id": "deliveryType",
+                    "qstnNmbr": 77,
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "correlationRule": null,
+                            "readonly": "readonly",
+                            "className": "newBox view"
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "className": "select edit ans",
+                            "style": "display:none",
+                            "attribute": [
+                                {
+                                    "option": "Spontaneous"
+                                },
+                                {
+                                    "option": "Induced"
+                                },
+                                {
+                                    "option": "Elective"
+                                },
+                                {
+                                    "option": "Emergency"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "",
+                                            "type": "multipleSelectBox",
+                                            "firstSelect": "deliveryName",
+                                            "firstSelectBoxText": "Delivery Name",
+                                            "firstSelectAttributes": [
+                                                {
+                                                    "option": ""
+                                                },
+                                                {
+                                                    "option": "Normal"
+                                                },
+                                                {
+                                                    "option": "Forcepsdelivery"
+                                                },
+                                                {
+                                                    "option": "Vacuumextraction"
+                                                },
+                                                {
+                                                    "option": "Breech"
+                                                },
+                                                {
+                                                    "option": "Caesarean"
+                                                },
+                                                {
+                                                    "option": "Sequential"
+                                                },
+                                                {
+                                                    "option": "VBAC"
+                                                },
+                                                {
+                                                    "option": "Others"
+                                                },
+                                                {
+                                                    "option": "Not Entered"
+                                                }
+                                            ],
+                                            "secondSelect": "csType",
+                                            "style": "display:none;",
+                                            "secondSelectBoxText": "CS Type",
+                                            "secondSelectAttributes": [
+                                                {
+                                                    "option": ""
+                                                },
+                                                {
+                                                    "option": "Emergency"
+                                                },
+                                                {
+                                                    "option": "Elective classical"
+                                                },
+                                                {
+                                                    "option": "Emergency LSCS"
+                                                },
+                                                {
+                                                    "option": "Elective LSCS"
+                                                },
+                                                {
+                                                    "option": "Not Entered"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Hysterectomy",
+                    "id": "Hysterectomy",
+                    "qstnNmbr": "87",
+                    "answer": [
+                        {
+                            "format": "Y/N",
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Indication",
+                    "id": "indication",
+                    "qstnNmbr": 78,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "textarea",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Robson's class",
+                    "id": "robsonclass",
+                    "qstnNmbr": 79,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                               {
+                                    "option": "Group 1"
+                                },
+                                {
+                                    "option": "Group 2e ( elective )"
+                                },
+                                {
+                                    "option": "Group 2i ( indicated )"
+                                },
+                                {
+                                    "option": "Group 3"
+                                },
+                                {
+                                    "option": "Group 4e ( elective )"
+                                },
+                                {
+                                    "option": "Group 4i ( indicated )"
+                                },
+                                {
+                                    "option": "Group 5"
+                                },
+                                {
+                                    "option": "Group 6"
+                                },
+                                {
+                                    "option": "Group 7"
+                                },
+                                {
+                                    "option": "Group 8"
+                                },
+                                {
+                                    "option": "Group 9"
+                                },
+                                {
+                                    "option": "Group 10"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "robsonclassDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "className": "common ans newBox",
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Antibiotics Used",
+                    "id": "AntiBioticsUsed",
+                    "qstnNmbr": 80,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "className": "newBox view",
+                            "readonly": "readonly",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": "Y/N",
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "attribute": [
+                                {
+                                    "option": "Yes"
+                                },
+                                {
+                                    "option": "No"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ],
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Prophylactic",
+                                            "id": "Prophylactic",
+                                            "qstnNmbr": "1",
+                                            "multiselect": true,
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "className": "newBox view",
+                                                    "readonly": "readonly",
+                                                    "correlationRule": null
+                                                },
+                                                {
+                                                    "format": null,
+                                                    "type": "select",
+                                                    "readonly": "readonly",
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "correlationRule": null,
+                                                    "attribute": [
+                                                        {
+                                                            "option": "Amox+Clav"
+                                                        },
+                                                        {
+                                                            "option": "Amox"
+                                                        },
+                                                        {
+                                                            "option": "Cephal ( 1st Generation )"
+                                                        },
+                                                        {
+                                                            "option": "Cephal ( 2nd Generation )"
+                                                        },
+                                                        {
+                                                            "option": "Cephal ( 3rd Generation )"
+                                                        },
+                                                        {
+                                                            "option": "Amino,Glyco"
+                                                        },
+                                                        {
+                                                            "option": "Others"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "question": "Therapeutic",
+                                            "id": "Therapeutic",
+                                            "qstnNmbr": "2",
+                                            "multiselect": true,
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "className": "newBox view",
+                                                    "readonly": "readonly",
+                                                    "correlationRule": null
+                                                },
+                                                {
+                                                    "format": null,
+                                                    "type": "select",
+                                                    "readonly": "readonly",
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "correlationRule": null,
+                                                    "attribute": [
+                                                        {
+                                                            "option": "Amox+Clav"
+                                                        },
+                                                        {
+                                                            "option": "Amox"
+                                                        },
+                                                        {
+                                                            "option": "Cephal ( 1st Generation )"
+                                                        },
+                                                        {
+                                                            "option": "Cephal ( 2nd Generation )"
+                                                        },
+                                                        {
+                                                            "option": "Cephal ( 3rd Generation )"
+                                                        },
+                                                        {
+                                                            "option": "Amino Glyco"
+                                                        },
+                                                        {
+                                                            "option": "Others"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "question": "Total days of use",
+                                            "id": "totalDaysofAntibioticUse",
+                                            "qstnNmbr": "3",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "String",
+                                                    "className": "newBox view",
+                                                    "readonly": "readonly",
+                                                    "correlationRule": null
+                                                },
+                                                {
+                                                    "format": null,
+                                                    "type": "select",
+                                                    "readonly": "readonly",
+                                                    "style": "display:none",
+                                                    "className": "select edit ans",
+                                                    "correlationRule": null,
+                                                    "attribute": [
+                                                        {
+                                                            "option": "1"
+                                                        },
+                                                        {
+                                                            "option": "2"
+                                                        },
+                                                        {
+                                                            "option": "3"
+                                                        },
+                                                        {
+                                                            "option": "4"
+                                                        },
+                                                        {
+                                                            "option": "5"
+                                                        },
+                                                        {
+                                                            "option": "6"
+                                                        },
+                                                        {
+                                                            "option": "7"
+                                                        },
+                                                        {
+                                                            "option": "8"
+                                                        },
+                                                        {
+                                                            "option": "9"
+                                                        },
+                                                        {
+                                                            "option": "10"
+                                                        },
+                                                        {
+                                                            "option": "More than 10"
+                                                        },
+                                                        {
+                                                            "option": "Not Entered"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Smooth muscle relaxants in active labour",
+                    "id": "muscleRelaxants",
+                    "qstnNmbr": 81,
+                    "multiselect": true,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox view",
+                            "correlationRule": null
+                        },
+                        {
+                            "format": null,
+                            "type": "select",
+                            "style": "display:none",
+                            "className": "select edit ans",
+                            "correlationRule": null,
+                            "attribute": [
+                                {
+                                    "option": "Drotaverin"
+                                },
+                                {
+                                    "option": "Valethamate"
+                                },
+                                {
+                                    "option": "Hyoscine"
+                                },
+                                {
+                                    "option": "Nil"
+                                },
+                                {
+                                    "option": "Not Entered"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "question": "Remarks",
+                    "qstnNmbr": 82,
+                    "id": "remarks",
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "textarea",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Special Points",
+                    "qstnNmbr": 83,
+                    "id": "specialPoints",
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "textarea",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": null
+                        }
+                    ]
+                },
+                {
+                    "question": "Conducted By",
+                    "id": "conductedBy",
+                    "qstnNmbr": 84,
+                    "answer": [
+                        {
+                            "format": null,
+                            "type": "String",
+                            "readonly": "readonly",
+                            "className": "newBox common ans",
+                            "correlationRule": [
+                                {
+                                    "data": [
+                                        {
+                                            "question": "Description",
+                                            "id": "conductedByDesc",
+                                            "qstnNmbr": "a",
+                                            "answer": [
+                                                {
+                                                    "format": null,
+                                                    "type": "textarea",
+                                                    "readonly": "readonly",
+                                                    "className": "newBox common ans",
+                                                    "correlationRule": null
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

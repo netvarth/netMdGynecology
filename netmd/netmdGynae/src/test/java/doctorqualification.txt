@@ -1,0 +1,12 @@
+{
+    "qualification": [
+        {
+            "id": 0,
+            "doctorId": 8,
+            "educationalDegree": "md",
+            "passedOutDate": "2012",
+            "institution": "nehru",
+            "actionName": "Add"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+                    "data": [
+                        {
+                            "id": "caseListTableCont",
+                            "elements": [
+                                {
+                                    "type": "table",
+                                    "content": {
+                                        "name": "case",
+                                        "idProperty": "case",
+                                        "className": "stdtable stdtablecb",
+                                        "style": "border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+                                        "colHeaders": [
+                                            
+											 {
+                                                "className": "head0",
+                                                "name": "No:",
+                                                "style": "width:10%"
+                                            },
+											{
+                                                "className": "head1",
+                                                "name": "Patient Name",
+                                                "style": "width:20%"
+                                            },
+											{
+                                                "className": "head0",
+                                                "name": "Department",
+                                                "style": "width:20%"
+                                            },
+                                            {
+                                                "className": "head1",
+                                                "name": "Case ",
+                                                "style": "width:20%"
+                                            },
+                                            {
+                                                "className": "head0",
+                                                "name": "Date & Time",
+                                                "style": "width:25%"
+                                            }
+										
+                                         
+                                           
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }

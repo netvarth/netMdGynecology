@@ -1,0 +1,3 @@
+function validateViewDoctor(){
+	return true;
+}

@@ -1,0 +1,198 @@
+{
+    "name": "viewRoom",
+    "id": "viewRoom",
+    "content": [
+        {
+            "className": "sep-div-view",
+            "data": [
+                {
+                    "className": "column-left",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-one-fourth",
+                                    "elements": [
+                                        {
+                                            "name": "id",
+                                            "id": "id",
+                                            "type": "newlabel",
+                                            "style": "margin-left:6%",
+                                            "title": "Id"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-three-fourth",
+                                    "elements": [
+                                        {
+                                            "name": "roomNo",
+                                            "id": "roomNo",
+                                            "type": "text",
+                                            "className": "newBox large",
+                                            "title": "Room No: "
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "id": "viewDepartment",
+                                    "elements": [
+                                        {
+                                            "name": "lblViewDepartment",
+                                            "id": "lblViewDepartment",
+                                            "type": "newlabel",
+                                            "title": "Department"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-left",
+                                    "id": "editDepartment",
+                                    "style": "display:none;",
+                                    "elements": [
+                                        {
+                                            "name": "department",
+                                            "id": "department",
+                                            "type": "select",
+                                            "className": "select",
+                                            "style": "width: 100%",
+                                            "title": "Department"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "id": "viewBlock",
+                                    "elements": [
+                                        {
+                                            "name": "lblViewBlock",
+                                            "id": "lblViewBlock",
+                                            "type": "newlabel",
+                                            "title": "Block"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "id": "editBlock",
+                                    "style": "display:none;",
+                                    "elements": [
+                                        {
+                                            "name": "block",
+                                            "id": "block",
+                                            "type": "select",
+                                            "className": "select",
+                                            "style": "width: 100%",
+                                            "title": "Block"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "id": "viewRoomType",
+                                    "elements": [
+                                        {
+                                            "name": "lblViewRoomType",
+                                            "id": "lblViewRoomType",
+                                            "type": "newlabel",
+                                            "title": "Room Type"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "id": "editRoomType",
+                                    "style": "display: none;",
+                                    "elements": [
+                                        {
+                                            "name": "roomType",
+                                            "id": "roomType",
+                                            "type": "select",
+                                            "className": "select",
+                                            "style": "width: 100%",
+                                            "title": "RoomType"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "name": "description",
+                                            "id": "description",
+                                            "type": "textarea",
+                                            "readonly": "readonly",
+                                            "className": "newBox large",
+                                            "title": "Description"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "className": "sep-div-view",
+            "style": "margin-bottom: 5px",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnRoomEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+										"className": "stdbtn btn_black",
+                                        "style": "opacity: 1;float: left;"
+                                    },
+                                    {
+                                        "name": "btnRoomSave",
+                                        "title": "Save",
+                                        "type": "button",
+                                         "className": "stdbtn btn_black",
+                                        "style": "opacity: 1;display: none;"
+                                    },
+                                    {
+                                        "name": "btnRoomCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity: 1;display: none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

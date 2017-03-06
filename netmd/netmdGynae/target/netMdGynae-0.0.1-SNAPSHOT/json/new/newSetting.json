@@ -1,0 +1,172 @@
+{
+    "title": "Create Setting",
+    "style": "width:60%;margin:0 20%",
+    "data": [
+        {
+            "name": "newSetting",
+            "id": "newSetting",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewSettingData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "name": "name",
+                                            "id": "name",
+                                            "type": "text",
+                                            "className": "large capital",
+                                            "title": "Name",
+                                            "required": "true"
+                                        }
+                                    ]
+                                }
+                                
+                            ]
+                        }
+                        
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "lblname",
+                                    "id": "lblname",
+                                    "type": "label",
+                                    "className": "large",
+                                    "title": "List "
+                                }
+                            ]
+                        },
+                        {
+                            "className": "sep-div",
+                            "data": [
+                                {
+                                    "className": "five_sixth addtest",
+                                    "id": "workBench",
+                                    "elements": [
+                                        {
+                                            "name": "workBench",
+                                            "id": "workBench",
+                                            "type": "combined",
+                                            "items": [
+                                                {
+                                                    "name": "autofield",
+                                                    "id": "autofield",
+                                                    "type": "text",
+                                                    "placeHolder": "List to enter",
+													"style":"width:90%",
+                                                    "className": "large"
+                                                },
+                                        
+                                                {
+                                                    "type": "button",
+                                                    "content": {
+                                                        "buttons": [
+                                                            {
+                                                                "name": "btnAdd",
+                                                                "id": "btnAdd",
+                                                                "title": "Add",
+                                                                "type": "button",
+                                                                "className": "stdbtn btn_black",
+                                                                "style": "opacity:1;"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "table",
+                                    "content": {
+                                        "name": "listTable",
+                                        "idProperty": "listTable",
+                                        "className": "stdtable",
+                                        "colHeaders": [
+                                            {
+                                                "className": "head0",
+                                                "name": "AutocompleteList",
+                                                "style": "width:90%"
+                                            },
+                                      
+                                            {
+                                                "className": "head1",
+                                                "name": "",
+                                                "style": "width:8%"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+   
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnSettingSave",
+                                                "id": "btnSettingSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1;"
+                                            },
+                                            {
+                                                "name": "btnSettingCancel",
+                                                "id": "btnSettingCancel",
+                                                "type": "button",
+                                                "title": "Cancel",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

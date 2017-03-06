@@ -1,0 +1,6 @@
+
+{
+    "id": 4,
+    "departmentName": "general",
+    "description": "all treatments"
+}

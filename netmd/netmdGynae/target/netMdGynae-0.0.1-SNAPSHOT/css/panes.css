@@ -1,0 +1,257 @@
+
+/**********MAIN CONTENT STYLES*******/
+.mainwrapper { 
+	margin: 10px; 
+	position: relative; 
+	}
+
+
+/**LEFT**/
+.mainleft { 
+	width: 250px; 
+	height:100%;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	padding-bottom: 20px;
+	border-right:1px solid #eee; 
+	}
+.leftmenu ul { 
+	list-style: none;
+	}
+.leftmenu ul li { 
+	display: block; 
+	position: relative; 
+	}
+.leftmenu ul li a { 
+	border: 1px solid #ddd; border-top: 0; 
+	display: block; 
+
+	color: #666; 
+	padding-left: 45px;
+	font-family:'Conv_MyriadPro-Regular',Sans-Serif;
+	font-size:15px;
+	text-transform:uppercase; 
+	font-style:normal;
+	color:#000;
+}
+.leftmenu ul li a:hover { 
+	color: #fff; 
+	text-decoration: none; 
+	background: #000; 
+	}
+	
+	
+.leftmenu ul li:first-child a {
+	 border-top: 1px solid #ddd; 
+	 
+	 }
+	 
+.leftmenu ul li a span { 
+	display: block; 
+	padding: 13px 10px; 
+	background: #fcfcfc url(../images/li-main-bg.jpg) repeat-x; 
+	border-left: 1px solid #eee;
+	font-style:normal;
+	
+}
+
+.leftmenu ul li a:hover span { 
+	color:#333;
+	background:#f7f7f7; 
+	}
+
+
+
+
+.leftmenu ul li.current a { 
+	background:url(../images/li-main-bg-hover.jpg) repeat-x; 
+	color: #fff; 
+	}
+.leftmenu ul li.current a span { 
+	background: url(../images/li-main-bg-hover.jpg) repeat-x;
+	 }
+
+
+.leftmenu ul li a.menudrop:hover span { 
+	background:url(../images/menudroparrow.png) no-repeat right 0;
+	 }
+.leftmenu ul li.current a.menudrop:hover span {
+	 background:url(../images/menudroparrow.png) no-repeat right -46px; 
+	 }
+	
+.leftmenu ul li a.dashboard {
+	background:#f6f4f4 url(../images/leftmenu/billing-bg.png) no-repeat;
+}	
+.leftmenu ul li a.bill {
+	background:#f6f4f4 url(../images/icon/dashboard/bill.png) no-repeat;
+}
+
+.leftmenu ul li a.patient {
+	background:#f6f4f4 url(../images/icon/dashboard/patient.png) no-repeat;
+}
+
+.leftmenu ul li a.caseList {
+	background:#f6f4f4 url(../images/icon/ptb/caselist.png) no-repeat;
+}
+
+.leftmenu ul li a.schedule {
+	background:#f6f4f4 url(../images/icon/dashboard/border-bg.png) no-repeat;
+}
+
+.leftmenu ul li a.doctor {
+	background:#f6f4f4 url(../images/icon/dashboard/doctor.png) no-repeat;
+}
+
+.leftmenu ul li a.appointment {
+	background:#f6f4f4 url(../images/icon/dashboard/edit.png) no-repeat;
+}
+
+.leftmenu ul li a.messages {
+	background:#f6f4f4 url(../images/icon/dashboard/message-icon.png) no-repeat;
+}
+.leftmenu ul li a.reports {
+	background:#f6f4f4 url(../images/leftmenu/reports-bg.png) no-repeat;
+}
+.leftmenu ul li a.settings {
+	background:#f6f4f4 url(../images/icon/dashboard/setting.png) no-repeat;
+}
+.leftmenu ul li a.reports {
+	background:#f6f4f4 url(../images/leftmenu/reports-bg.png) no-repeat;
+}
+.leftmenu ul li a.settings {
+	background:#f6f4f4 url(../images/icon/dashboard/setting.png) no-repeat;
+}
+.leftmenu ul li a.accounts {
+	background:#f6f4f4 url(../images/icon/dashboard/accounts.png) no-repeat;
+}
+.leftmenu ul li a.gynecology {
+	background:#f6f4f4 url(../images/icon/dashboard/gyne.png) no-repeat;
+}
+
+
+
+.leftmenu ul li .menutip { 
+	position: absolute; 
+	z-index: 100; 
+	left: 48px; 
+	top: 0; 
+	background: url(../images/blacktrans.png); 
+	color: #fff; 
+	padding: 15px 10px; 
+	display: none;
+	-moz-border-radius: 0 2px 2px 0; -webkit-border-radius: 0 2px 2px 0; border-radius: 0 2px 2px 0; 
+}
+
+
+
+
+.leftmenu ul li ul { 
+	margin: 0 0 10px 45px; 
+	display: none;
+	}
+	
+
+	
+.leftmenu ul li ul li:first-child a { 
+	border-top: 0;
+	}
+
+.leftmenu ul li ul li a { padding-left: 0; background:none; }
+
+
+.leftmenu ul li ul li a span { 
+	border-left: 0; 
+	padding:7px;
+	background:url(../images/li-child.jpg) repeat-x;
+	font-family:'Conv_MyriadPro-Regular',Sans-Serif;
+	font-size:13px;
+	text-transform:uppercase; 
+	font-style:normal;
+	 }
+
+
+.leftmenu ul li ul li a:hover span { border-left: 0; background: #eee; }
+
+
+.leftmenu ul li.current ul li a { border-top: 0; border-bottom: 1px solid #272727; }
+.leftmenu ul li.current ul li a span { border-left: 0; }
+.leftmenu ul li.current ul li a:hover span { background: #2e2e2e; color:#fff; }
+
+.leftmenu ul li ul li.current1 a { border-top: 0; border-bottom: 1px solid #000; }
+.leftmenu ul li ul li.current1 a span { border-left: 0; background:#000; color:#fff;}
+
+
+/**SHOW ICON ONLY LEFT MENU**/
+	
+.lefticon .mainleft { width: 45px; }
+.lefticon .leftmenu { overflow: none;}
+.lefticon .leftmenu ul li { width: 250px; }
+.lefticon .leftmenu ul li a { width: 2px; height: 45px; }
+.lefticon .leftmenu ul li a span { display: none; }
+.lefticon .maincontent { margin-left: 45px; }
+
+#togglemenuleft { border-top: 1px solid #eee; margin-top: 20px; text-align: center; }
+#togglemenuleft a { 
+	display: inline-block; position: relative; top: -13px; width: 22px; height: 22px; 
+	background: url(../images/toggle.png) no-repeat 0 0; cursor: pointer; 
+}
+#togglemenuleft a.toggle { background: url(../images/toggle.png) no-repeat 0 -25px; text-align: left; }
+
+.shortcuts { list-style: none; padding:0 0 20px 0;}
+.shortcuts li { 
+	float: left; margin-right: 50px; margin-bottom: 40px; width: 90px; height: 60px; background: #eee; 
+	padding: 10px; -moz-border-radius: 2px; -webkit-border-radius: 2px;  border-radius: 2px; position: relative; 
+	-moz-box-shadow: inset 1px 1px 2px #ccc; -webkit-box-shadow: inset 1px 1px 2px #ccc; box-shadow: inset 1px 1px 2px #ccc;
+}
+.shortcuts li a { 
+	width: 88px; height: 58px; display: block; background-color: #fff; background-repeat: no-repeat; background-position: center 10px; 
+	border: 1px solid #fff; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;
+	text-decoration:none;
+}
+.shortcuts li a:hover { border-color: #666; }
+.shortcuts li a span { 
+	text-align: center; display: block; padding-top: 70px; font-family: 'RobotoBoldCondensed', Arial, Helvetica, sans-serif; 
+}
+.shortcuts li a.b1ock { background-image:url(../images/icon/admin/block.png); }
+.shortcuts li a.bedType{ background-image:url(../images/icon/admin/bedtype1.png)}
+.shortcuts li a.roomType{background-image:url(../images/icon/admin/room1.png); }
+.shortcuts li a.department{ background-image:url(../images/icon/admin/department.png); }
+.shortcuts li a.room{ background-image:url(../images/icon/admin/room.png); }
+.shortcuts li a.tax{ background-image:url(../images/icon/admin/tax.png);}
+.shortcuts li a.item{ background-image:url(../images/icon/admin/item.png); }
+.shortcuts li a.services{ background-image:url(../images/icon/admin/service.png); }
+.shortcuts li a.bed{ background-image:url(../images/icon/admin/bed.png); }
+.shortcuts li a.bill{ background-image:url(../images/icon/admin/bill.png); }
+.shortcuts li a.discount{ background-image:url(../images/icon/admin/discount1.png); }
+.shortcuts li a.advance{ background-image:url(../images/icon/admin/advance1.png); }
+.shortcuts li a.head{ background-image:url(../images/icon/admin/accounts.png); }
+.shortcuts li a.settings{ background-image:url(../images/icon/admin/settings1.png); }
+.shortcuts li a.questionnaire{ background-image:url(../images/icon/admin/gynacology.png); }
+#ser{ background-image:url(../images/icon/dashboard/search.png)no repeat; }
+
+/* +++++++ Global Box ++++++++++ */
+.widgetbox  {width:100%;}
+.title {
+	width:100%;
+	height:42px;
+	position:relative;
+	background:#097fd4 url(../images/heading-tab-bg.jpg) repeat-x;
+	margin:1px 0 0 0;
+}
+
+.title h1 {
+	font-family:'Conv_MyriadPro-Regular',Sans-Serif;
+	font-size:16px;
+	color:#000;
+	padding:10px 0 10px 10px;
+	cursor:pointer;
+}
+
+.widgetcontent {
+	width:100%;
+	height:120px;
+	margin:0 0 0 0;
+	padding:15px 0 0 15px;
+	border:1px solid #ccc;
+}

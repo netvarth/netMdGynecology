@@ -1,0 +1,794 @@
+{
+    "name": "viewBill",
+    "id": "viewBill",
+    "content": [
+        {
+            "className": "sep-div-view",
+            "id": "patientHeader",
+            "style": "width:100%",
+            "data": [
+                {
+                    "className": "column-left",
+                    "id": "patient",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "viewNameContainer",
+                            "elements": [
+                                {
+                                    "name": "name",
+                                    "id": "name",
+                                    "type": "text",
+                                    "readonly": "readonly",
+                                    "title": "Name",
+                                    "className": "newBox large"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "age",
+                                            "id": "age",
+                                            "type": "newlabel",
+                                            "title": "Age"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "id": "viewGender",
+                                    "elements": [
+                                        {
+                                            "name": "gender",
+                                            "id": "gender",
+                                            "type": "newlabel",
+                                            "title": "Gender"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "style": "display:none;",
+                                    "id": "editGender",
+                                    "elements": [
+                                        {
+                                            "name": "gender",
+                                            "id": "gender",
+                                            "type": "radio",
+                                            "title": "Gender",
+                                            "value": [
+                                                {
+                                                    "title": "Male",
+                                                    "id": "male",
+                                                    "value": "Male"
+                                                },
+                                                {
+                                                    "title": "Female",
+                                                    "id": "female",
+                                                    "value": "Female"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "phone",
+                                            "id": "phone",
+                                            "title": "Phone",
+                                            "type": "newlabel"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "mobile",
+                                            "id": "mobile",
+                                            "type": "newlabel",
+                                            "title": "Mobile"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "id": "edit",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "email",
+                                            "id": "email",
+                                            "title": "E-mail",
+                                            "type": "newlabel"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "id": "orderCategory",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "referral",
+                                            "id": "referral",
+                                            "title": "Ref By",
+                                            "readonly": "readonly",
+                                            "type": "text",
+                                            "className": "newBox large"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "patientType",
+                                            "id": "patientType",
+                                            "type": "newlabel",
+                                            "title": "Patient Type"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "date",
+                                            "id": "date",
+                                            "title": "Date",
+                                            "type": "newlabel"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "status",
+                                            "id": "status",
+                                            "type": "newlabel",
+                                            "title": "Status"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "style": "display:none;",
+                                    "id": "patientHeaderNote",
+                                    "elements": [
+                                        {
+                                            "name": "patientNote",
+                                            "id": "patientNote",
+                                            "title": "Note",
+                                            "type": "text",
+                                            "className": "large"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "type": "button",
+                                            "content": {
+                                                "buttons": [
+                                                    {
+                                                        "name": "btnPatientEdit",
+                                                        "title": "Edit",
+                                                        "type": "button",
+                                                        "className": "stdbtn btn_black",
+                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;"
+                                                    },
+                                                    {
+                                                        "name": "btnPatientSave",
+                                                        "title": "Save",
+                                                        "type": "button",
+                                                        "className": "stdbtn btn_black",
+                                                        "style": "float: right;opacity: 1;display:none;padding:2px 3px 2px 3px; margin:20px 0px 0px 0px"
+                                                    },
+                                                    {
+                                                        "name": "btnPatientCancel",
+                                                        "title": "Cancel",
+                                                        "type": "button",
+                                                        "className": "stdbtn",
+                                                        "style": "float: right;opacity: 1;display:none;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        
+        {
+            "className": "sep-div-view",
+            "style": "width:100%",
+            "data": [
+                {
+                    "className": "column-left",
+                    "id": "selectItemlbl",
+                    "style": "display:none;",
+                    "elements": [
+                        {
+                            "type": "label",
+                            "className": "large",
+                            "title": "Select Items/Services"
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "id": "qtylbl",
+                    "style": "display:none;",
+                    "elements": [
+                        {
+                            "type": "label",
+                            "className": "small",
+                            "title": "Qty"
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth ",
+                    "style": "display:none;",
+                    "id": "ItemServiceWorkBench",
+                    "elements": [
+                        {
+                            "name": "workBench",
+                            "id": "workBench",
+                            "type": "combined",
+                            "items": [
+                                {
+                                    "name": "itemOrService",
+                                    "id": "itemOrService",
+                                    "type": "text",
+                                    "placeHolder": "Items/Services",
+                                    "style": "width:45%;"
+                                },
+                                {
+                                    "name": "quantity",
+                                    "tabIndex": 10,
+                                    "id": "quantity",
+                                    "type": "text",
+                                    "className": "small",
+                                    "style": "width:15%;",
+                                    "value": [
+                                        {
+                                            "title": "Qty"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnItemServiceAdd",
+                                                "id": "btnItemServiceAdd",
+                                                "title": "Add",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "table",
+                            "content": {
+                                "name": "itemServiceTable",
+                                "idProperty": "itemServiceTable",
+                                "className": "stdtable",
+                                "style": "border-spacing:0;border-collapse:collapse; border:0; font-size: 12px;",
+                                "colHeaders": [
+                                    {
+                                        "className": "head0",
+                                        "name": "Items/Services",
+                                        "style": "width: 32%;font-size: 12px;"
+                                    },
+                                    {
+                                        "className": "head1",
+                                        "name": "Date",
+                                        "style": "width: 13%;font-size: 12px;"
+                                    },
+                                    {
+                                        "className": "head0",
+                                        "name": "Qty",
+                                        "style": "width: 8%;font-size: 12px;"
+                                    },
+                                    {
+                                        "className": "head1",
+                                        "name": "Rate",
+                                        "image": "/netmd/images/rupee-symbel.png",
+                                        "style": "width: 10%;font-size: 12px;"
+                                    },
+                                    {
+                                        "className": "head0",
+                                        "name": "Tax",
+                                        "image": "/netmd/images/percentage.png",
+                                        "style": "width: 10%;font-size: 12px;"
+                                    },
+                                    {
+                                        "className": "head1",
+                                        "name": "NetRate",
+                                        "image": "/netmd/images/rupee-symbel.png",
+                                        "style": "width: 12%;font-size: 12px;"
+                                    },
+                                    {
+                                        "className": "head0",
+                                        "name": "",
+                                        "style": "width: 4%"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnItemServiceEdit",
+                                                "title": "Edit",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "float: right;opacity: 1; padding:2px 3px 2px 3px; margin:20px 0px 0px 0px"
+                                            },
+                                            {
+                                                "name": "btnItemServiceSave",
+                                                "title": "Save",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "float: right;opacity: 1;display:none;padding:2px 3px 2px 3px; margin:20px 0px 0px 0px"
+                                            },
+                                            {
+                                                "name": "btnItemServiceCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "float: right;opacity: 1;display:none;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+            "className": "sep-div-view",
+            "style": "width:100%",
+            "data": [
+                {
+                    "className": "column-left",
+                    "id": "paymentSection",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "amountPaid",
+                                            "id": "amountPaid",
+                                            "type": "newlabel",
+                                            "readonly": "readonly",
+                                            "title": "Amount Paid ",
+                                            "className": "newBox ",
+                                            "image": "/netmd/images/rupee-symbel.png"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "payStatus",
+                                            "id": "payStatus",
+                                            "type": "newlabel",
+                                            "title": "Payment Status"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "style": "display:none;",
+                                    "id": "viewBalance",
+                                    "elements": [
+                                        {
+                                            "name": "balance",
+                                            "id": "balance",
+                                            "type": "text",
+                                            "className": "newBox large",
+                                            "title": "Balance",
+                                            "image": "/netmd/images/rupee-symbel.png",
+                                            "readonly": "readonly"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "style": "display:none;",
+                                    "id": "viewPaymentNote",
+                                    "elements": [
+                                        {
+                                            "name": "paymentNote",
+                                            "id": "paymentNote",
+                                            "type": "text",
+                                            "title": "Note",
+                                            "className": "newBox large"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "type": "table",
+                                            "content": {
+                                                "name": "paymentTable",
+                                                "idProperty": "paymentTable",
+                                                "className": "stdtable",
+                                                "style": "font-size: 12px;",
+                                                "colHeaders": [
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "Paid Date",
+                                                        "style": "width:65%"
+                                                    },
+                                                    {
+                                                        "className": "head1",
+                                                        "name": "Amount"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "data": [
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "type": "button",
+                                                    "content": {
+                                                        "buttons": [
+                                                            {
+                                                                "name": "btnPaymentEdit",
+                                                                "title": "Edit",
+                                                                "type": "button",
+                                                                "className": "stdbtn btn_black",
+                                                                "style": "float: right;opacity: 1; padding:2px 3px 2px 3px; margin:20px 0px 0px 0px"
+                                                            },
+                                                            {
+                                                                "name": "btnPaymentSave",
+                                                                "title": "Save",
+                                                                "type": "button",
+                                                                "className": "stdbtn btn_black",
+                                                                "style": "float: right;opacity: 1;display:none;padding:2px 3px 2px 3px; margin:20px 0px 0px 0px"
+                                                            },
+                                                            {
+                                                                "name": "btnPaymentCancel",
+                                                                "title": "Cancel",
+                                                                "type": "button",
+                                                                "className": "stdbtn",
+                                                                "style": "float: right;opacity: 1;display:none;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "id": "discountSection",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "id": "discountTitleSection",
+                            "style": "display:none",
+                            "elements": [
+                                {
+                                    "name": "discountType",
+                                    "id": "discountType",
+                                    "type": "label",
+                                    "className": "large",
+                                    "title": "Select Discount"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth ",
+                            "style": "display:none;",
+                            "id": "discountworkBench",
+                            "elements": [
+                                {
+                                    "name": "workBench",
+                                    "id": "workBench",
+                                    "type": "combined",
+                                    "items": [
+                                        {
+                                            "name": "selectDiscount",
+                                            "id": "selectDiscount",
+                                            "type": "select",
+                                            "className": "select",
+                                            "style": "width:40%;",
+                                            "value": [
+                                                {
+                                                    "title": "Select discount"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "name": "discountValue",
+                                            "id": "discountValue",
+                                            "style": "width:20%;",
+                                            "type": "text"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "content": {
+                                                "buttons": [
+                                                    {
+                                                        "name": "btnDiscountAdd",
+                                                        "id": "btnDiscountAdd",
+                                                        "title": "Add",
+                                                        "type": "button",
+                                                        "className": "stdbtn btn_black",
+                                                        "style": "opacity:1;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "table",
+                                    "content": {
+                                        "name": "discountTable",
+                                        "idProperty": "discountTable",
+                                        "className": "stdtable",
+                                        "style": "font-size: 12px;",
+                                        "colHeaders": [
+                                            {
+                                                "className": "head0",
+                                                "name": "Discount Name",
+                                                "style": "width:65%"
+                                            },
+                                            {
+                                                "className": "head1",
+                                                "name": "Discount Value",
+                                                "style": "width:25%"
+                                            },
+                                            {
+                                                "className": "head0",
+                                                "name": "",
+                                                "style": "width:8%"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "id": "notes",
+                            "style": "display:none;",
+                            "elements": [
+                                {
+                                    "name": "note",
+                                    "id": "note",
+                                    "type": "text",
+                                    "title": "Note",
+                                    "className": "large"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "type": "button",
+                                            "content": {
+                                                "buttons": [
+                                                    {
+                                                        "name": "btnDiscountEdit",
+                                                        "title": "Edit",
+                                                        "type": "button",
+                                                        "className": "stdbtn btn_black",
+                                                        "style": "float: right;opacity: 1; padding:2px 3px 2px 3px; margin:20px 0px 0px 0px"
+                                                    },
+                                                    {
+                                                        "name": "btnDiscountSave",
+                                                        "title": "Save",
+                                                        "type": "button",
+                                                        "className": "stdbtn btn_black",
+                                                        "style": "float: right;opacity: 1;display:none;padding:2px 3px 2px 3px; margin:20px 0px 0px 0px"
+                                                    },
+                                                    {
+                                                        "name": "btnDiscountCancel",
+                                                        "title": "Cancel",
+                                                        "type": "button",
+                                                        "className": "stdbtn",
+                                                        "style": "float: right;opacity: 1;display:none;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "className": "sep-div-view",
+            "id": "summary",
+            "style": "width:100%;margin-bottom:5px",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "table",
+                            "content": {
+                                "name": "toTalTable",
+                                "idProperty": "toTalTable",
+                                "className": "stdtable",
+                                "style": "font-size: 12px;",
+                                "colHeaders": [
+                                    {
+                                        "name": "Grand Total",
+                                        "style": "width:25%;border:none;",
+                                        "image": "/netmd/images/rupee-symbel.png",
+                                        "content": [
+                                            {
+                                                "className": "teble-text",
+                                                "id": "grandTotal"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Bill Discount",
+                                        "style": "width:25%;border:none;",
+                                        "image": "/netmd/images/rupee-symbel.png",
+                                        "content": [
+                                            {
+                                                "className": "teble-text",
+                                                "id": "billDiscount"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "Net Total",
+                                        "content": [
+                                            {
+                                                "className": "teble-text",
+                                                "id": "netTotal"
+                                            }
+                                        ],
+                                        "image": "/netmd/images/rupee-symbel.png",
+                                        "style": "width:25%;border:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-right",
+                            "id": "discharge",
+                            "style": "display:none",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnDischarge",
+                                                "id": "btnDischarge",
+                                                "title": "Discharge",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "float: right;opacity: 1; padding:2px 3px 2px 3px; margin:5px 0px 0px 0px"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

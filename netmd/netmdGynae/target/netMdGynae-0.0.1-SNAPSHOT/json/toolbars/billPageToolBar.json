@@ -1,0 +1,26 @@
+{
+    "buttons": [
+		{
+			"name" 	: 	"change",
+			"title"	:	"Change Status",
+			"datarevealid":"changeStatusModal",
+			"url"	:	"/netmd/ws/ui/bill/updateOrderStatus"
+		},
+		{
+			"name" 	: 	"print",
+			"title"	:	"Print"
+		},
+  
+        {
+            "name": "view",
+            "title": "view"
+          
+        },
+        {
+            "name": "new",
+            "title": "New"
+          
+        }
+		
+    ]
+}

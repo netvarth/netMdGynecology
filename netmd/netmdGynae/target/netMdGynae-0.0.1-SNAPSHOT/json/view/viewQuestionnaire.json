@@ -1,0 +1,65 @@
+{
+    "name": "viewQuestionnaire",
+    "id": "viewQuestionnaire",
+    "content": [
+        {
+            "className": "sep-div",
+            "style": "display:none",
+            "id": "errorDivHeader",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "id": "errorDivViewQuestionnaireData"
+                }
+            ]
+        },
+        {
+            "className": "sep-div",
+            "id": "viewQuestionnaireDiv",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "id": "viewQuestionnaireInnerDiv"
+                }
+            ]
+        },
+        {
+            "className": "sep-div",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnViewQuestionnaireEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity: 1; float:left;"
+                                    },
+                                    {
+                                        "name": "btnViewQuestionnaireSave",
+                                        "title": "Save",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;display:none;"
+                                    },
+                                    {
+                                        "name": "btnViewQuestionnaireCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

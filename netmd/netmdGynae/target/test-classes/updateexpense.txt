@@ -1,0 +1,11 @@
+{
+    "id": 3,
+    "expenseName": "300",
+    "headId": "5",
+    "headName": "varsha",
+    "description": "",
+    "paidAmount": "300",
+    "balance": "100",
+    "paymentStatus": "PartiallyPaid",
+    "note": ""
+}

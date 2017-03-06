@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "id": "gyneListTableCont",
+            "elements": [
+				{
+                    "type": "table",
+                    "content": {
+						"name" : "gyne",
+						"idProperty" : "gyne",
+						"className" :"stdtable stdtablecb",
+						"style":"border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+						"colHeaders" : [
+							{ "className" : "head0",	"name" : "Id","style":"width:8%"},
+							{ "className" : "head1",	"name" : "patientName","style":"width:30%"}
+							
+						]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": 12,
+    "firstName": "sanu",
+    "lastName": "r",
+    "phone": "",
+    "mobile": "",
+    "gender": "Male",
+    "email": "",
+    "age": 45,
+    "address": "",
+    "bloodGroup": "B",
+    "rh": "Positive",
+    "ailment": "",
+    "chronicDisease": "",
+    "diagnosis": "",
+    "familyHistory": "",
+    "allergies": "",
+    "medicalHistory": []
+}

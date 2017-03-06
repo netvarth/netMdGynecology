@@ -1,0 +1,117 @@
+{
+    "title": " Create Advance",
+    "style": "width:60%;margin:0 20%",
+    "data": [
+        {
+            "name": "newAdvance",
+            "id": "newAdvance",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivnewAdvanceData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "name",
+                                            "id": "name",
+                                            "type": "text",
+                                            "className": "large",
+                                            "title": "Patient Name",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+								{
+                                    "className": "column-right",
+                                  
+                                            
+                                            "elements": [
+                                                {
+													"name": "email",
+													"id": "email",
+													"type": "text",
+													"className": "large",
+													"title": "Email"
+													
+                                                }
+                                            
+                                        
+                                        
+                                    ]
+                                }
+                               
+                            ]
+                        },
+						{
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+									{
+													"name": "amount",
+													"id": "amount",
+													"type": "text",
+													"className": "medium",
+													"title": "Amount",
+													"required": true
+                                        }
+                                    ]
+                                }
+                                
+                            ]
+                        }
+                    ]
+                },				
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnAdvanceSave",
+                                                "id": "btnAdvanceSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1;"
+                                            },
+                                            {
+                                                "name": "btnAdvanceCancel",
+                                                "id": "btnAdvanceCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

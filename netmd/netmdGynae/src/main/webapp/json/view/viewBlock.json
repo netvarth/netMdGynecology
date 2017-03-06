@@ -1,0 +1,88 @@
+{
+    "name": "viewBlock",
+    "id": "viewBlock",
+    "content": [
+        {
+            "className": "sep-div-view",
+            "data": [
+                {
+                    "className": "column-left",
+                    "elements": [
+                        {
+                            "name": "id",
+                            "id": "id",
+                            "type": "newlabel",
+                            "style": "margin-left:6%",
+                            "title": "Id"
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "elements": [
+                        {
+                            "name": "name",
+                            "id": "name",
+                            "type": "text",
+                            "readonly": "readonly",
+                            "className": "newBox large",
+                            "title": "Name"
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "name": "description",
+                            "id": "description",
+                            "type": "textarea",
+                            "readonly": "readonly",
+                            "className": "newBox large",
+                            "title": "Description"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "className": "sep-div-view",
+            "style": "margin-bottom:5px",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnBlockEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity: 1; float:left;"
+                                    },
+                                    {
+                                        "name": "btnBlockSave",
+                                        "title": "Save",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;display:none;"
+                                    },
+                                    {
+                                        "name": "btnBlockCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+    "type": "medium",
+    "rent": 234,
+    "count": 1,
+    "noOfBeds": 1
+}

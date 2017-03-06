@@ -1,0 +1,208 @@
+
+@font-face {
+	font-family: 'Conv_MyriadPro-Regular';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: local('?'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_BarcodeFont';
+	src: url('../fonts/BarcodeFont.eot');
+	src: local('?'), url('../fonts/BarcodeFont.woff') format('woff'), url('../fonts/BarcodeFont.ttf') format('truetype'), url('../fonts/BarcodeFont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*genral section*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,                                       /* Note--changed css ie removed color from   general section by leo-- */
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+
+
+/* Forms */
+.gyne-content  p {  position: relative;  width:98%;}
+.gyne-content  p span:last-child { padding:0px 0px 0px 3px;}
+.gyne-content input[type="text"]:focus,.gyne-content select:focus, .gyne-content  input[type="password"]:focus, .gyne-content  textarea:focus{
+  background: url(/netmd/images/input_bg_focus.png) repeat-x #fdfdfd;
+  
+}
+
+.gyne-content input[type="button"]:focus {
+	border-color:#fff;
+}
+.gyne-content input[type="button"] {
+	border-color:none;
+}
+
+.gyne-content  input[type="text"], .gyne-content  input[type="password"], .gyne-content  textarea {
+  background: url(/netmd/images/input_bg.png) repeat-x #fdfdfd;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #ccc;
+  border-radius: 2px;
+  gyne-shadow: 0 1px 0 #fff;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  height: 30px;
+  outline: none;
+  padding: 6px 10px;
+  resize: none;
+  margin:3px 0 0 0;
+}
+.gyne-content  input[type="text"].newBox{
+background:none;
+border:none;
+color:#000;
+padding:0px;
+margin:0px;
+width: 100%;
+}
+.gyne-content  input[type="password"].newBox{
+background:none;
+border:none;
+color:#000;
+padding:0px;
+margin:0px;
+width: 100%;
+}
+.gyne-content  textarea.newBox{
+background:none;
+border:none;
+color:#000;
+padding:0px;
+margin:0px;
+width: 100%;
+}
+.gyne-content  input[type="text"].labelTextBox{
+background:none;
+border:none;
+color:#000;
+padding:0px;
+margin:0px;
+width: 100%;
+}
+.gyne-content  input[type="password"].labelTextBox{
+background:none;
+border:none;
+color:#000;
+padding:0px;
+margin:0px;
+width: 100%;
+}
+.gyne-content input.tiny {
+width: 15%;
+}
+.gyne-content  input[type="text"],.gyne-content  input[type="password"],.gyne-content  input[type="button"],.gyne-content  textarea,.gyne-content select {margin-top:-3px}
+.gyne-content  input[type="text"].newBox,.gyne-content  textarea.newBox,.gyne-content select.newBox, .gyne-content  input[type="password"].newBox {margin-top:-3px}
+.gyne-content  input[type="checkbox"] {margin-bottom:13px}
+input.readonlybox {
+	background:none;
+	border:none;
+	color:#000;
+	padding:0px;
+	margin:0px;
+	width:50%;
+	text-align:right;
+	
+}
+.select { 
+	border: 1px solid #ccc; background: #fcfcfc; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; 
+	-moz-gyne-shadow: inset 1px 1px 2px #ddd; -webkit-gyne-shadow: inset 1px 1px 2px #ddd; gyne-shadow: inset 1px 1px 2px #ddd; color: #000;
+	height:30px;
+	margin:3px 5px 0 0px;
+}
+.gyne-content  textarea {
+  height: 60px;
+  line-height: 20px;
+  margin-bottom: 0;
+  padding-top: 8px;
+}
+.gyne-content  p.combined input {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.gyne-content  p.combined input:first-child {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right: none;
+  margin-right: -3px;
+}
+.gyne-content  p.combined input.last-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  position: absolute;
+  top: 0;
+}
+.gyne-content  input.small { width: 25%;}
+.gyne-content  input.small-2 { width: 70%; float:left; margin:0 0px 0 0; }
+.gyne-content  input.medium { width: 40% }
+.gyne-content  input.large { width: 100% }
+.gyne-content  input.larger {}
+.gyne-content  input.capital { text-transform: capitalize; }
+.gyne-content  input.dlarge { width: 54% }
+.gyne-content  input.avglarge { width: 43% }
+.gyne-content  p .icon {
+  position: absolute;
+  right: 8px;
+  top: 7px;
+}
+.gyne-content  p .icon.valid {display: none;}
+.gyne-content  p input.error,  p textarea.error {
+  border: 2px solid #d29797;
+  border-top: 1px solid #ae6767;
+  color: #ff0000;
+}
+.gyne-content  p span{margin:0 0 10px;font-weight:bold;font-size:12px;}
+.gyne-content  p span.barcode{font-weight:normal;}
+.gyne-content  p .tip {
+  background: url(../img/tip_bg.png) no-repeat;
+  bottom: -6px;
+  display: block;
+  height: 6px;
+  position: absolute;
+  right: 34px;
+  width: 12px;
+  z-index: 9;
+}
+.gyne-content  p > label {
+  color: #333;
+  line-height: 19px;
+  text-indent: 4px;
+}
+.gyne-content  p {
+  clear: both;
+  color: #333;
+  line-height: 25px;
+}
+.gyne-content  p.main {font-weight:bold;}
+.gyne-content  p small {
+  font-size: 11px;
+  font-style: italic;
+  float: right;
+  margin-bottom: 14px;
+}
+/* .gyne-content {  padding: 5px 5px 5px 14px;} */
+.marginstyle{
+margin-left:50px;
+}
+
+.box-content #gyneModalProcessor  table th label { 
+color:#fff;
+}

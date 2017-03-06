@@ -1,0 +1,129 @@
+{
+    "title": " Create BedType",
+    "style": "width:40%;margin:0 30%",
+    "data": [
+        {
+            "name": "newBedType",
+            "id": "newBedType",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewBedTypeData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "type",
+                                            "id": "type",
+                                            "type": "text",
+                                            "className": "large",
+                                            "title": "Bed Type",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "rent",
+                                                    "id": "rent",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "title": "Rent",
+													"image": "/netmd/images/rupee-symbel.png",
+													"required":"true"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "count",
+                                                    "id": "count",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "title": "Count"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+						{
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+									{
+                                            "name": "tax",
+                                            "id": "tax",
+                                            "type": "select",
+                                            "className": "select",
+											"style":"width:100%",
+                                            "title": "Select tax"
+                                        }
+                                    ]
+                                }                                
+                            ]
+                        }
+                    ]
+                },
+			
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnBedTypeSave",
+                                                "id": "btnBedTypeSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;"
+                                            },
+                                            {
+                                                "name": "btnBedTypeCancel",
+                                                "id": "btnBedTypeCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity: 1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

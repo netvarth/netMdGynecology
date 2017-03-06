@@ -1,0 +1,297 @@
+{
+    "title": "Create Doctor",
+    "style": "width:61%;margin:0 20%",
+    "data": [
+        {
+            "name": "newDoctorForm",
+            "id": "newDoctorForm",
+            "content": [
+				{
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewDoctor"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "id": "referralsdiv",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "data": [
+									
+                                        {
+                                            "className": "five_sixth",
+                                            "data": [
+                                                {
+                                                    "className": "column-one-verysmall",
+                                                    "elements": [
+                                                        {
+                                                            "name": "honorific",
+                                                            "id": "honorific",
+                                                            "tabIndex": 1,
+                                                            "type": "text",
+															"readonly":"readonly",
+                                                            "className": "",
+															"title":"First Name",
+                                                            "style": "width:100%;font-size:15px;"                                                            
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "className": "column-one-verysmallopp",
+                                                    "elements": [
+                                                        {
+                                                            "name": "firstname",
+                                                            "id": "firstname",
+                                                            "tabIndex": 2,
+                                                            "type": "text",
+															"title":"",
+                                                            "className": "large capital",
+															"required": true
+															
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "lastname",
+                                            "id": "lastname",
+                                            "tabIndex": 2,
+                                            "type": "text",
+                                            "className": "large capital",
+                                            "title": "Last Name"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "dob",
+                                                    "id": "dob",
+                                                    "tabIndex": 3,
+                                                    "type": "text",
+                                                    "className": "large capital",
+                                                    "title": "Date Of Birth",
+                                                    "required": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "gender",
+                                                    "id": "gender",
+                                                    "tabIndex": 4,
+                                                    "type": "radio",
+                                                    "required": true,
+                                                    "title": "Gender",
+                                                    "value": [
+                                                        {
+                                                            "title": "Male",
+                                                            "value": "Male",
+                                                            "checked": "true",
+                                                            "style": "margin:2px"
+                                                        },
+                                                        {
+                                                            "title": "Female",
+                                                            "value": "Female",
+                                                            "style": "margin:2px"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "phone",
+                                                    "id": "phone",
+                                                    "type": "text",
+                                                    "tabIndex": 5,
+                                                    "className": "large capital",
+                                                    "title": "phone"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "mobile",
+                                                    "id": "mobile",
+                                                    "type": "text",
+                                                    "tabIndex": 6,
+                                                    "className": "large capital",
+                                                    "title": "Mobile"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "address",
+                                            "id": "address",
+                                            "type": "textarea",
+                                            "tabIndex": 9,
+                                            "className": "large",
+                                            "title": "Address",
+                                            "style": "height:82px;padding:none;"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "specialization",
+                                            "id": "specialization",
+                                            "type": "text",
+                                            "tabIndex": 7,
+                                            "className": "large capital",
+                                            "title": "specialization",
+                                            "required": "true"
+                                        },
+                                        {
+                                            "name": "email",
+                                            "id": "email",
+                                            "type": "text",
+                                            "tabIndex": 8,
+                                            "className": "large",
+                                            "title": "E-mail",
+                                            "required": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "label",
+                                    "title": "Login Info",
+                                    "spanstyle": "font-size:15px;"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "username",
+                                    "id": "username",
+                                    "type": "text",
+                                    "className": "large",
+                                    "title": "Username",
+                                    "readonly": true,
+                                    "required": true
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "admin",
+                                    "id": "admin",
+                                    "type": "checkbox",
+                                    "className": "medium",
+                                    "title": "Admin Privilege",
+                                    "value": [
+                                        {
+                                            "name": "check",
+                                            "value": "Doctor",
+                                            "type": "checkbox",
+                                            "checked": "",
+                                            "id": "check",
+                                            "style": "float:left; margin:5px 5px 0px 0px;"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div ",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnNewDoctorCreate",
+                                                "id": "btnNewDoctorCreate",
+                                                "title": "Save",
+                                                "tabIndex": 12,
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1; margin:2px"
+                                            },
+                                            {
+                                                "name": "btnNewDoctorCancel",
+                                                "id": "btnNewDoctorCancel",
+                                                "tabIndex": 13,
+                                                "title": "Clear",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1; margin:2px"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

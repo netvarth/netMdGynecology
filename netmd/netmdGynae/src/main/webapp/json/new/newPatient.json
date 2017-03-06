@@ -1,0 +1,344 @@
+{
+    "title": "Create Patient",
+    "style": "width:60%;margin:0 20%",
+    "data": [
+        {
+            "name": "newPatient",
+            "id": "newPatient",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewPatient"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "firstName",
+                                                    "id": "firstName",
+                                                    "type": "text",
+                                                    "required": true,
+                                                    "className": "large capital",
+                                                    "style": "height:4%",
+                                                    "title": "First Name"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "lastName",
+                                                    "id": "lastName",
+                                                    "type": "text",
+                                                    "required": true,
+                                                    "className": "large capital",
+                                                    "style": "height:4%",
+                                                    "title": "Last Name"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "phone",
+                                                    "id": "phone",
+                                                    "type": "text",
+                                                    "className": "large capital",
+                                                    "style": "height:4%",
+                                                    "title": "Phone"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "mobile",
+                                                    "id": "mobile",
+                                                    "type": "text",
+                                                    "className": "large capital",
+                                                    "style": "height:4%",
+                                                    "title": "Mobile"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "dob",
+                                                    "id": "dob",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "style": "height:4%",
+                                                    "title": "DOB"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "gender",
+                                                    "id": "gender",
+                                                    "type": "radio",
+                                                    "title": "Gender",
+                                                    "value": [
+                                                        {
+                                                            "title": "Male",
+                                                            "value": "Male",
+                                                            "checked": "true",
+                                                            "tabIndex": 5
+                                                        },
+                                                        {
+                                                            "title": "Female",
+                                                            "value": "Female"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "email",
+                                            "id": "email",
+                                            "type": "text",
+                                            "className": "large",
+                                            "style": "height:4%",
+                                            "title": "E-Mail"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "age",
+                                                    "id": "age",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "style": "height:4%",
+                                                    "title": "Age"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "selectEducation",
+                                                    "id": "selectEducation",
+                                                    "type": "combined",
+                                                    "title": "Education",
+                                                    "items": [
+                                                        {
+                                                            "name": "education",
+                                                            "id": "education",
+                                                            "type": "select",
+                                                            "className": "select",
+                                                            "value": [
+                                                                {
+                                                                    "title": "Select",
+                                                                    "id": "select"
+                                                                },                                                              
+                                                                {
+                                                                    "title": "Primary"
+                                                                },
+                                                                {
+                                                                    "title": "Secondary"
+                                                                },
+                                                                {
+                                                                    "title": "HigherSecondary"
+                                                                },
+                                                                {
+                                                                    "title": "Graduate"
+                                                                },
+                                                                {
+                                                                    "title": "Others"
+                                                                },
+																{
+                                                                    "title": "None"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "five_sixth",
+                                            "data": [
+                                                {
+                                                    "className": "column-left",
+                                                    "elements": [
+                                                        {
+                                                            "name": "selectBloodGrp",
+                                                            "id": "selectBloodGrp",
+                                                            "type": "combined",
+                                                            "title": "Blood Group",
+                                                            "items": [
+                                                                {
+                                                                    "name": "bloodGroup",
+                                                                    "id": "bloodGroup",
+                                                                    "type": "select",
+                                                                    "className": "select",
+                                                                    "value": [
+                                                                        {
+                                                                            "title": "Select",
+                                                                            "id": "select"
+                                                                        },
+                                                                        {
+                                                                            "title": "A"
+                                                                        },
+                                                                        {
+                                                                            "title": "B"
+                                                                        },
+                                                                        {
+                                                                            "title": "O"
+                                                                        },
+                                                                        {
+                                                                            "title": "AB"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "className": "column-right",
+                                                    "elements": [
+                                                        {
+                                                            "name": "rhsign",
+                                                            "id": "rhsign",
+                                                            "type": "combined",
+                                                            "title": "Rh",
+                                                            "items": [
+                                                                {
+                                                                    "name": "select",
+                                                                    "tabIndex": 11,
+                                                                    "id": "rh",
+                                                                    "type": "select",
+                                                                    "className": "select",
+                                                                    "value": [
+                                                                        {
+                                                                            "title": "Select",
+                                                                            "id": "select"
+                                                                        },
+                                                                        {
+                                                                            "title": "+ve",
+                                                                            "id": "positive"
+                                                                        },
+                                                                        {
+                                                                            "title": "-ve",
+                                                                            "id": "negative"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "address",
+                                            "id": "address",
+                                            "type": "textarea",
+                                            "className": "large",
+                                            "style": "height:80px;padding:none;",
+                                            "title": "Address"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnCreatePatient",
+                                                "id": "btnCreatePatient",
+                                                "title": "Save",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1"
+                                            },
+                                            {
+                                                "name": "btnCancelPatient",
+                                                "id": "btnCancelPatient",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

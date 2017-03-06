@@ -1,0 +1,79 @@
+{
+    "title": "View Message",
+    "style": "width:55%;margin:0 20%",
+    "data": [
+        {
+            "name": "messageViewForm",
+            "id": "messageViewForm",
+            "content": [
+                {
+                    "className": "sep-div-view ",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-first",
+                                    "elements": [
+                                        {
+                                            "name": "messageID",
+                                            "id": "messageID",
+                                            "tabIndex": 3,
+                                            "type": "newlabel",
+                                            "className": "newBox large capital",
+                                            "title": "Id"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-second",
+                                    "elements": [
+                                        {
+                                            "name": "doctorname",
+                                            "id": "doctorname",
+                                            "tabIndex": 3,
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "Doctor Name"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-third ",
+                                    "elements": [
+                                        {
+                                            "name": "dateandtime",
+                                            "id": "dateandtime",
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "Date&Time"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view ",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "viewMessage",
+                                    "id": "viewMessage",
+                                    "type": "textarea",
+                                    "className": "newBox large",
+                                    "title": "Message",
+                                    "readonly": "readonly",
+                                    "style": "height:82px;padding:none;"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

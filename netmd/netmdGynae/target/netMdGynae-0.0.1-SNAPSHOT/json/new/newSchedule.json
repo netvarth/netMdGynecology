@@ -1,0 +1,288 @@
+{
+    "title": "Create Schedule",
+    "style": "width:55%;margin:0 20%",
+    "data": [
+        {
+            "name": "newScheduleForm",
+            "id": "newScheduleForm",
+            "content": [
+				{
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewSchedule"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view ",
+                    "data": [
+                        {
+                            "className": "column-first-small ",
+                            "elements": [
+                                {
+                                    "name": "slot",
+                                    "id": "slot",
+                                    "tabIndex": 1,
+                                    "type": "radio",
+                                    "title": "Avaliabilty Status",
+                                    "value": [
+                                        {
+                                            "title": "Available",
+                                            "value": "Working Hours",
+                                            "checked": "true"
+                                        },
+                                        {
+                                            "title": "Vacation",
+                                            "value": "vacation"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view ",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-first",
+                                    "elements": [
+                                        {
+                                            "name": "Startdate",
+                                            "id": "Startdate",
+                                            "tabIndex": 2,
+                                            "type": "text",
+                                            "className": "avglarge",
+                                            "style": "width: 50%;",
+                                            "title": "Start Date"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-second",
+                                    "elements": [
+                                        {
+                                            "name": "from",
+                                            "id": "from",
+                                            "tabIndex": 3,
+                                            "type": "text",
+                                            "className": "avglarge",
+                                            "style": "width: 50%;",
+                                            "title": "Time From"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-third ",
+                                    "elements": [
+                                        {
+                                            "name": "to",
+                                            "id": "to",
+                                            "tabIndex": 4,
+                                            "type": "text",
+                                            "className": "avglarge",
+                                            "style": "width: 50%;",
+                                            "title": "Time To"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view ",
+                    "data": [
+                        {
+                            "className": "column-fourth",
+                            "elements": [
+                                {
+                                    "name": "repeat",
+                                    "id": "repeat",
+                                    "tabIndex": 5,
+                                    "style": "width:55%;",
+                                    "type": "select",
+                                    "title": "Repeat"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-last",
+                            "id": "repeatweek",
+                            "style": "display:none;margin-top: 3%;",
+                            "elements": [
+                                {
+                                    "name": "weekly",
+                                    "id": "weekly",
+                                    "type": "checkbox",
+                                    "className": "medium",
+                                    "value": [
+                                        {
+                                            "className": "week",
+                                            "name": "mon",
+                                            "title": "MON",
+                                            "id": "check",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "className": "week",
+                                            "name": "tue",
+                                            "title": "TUE",
+                                            "id": "check1",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "className": "week",
+                                            "name": "wed",
+                                            "title": "WED",
+                                            "id": "check2",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "className": "week",
+                                            "name": "thu",
+                                            "title": "THU",
+                                            "id": "check3",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "className": "week",
+                                            "name": "fri",
+                                            "title": "FRI",
+                                            "id": "check4",
+                                            "value": "6"
+                                        },
+                                        {
+                                            "className": "week",
+                                            "name": "sat",
+                                            "title": "SAT",
+                                            "id": "check5",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "className": "week",
+                                            "name": "sun",
+                                            "title": "SUN",
+                                            "id": "check6",
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view ",
+                    "id": "repeatend",
+                    "style": "display:none",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-small",
+                                    "elements": [
+                                        {
+                                            "name": "endon",
+                                            "id": "endon",
+                                            "type": "radio",
+                                            "title": "End On  After",
+                                            "value": [
+                                                {
+                                                    "name": "end",
+                                                    "id": "endafter",
+                                                    "value": "endafter",
+                                                    "title": "Occurence"
+                                                },
+                                                {
+                                                    "name": "end1",
+                                                    "id": "enddate",
+                                                    "value": "enddate",
+                                                    "title": "Date"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-left",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+											 "id":"occurance",
+											 "style": "display:none;",
+                                            "elements": [
+                                                {
+                                                    "type": "text",
+                                                    "id": "occuranceOne",
+                                                    "className": "larger"
+                                                    
+                                                }
+                                            ]
+                                        },
+										{
+                                            "className": "column-left",
+											 "id":"datepicker",
+											 "style": "display:none;",
+                                            "elements": [
+                                                {
+                                                    "type": "text",
+                                                    "id": "datepickerOne",
+                                                    "className": "larger"
+                                                    
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnDone",
+                                                "id": "btnDone",
+                                                "tabIndex": 6,
+                                                "title": "Save",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1; margin:2px"
+                                            },
+                                            {
+                                                "name": "btnCancel",
+                                                "id": "btnCancel",
+                                                "tabIndex": 7,
+                                                "title": "Clear",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1; margin:2px"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,257 @@
+{
+    "id": 3,
+    "patientId": "10",
+    "patientType": "InPatient",
+    "admittedDate": null,
+    "caseName": "obstetrics",
+    "departmentId": "3",
+    "departmentName": "obstetrics",
+    "questionAnswerDTO": {
+        "answerDTO": [
+            {
+                "questionKey": "slNo",
+                "answer": "5"
+            },
+            {
+                "questionKey": "ipNumber",
+                "answer": "10"
+            },
+            {
+                "questionKey": "bookedUnbooked",
+                "answer": "Unbooked"
+            },
+            {
+                "questionKey": "unit",
+                "answer": "5"
+            },
+            {
+                "questionKey": "doctorIncharge",
+                "answer": "kumar"
+            },
+            {
+                "questionKey": "name",
+                "answer": "tinu"
+            },
+            {
+                "questionKey": "age",
+                "answer": "22"
+            },
+            {
+                "questionKey": "height",
+                "answer": "29"
+            },
+            {
+                "questionKey": "weight",
+                "answer": "45"
+            },
+            {
+                "questionKey": "bodymassIndex",
+                "answer": "535.08"
+            },
+            {
+                "questionKey": "bloodgroup",
+                "answer": "A"
+            },
+            {
+                "questionKey": "rh",
+                "answer": "+ve"
+            },
+            {
+                "questionKey": "education",
+                "answer": "Graduation"
+            },
+            {
+                "questionKey": "husbandName",
+                "answer": "ravi"
+            },
+            {
+                "questionKey": "address",
+                "answer": ""
+            },
+            {
+                "questionKey": "phoneNumber",
+                "answer": ""
+            },
+            {
+                "questionKey": "religion",
+                "answer": "Hindu"
+            },
+            {
+                "questionKey": "isTribal",
+                "answer": "No"
+            },
+            {
+                "questionKey": "tribal",
+                "answer": "select"
+            },
+            {
+                "questionKey": "dateofAdmissionHospital",
+                "answer": "03/05/2014 10:11 AM"
+            },
+            {
+                "questionKey": "previousCS",
+                "answer": "1"
+            },
+            {
+                "questionKey": "sameHospital",
+                "answer": "1"
+            },
+            {
+                "questionKey": "otherHospital",
+                "answer": "0"
+            },
+            {
+                "questionKey": "lmp",
+                "answer": ""
+            },
+            {
+                "questionKey": "confinementDate",
+                "answer": ""
+            },
+            {
+                "questionKey": "gestinationWeek",
+                "answer": "select"
+            },
+            {
+                "questionKey": "gestinationDay",
+                "answer": "select"
+            },
+            {
+                "questionKey": "gravidity",
+                "answer": "2"
+            },
+            {
+                "questionKey": "parity",
+                "answer": "2"
+            },
+            {
+                "questionKey": "abortion",
+                "answer": "0"
+            },
+            {
+                "questionKey": "icuAdminSameHsp",
+                "answer": "select"
+            },
+            {
+                "questionKey": "icuAdminDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "isALSAmbulance",
+                "answer": "select"
+            },
+            {
+                "questionKey": "alsAmbulanceDesc",
+                "answer": "select"
+            },
+            {
+                "questionKey": "fetal1CongAnomali",
+                "answer": "select"
+            },
+            {
+                "questionKey": "fetal1NICU",
+                "answer": "select"
+            },
+            {
+                "questionKey": "fetal1stillbirth",
+                "answer": "select"
+            },
+            {
+                "questionKey": "fetal1NeonatalDeath",
+                "answer": "select"
+            },
+            {
+                "questionKey": "plprevAclocal",
+                "answer": "select"
+            },
+            {
+                "questionKey": "plprevAclocalDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "plprevAcReffered",
+                "answer": "select"
+            },
+            {
+                "questionKey": "plprevAcRefDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "perinealTear",
+                "answer": "select"
+            },
+            {
+                "questionKey": "perinealTearType",
+                "answer": "select"
+            },
+            {
+                "questionKey": "cerebroVasPrb",
+                "answer": "select"
+            },
+            {
+                "questionKey": "cerebroVasPrbDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "sevMatMorbidility",
+                "answer": "select"
+            },
+            {
+                "questionKey": "sevMatMorbidilityDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "maternalDeath",
+                "answer": "select"
+            },
+            {
+                "questionKey": "maternalDeathType",
+                "answer": "select"
+            },
+            {
+                "questionKey": "anyOther",
+                "answer": "select"
+            },
+            {
+                "questionKey": "anyOtherDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "deliveryType",
+                "answer": ""
+            },
+            {
+                "questionKey": "deliveryName",
+                "answer": ""
+            },
+            {
+                "questionKey": "indication",
+                "answer": ""
+            },
+            {
+                "questionKey": "robsonclass",
+                "answer": "select"
+            },
+            {
+                "questionKey": "robsonclassDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "remarks",
+                "answer": ""
+            },
+            {
+                "questionKey": "specialPoints",
+                "answer": ""
+            },
+            {
+                "questionKey": "conductedBy",
+                "answer": ""
+            },
+            {
+                "questionKey": "conductedByDesc",
+                "answer": ""
+            }
+        ]
+    }
+}

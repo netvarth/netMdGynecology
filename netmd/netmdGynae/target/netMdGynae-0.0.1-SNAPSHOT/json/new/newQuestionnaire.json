@@ -1,0 +1,66 @@
+{
+    "title": "ANTENATAL & EMERGENCY CASES(OTHER THAN INPATIENT) ",
+    "style": "width:70%;margin:0 15%",
+    "data": [
+        {
+            "name": "newQuestionnaire",
+            "id": "newQuestionnaire",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivnewQuestionnaireData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "id": "newQuestionnaireDiv",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "newQuestionnaireInnerDiv"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnQuestionnaireSave",
+                                                "id": "btnQuestionnaireSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1;"
+                                            },
+                                            {
+                                                "name": "btnQuestionnaireCancel",
+                                                "id": "btnQuestionnaireCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

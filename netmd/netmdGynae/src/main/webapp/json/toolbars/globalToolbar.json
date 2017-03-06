@@ -1,0 +1,45 @@
+{
+    "buttons": [
+		{
+            "title": "New Doctor",
+            "className": "big-link",
+            "name": "ribbonNewDoctor",
+			"id": "ribbonNewDoctor",
+            "image": "/netmd/images/icon/dashboard/doctor.png",
+			"url":"/netmd/ws/ui/doctor/create"
+        },
+		{
+            "title": "New Schedule",
+            "className": "big-link",
+            "name": "ribbonNewSchdule",
+			"id": "ribbonNewSchdule",
+            "image": "/netmd/images/icon/dashboard/border-bg.png",
+			"url":"/netmd/ws/ui/schedule/create"
+        },
+		{
+            "title": "New Patient",
+            "className": "big-link",
+            "name": "ribbonNewPatient",
+			"id": "ribbonNewPatient",
+            "image": "/netmd/images/icon/dashboard/patient.png",
+			"url":"/netmd/ws/ui/patient/create"
+        },
+		{
+            "title": "New Appointment",
+            "className": "big-link",
+            "name": "ribbonNewAppointment",
+			"id": "ribbonNewAppointment",
+            "image": "/netmd/images/icon/dashboard/edit.png",
+			"url":"/netmd/ws/ui/appointment/create"
+        },
+		{
+            "title": "New Bill",
+            "className": "big-link",
+            "name": "ribbonNewBill",
+			"id": "ribbonNewBill",
+            "image": "/netmd/images/icon/dashboard/bill.png",
+			"url":"/netmd/ws/ui/bill/create"
+        }
+		
+    ]
+}

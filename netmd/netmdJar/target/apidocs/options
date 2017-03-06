@@ -1,0 +1,24 @@
+-classpath
+'C:/Users/User/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'E:/latestWorkSpace/netmd/netmdJar/src/main/java;E:/latestWorkSpace/netmd/netmdJar/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2017. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'E:/latestWorkSpace/netmd/netmdJar/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'netmdJar 0.0.1-SNAPSHOT API'
+-linkoffline
+'http://docs.oracle.com/javase/8/docs/api' 'E:/latestWorkSpace/netmd/netmdJar/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'netmdJar 0.0.1-SNAPSHOT API'

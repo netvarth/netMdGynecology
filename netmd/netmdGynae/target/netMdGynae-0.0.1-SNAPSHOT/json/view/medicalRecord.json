@@ -1,0 +1,55 @@
+{
+    "name": "patientViewForm",
+    "id": "patientViewForm",
+    "content": [
+        {
+            "className": "sep-div",
+            "id": "patientPersonalDiv",
+            "data": [
+                {
+                    "className": "column-left",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "viewPatientFirstName",
+                                    "id": "viewPatientFirstName",
+                                    "tabIndex": 3,
+                                    "type": "text",
+                                    "className": "newBox large capital",
+                                    "title": "Name"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "viewPatientAge",
+                                    "id": "viewPatientAge",
+                                    "type": "text",
+                                    "className": "newBox large capital",
+                                    "title": "Age"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "id": "viewGender",
+                    "elements": [
+                        {
+                            "name": "lblViewPatientGender",
+                            "id": "lblViewPatientGender",
+                            "type": "newlabel",
+                            "title": "Gender"
+                        }
+                    ]
+                }
+            ]
+        }
+		
+    ]
+}

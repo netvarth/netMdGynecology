@@ -1,0 +1,71 @@
+{
+    "buttons": [
+        {
+            "title": "Block",
+            "className": "b1ock",
+            "name": "btnBlock"
+        },
+        {
+            "title": "Department",
+            "className": "department",
+            "name": "btnDepartment"
+        },
+        {
+            "title": "Bed Type",
+            "className": "bedType",
+            "name": "btnBedType"
+        },
+		{
+            "title": "Bed",
+            "className": "bed",
+            "name": "btnBed"
+        },
+        {
+            "title": "Room Type",
+            "className": "roomType",
+            "name": "btnRoomType"
+        },
+        {
+            "title": "Room",
+            "className": "room",
+            "name": "btnRoom"
+        },
+        {
+            "title": "Item",
+            "className": "item",
+            "name": "btnItem"
+        },
+        {
+            "title": "Tax",
+            "className": "tax",
+            "name": "btnTax"
+        },
+		{
+            "title": "Services",
+            "className": "services",
+            "name": "btnService"
+        },
+		
+		{
+            "title": "Discount",
+            "className": "discount",
+            "name": "btnDiscount"
+        },
+		{
+            "title": "Head",
+            "className": "head",
+            "name": "btnHead"
+        },
+        {
+         "title":"Bill Settings",
+         "className":"settings",
+         "name":"btnSettings"
+        },
+		{
+          "title": "Antenatal Records",
+		  "className": "questionnaire",
+          "name": "btnQuestionnaire"    
+        }
+		
+    ]
+}

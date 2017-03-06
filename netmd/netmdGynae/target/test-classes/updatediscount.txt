@@ -1,0 +1,8 @@
+{
+    "id": 2,
+    "name": "aishu",
+    "description": "",
+    "discType": "OnDemand",
+    "discValue": 0,
+    "calculationType": "Fixed"
+}

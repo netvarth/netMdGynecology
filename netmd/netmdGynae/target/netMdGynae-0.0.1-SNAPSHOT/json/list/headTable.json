@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": "headListTableCont",
+            "elements": [
+				{
+                    "type": "table",
+                    "content": {
+						"name" : "head",
+						"idProperty" : "head",
+						"className" :"stdtable stdtablecb",
+						"style":"border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+						"colHeaders" : [
+							{ "className" : "head0",	"name" : "Id","style":"width:10%"},
+							{ "className" : "head1",	"name" : "Head Name","style":"width:30%"},
+							{ "className" : "head0",	"name" : "Parent Head","style":"width:30%"},
+							{ "className" : "head1",	"name" : "Head Type","style":"width:30%"}
+						]
+                    }
+                }
+            ]
+        }
+    ]
+}

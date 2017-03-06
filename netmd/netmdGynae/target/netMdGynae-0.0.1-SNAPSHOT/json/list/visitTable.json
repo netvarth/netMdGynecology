@@ -1,0 +1,57 @@
+{
+    "className": "sep-div",
+    "id": "patientPersonalDiv",
+    "data": [
+	     {
+            "className": "sep-div",
+            "id": "patientVisitToolbarDiv"
+        },
+        {
+            "className": "sep-div",
+            "data": [
+                {
+                    "data": [
+                        {
+                            "id": "visitTableTableCont",
+                            "elements": [
+                                {
+                                    "type": "table",
+                                    "content": {
+                                        "name": "visitTable",
+                                        "idProperty": "visitTable",
+                                        "className": "stdtable stdtablecb",
+                                        "style": "border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+                                        "colHeaders": [
+                                            {
+                                                "className": "head1",
+                                                "name": "No:",
+                                                "style": "width:10%"
+                                            },
+											{
+                                                "className": "head0",
+                                                "name": "Date&Time",
+                                                "style": "width:30%"
+                                            },
+											{
+                                                "className": "head1",
+                                                "name": "Type",
+                                                "style": "width:20%"
+                                            },
+                                            {
+                                                "className": "head0",
+                                                "name": "Description",
+                                                "style": "width:40%"
+                                            }
+                                            
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+        
+    ]
+}

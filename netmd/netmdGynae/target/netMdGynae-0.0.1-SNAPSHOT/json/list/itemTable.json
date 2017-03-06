@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": "itemListTableCont",
+            "elements": [
+				{
+                    "type": "table",
+                    "content": {
+						"name" : "item",
+						"idProperty" : "item",
+						"className" :"stdtable stdtablecb",
+						"style":"border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+						"colHeaders" : [
+							{ "className" : "head0",	"name" : "Id","style":"width:8%"},
+							{ "className" : "head1",	"name" : "Item","style":"width:30%"},
+							{ "className" : "head0",	"name" : "Price","style":"width:15%","image":"/netmd/images/rupee-symbel.png"}
+							
+						]
+                    }
+                }
+            ]
+        }
+    ]
+}

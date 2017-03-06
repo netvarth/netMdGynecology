@@ -1,0 +1,172 @@
+{
+    "name": "visitViewForm",
+    "id": "visitViewForm",
+    "content": [
+		 {
+					"className": "sep-div-view-One heading",
+					"style": "display:none",
+					"id": "errorDivHeader",
+					"data": [
+						{
+							"className": "five_sixth",
+							"id": "errorDivVwVisitData"
+						}
+					]
+				},
+				
+        {
+            "className": "sep-div",
+            "id": "patientViewVisitToolbarDiv"
+        },
+		{
+            "className": "sep-div",
+            "id": "patientCaseAddDiv",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "viewVisitId",
+                                            "id": "viewVisitId",
+                                            "tabIndex": 3,
+                                            "type": "newlabel",
+                                            "className": "newBox large capital",
+                                            "title": "Visit Id"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "viewDoctorName",
+                                            "id": "viewDoctorName",
+                                            "tabIndex": 3,
+                                            "type": "newlabel",
+                                            "className": "newBox large capital",
+                                            "title": "Doctor Name"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "recordType",
+                                    "id": "recordType",
+                                    "tabIndex": 3,
+                                    "type": "newlabel",
+                                    "className": "newBox large capital",
+                                    "title": "Record Type"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "viewCaseIdVisit",
+                                    "id": "viewCaseIdVisit",
+                                    "tabIndex": 3,
+                                    "type": "newlabel",
+                                    "className": "newBox large capital",
+                                    "title": "Case Id"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "viewVisitDate",
+                                    "id": "viewVisitDate",
+                                    "tabIndex": 3,
+                                    "type": "newlabel",
+                                    "className": "newBox medium capital",
+                                    "title": "Date & Time"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "name": "viewVisitDescription",
+                            "id": "viewVisitDescription",
+                            "tabIndex": 3,
+                            "type": "textarea",
+                            "style": "height:100px;padding:none;float:left;",
+                            "className": "newBox large capital",
+                            "title": "Visit Description"
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnVisitEdit",
+                                        "id": "btnVisitEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;margin:4px;float:right"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnVisitSave",
+                                        "id": "btnVisitSave",
+                                        "title": "Done",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;margin:4px;float:right;display:none;"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnVisitCancel",
+                                        "id": "btnVisitCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;margin:4px;float:right;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

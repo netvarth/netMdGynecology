@@ -1,0 +1,13 @@
+{
+    "experience": [
+        {
+            "id": 0,
+            "doctorId": 12,
+            "designation": "mbbs",
+            "workedAt": "",
+            "fromDate": "1999-03-04",
+            "toDate": "2014-03-20",
+            "actionName": "Add"
+        }
+    ]
+}

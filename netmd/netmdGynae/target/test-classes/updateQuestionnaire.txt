@@ -1,0 +1,73 @@
+{
+    "answerDTO": [
+        {
+            "questionKey": "anteRegisered",
+            "answer": ""
+        },
+        {
+            "questionKey": "proteinChk",
+            "answer": ""
+        },
+        {
+            "questionKey": "preeclampsia",
+            "answer": ""
+        },
+        {
+            "questionKey": "antihypertensive",
+            "answer": ""
+        },
+        {
+            "questionKey": "hypertension",
+            "answer": ""
+        },
+        {
+            "questionKey": "hypersensitives",
+            "answer": ""
+        },
+        {
+            "questionKey": "HELLP",
+            "answer": ""
+        },
+        {
+            "questionKey": "HELLPtreatment",
+            "answer": ""
+        },
+        {
+            "questionKey": "EclampsiaAndPreEclampsia",
+            "answer": ""
+        },
+        {
+            "questionKey": "MgSO4",
+            "answer": "87"
+        },
+        {
+            "questionKey": "plprevaccreta",
+            "answer": ""
+        },
+        {
+            "questionKey": "cerebrovascularaccidents",
+            "answer": ""
+        },
+        {
+            "questionKey": "morbidity",
+            "answer": ""
+        },
+        {
+            "questionKey": "maternalDeath",
+            "answer": "select"
+        },
+        {
+            "questionKey": "death1name",
+            "answer": ""
+        },
+        {
+            "questionKey": "death1cause",
+            "answer": "select"
+        },
+        {
+            "questionKey": "death1address",
+            "answer": ""
+        }
+    ],
+    "questionnaireId": 32
+}

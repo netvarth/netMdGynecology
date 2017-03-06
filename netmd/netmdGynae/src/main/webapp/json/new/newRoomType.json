@@ -1,0 +1,127 @@
+{
+    "title": " Create RoomType",
+    "style": "width:40%;margin:0 30%",
+    "data": [
+        {
+            "name": "newRoomType",
+            "id": "newRoomType",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewRoomTypeData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "type",
+                                                    "id": "type",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "title": "Room Type",
+                                                    "required": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "rent",
+                                                    "id": "rent",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "title": "Rent",
+													"image": "/netmd/images/rupee-symbel.png",
+													"required":"true"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "nmbrOfBed",
+                                                    "id": "nmbrOfBed",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "title": "No.of Beds"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "count",
+                                                    "id": "count",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "title": "No of Rooms"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnRoomTypeSave",
+                                                "id": "btnRoomTypeSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;"
+                                            },
+                                            {
+                                                "name": "btnRoomTypeCancel",
+                                                "id": "btnRoomTypeCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity: 1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

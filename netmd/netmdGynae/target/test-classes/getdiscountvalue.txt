@@ -1,0 +1,5 @@
+{
+    "id": 4,
+    "discValue": 23,
+    "amount": 156
+}

@@ -1,0 +1,7 @@
+{
+    "type": "single",
+    "rent": 200,
+    "count": 1,
+    "taxId": "0",
+    "taxName": "Select tax Type"
+}

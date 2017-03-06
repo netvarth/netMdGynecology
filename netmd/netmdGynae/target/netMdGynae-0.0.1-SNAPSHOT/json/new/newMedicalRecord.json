@@ -1,0 +1,129 @@
+{
+    "title": "Create Medical Record",
+    "style": "width:60%;margin:0 20%",
+    "data": [
+        {
+            "name": "newMedicalRecord",
+            "id": "newMedicalRecord",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewMedicalRecord"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-first",
+                                    "elements": [
+                                        {
+                                            "name": "patientName",
+                                            "id": "patientName",
+                                            "type": "newlabel",
+                                            "title": "Patient Name"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-second",
+                                    "elements": [
+                                        {
+                                            "name": "caseName",
+                                            "id": "caseName",
+                                            "type": "newlabel",
+                                            "title": "Case"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-third",
+                                    "elements": [
+                                        {
+                                            "name": "doctor",
+                                            "id": "doctor",
+                                            "tabIndex": 2,
+                                            "type": "text",
+											"className": "large",
+                                            "style": "width:60%;",
+                                            "title": "Select Doctor",
+                                            "required": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "medicalRecordType",
+                                    "id": "medicalRecordType",
+                                    "type": "select",
+                                    "className": "select",
+                                    "style": "width:60%;",
+                                    "title": "Medical Record Type",
+                                    "required": true
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "medicalRecord",
+                                    "id": "medicalRecord",
+                                    "tabIndex": 3,
+                                    "type": "textarea",
+                                    "style": "height:100px;padding:none;float:left;",
+                                    "className": "large capital",
+                                    "title": "Medical Record",
+                                    "required": true
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnMedicalRecordCreate",
+                                                "id": "btnMedicalRecordCreate",
+                                                "tabIndex": 4,
+                                                "title": "Save",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1;margin:4px;float:left"
+                                            },
+                                            {
+                                                "name": "btnMedicalRecordCancel",
+                                                "id": "btnMedicalRecordCancel",
+                                                "tabIndex": 5,
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1; margin:4px;float:left"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

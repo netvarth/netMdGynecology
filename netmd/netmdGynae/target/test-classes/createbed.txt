@@ -1,0 +1,7 @@
+{
+    "bedNumber": "2",
+    "bedType": "double",
+    "bedTypeId": 2,
+    "roomId": 2,
+    "description": ""
+}

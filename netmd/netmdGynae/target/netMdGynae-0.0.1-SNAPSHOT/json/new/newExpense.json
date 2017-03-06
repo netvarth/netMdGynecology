@@ -1,0 +1,143 @@
+{
+    "title": " Create Expense",
+    "style": "width:50%;margin:0 25%",
+    "data": [
+        {
+            "name": "newExpense",
+            "id": "newExpense",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivExpenseer",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewExpenseData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "name",
+                                            "id": "name",
+                                            "type": "text",
+                                            "className": "large",
+                                            "title": "Expense",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+								{
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "totalAmount",
+                                                    "id": "totalAmount",
+                                                    "type": "text",
+                                                    "className": "large",
+													"image": "/netmd/images/rupee-symbel.png",
+                                                    "title": "Total Amount"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "amountPaid",
+                                                    "id": "amountPaid",
+                                                    "type": "text",
+                                                    "className": "large",
+													"image": "/netmd/images/rupee-symbel.png",
+                                                    "title": "Amount Paid"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                               
+                            ]
+                        },
+						{
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+									{
+                                            "name": "head",
+                                            "id": "head",
+                                            "type": "select",
+                                            "className": "select",
+											"style":"width:100%",
+                                            "title": "Select Head",
+											"required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                     "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "description",
+                                            "id": "description",
+                                            "type": "textarea",
+                                            "className": "large",
+                                            "title": "Description",
+                                            "required": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },				
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnExpenseSave",
+                                                "id": "btnExpenseSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1;"
+                                            },
+                                            {
+                                                "name": "btnExpenseCancel",
+                                                "id": "btnExpenseCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

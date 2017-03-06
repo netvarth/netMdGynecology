@@ -1,0 +1,115 @@
+{
+    "name": "viewDiscount","id": "viewDiscount",
+    "content": [
+        {
+            "className": "sep-div-view","id": "viewdiscountHeader",
+            "data": [
+                {
+                    "className": "column-left",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {"className": "column-first-small",
+                                 "elements": [{"name": "id","id": "id","type": "newlabel","readonly": "readonly","title": "Id"}]},
+                                {"className": "column-last",
+                                 "elements": [{"name": "name","id": "name","type": "text","className": "large newBox","readonly": "readonly","title": "Name"}]}
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+									"className": "column-first-small","id": "viewDiscCalType",
+									"elements":[{"name": "lblCalculationtype","id": "lblCalculationtype","type": "newlabel","title": "Value In"}]
+								},
+								{
+									"className": "column-first-small","id": "editDiscCalType","style": "display:none;",
+									"elements": [
+										{
+											"name": "vwCalculationtype","id": "vwCalculationtype","type": "radio","title": "Value In",
+											"value": [
+												{
+													"title": "<img src='/netmd/images/rupee-symbel.png' style='margin:5px 0 0 0;'/>",
+													"value": "Fixed","id": "fixed"
+												},
+												{"title": "%","value": "Percentage","id": "percentage"}
+											]
+										}
+									]
+								},
+                                {
+                                    "className": "column-left","id": "viewdisctype",
+                                    "elements": [{"name": "lblViewDiscounttype","id": "lblViewDiscounttype","type": "newlabel","labelId":"viewDiscountType","title": "Value"}]
+                                },
+                                {
+                                    "className": "column-left","id": "editDiscType",
+                                    "style": "display:none; margin:0px 5px 0px 0px;",
+                                    "elements": [
+                                        {
+                                            "name": "discountType","id": "discountType","type": "combocheckbox","title": "Value-Ondemand","spanId":"viewDiscountTypeId",
+                                            "value": [
+                                                {
+                                                    "title": "Predefined","name": "check","value":"Predefined","type": "checkbox",
+													"style": "float:left; margin:5px 5px 0px 0px;","id": "Predefined"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "elements": [
+                        {
+                            "name": "description","id": "description","type": "textarea","className": "newBox",
+                            "readonly": "readonly","style": "height:90px;padding:none;","title": "Description"
+                        }
+                    ]
+                }
+			]
+		},
+		 {
+            "className": "sep-div-view",
+            "style": "margin-bottom:5px",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnDiscountEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity: 1; float:left;"
+                                    },
+                                    {
+                                        "name": "btnDiscountSave",
+                                        "title": "Save",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;display:none;"
+                                    },
+                                    {
+                                        "name": "btnDiscountCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+	]	
+}

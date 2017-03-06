@@ -1,0 +1,75 @@
+{
+    "title": "Create Appointment",
+    "style": "width:50%;margin:0 30%",
+    "data": [
+        {
+            "name": "newAppointmentForm",
+            "id": "newAppointmentForm",
+            "content": [
+				{
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewAppmt"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view ",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "Patient",
+                                    "id": "Patient",
+									"type": "text",
+									"className":"large",
+                                    "title": "Patient Name"
+                                }
+                            ]
+                        }
+                       
+                    ]
+                },
+
+                {
+                    "className": "sep-div-view",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnDone",
+                                                "id": "btnDone",
+                                                "title": "Save",
+                                                "type": "button",
+												"className": "stdbtn btn_black",
+                                                "style": "opacity:1; margin:2px"
+                                            },
+                                            {
+                                                "name": "btnCancel",
+                                                "id": "btnCancel",
+                                                "title": "Clear",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1; margin:2px"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

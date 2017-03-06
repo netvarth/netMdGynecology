@@ -1,0 +1,14 @@
+{
+     "Name";
+	 "email";
+	 "gender";
+	 "patientId";
+	 "phone";
+	 "mobile";
+	 "origin";
+	 "billId";
+	 "uid";
+	 "note";
+	 "age";
+	 "referralName";
+	 }

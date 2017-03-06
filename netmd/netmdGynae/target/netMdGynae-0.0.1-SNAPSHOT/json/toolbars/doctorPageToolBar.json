@@ -1,0 +1,23 @@
+{		
+	"buttons":	[
+		
+			
+		{
+			"name" 	: 	"delete",
+			"title"	:	"Delete",
+			"url":"/netmd/ws/ui/doctor/delete/{id}"
+			
+		},
+		{
+			"name" 	: 	"view",
+			"title"	:	"View",
+			"url":"/netmd/ws/ui/doctor/view/{id}"
+			
+		},
+		{
+			"name" 	: 	"new",
+			"title"	:	"New",
+			"url":"/netmd/ws/ui/doctor/create"
+		}
+	]
+}

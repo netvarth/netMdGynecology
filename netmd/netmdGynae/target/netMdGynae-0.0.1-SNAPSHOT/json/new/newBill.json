@@ -1,0 +1,649 @@
+{
+    "title": "Create Bill",
+    "data": [
+        {
+            "name": "newBill",
+            "id": "newBill",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewBillData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "id": "priorityorigindiv",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "priorityNewOrder",
+                                    "id": "priority",
+                                    "type": "radio",
+                                    "title": "Priority",
+                                    "value": [
+                                        {
+                                            "title": "Normal",
+                                            "value": "Normal",
+                                            "checked": "true"
+                                        },
+                                        {
+                                            "title": "High",
+                                            "value": "High"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+						
+						
+                        {
+                            "className": "column-right",
+                            "id": "originDiv",
+                            "elements": [
+                                {
+                                    "name": "patientType",
+                                    "id": "patientType",
+                                    "type": "radio",
+                                    "title": "Patient Type",
+                                    "value": [
+                                        {
+                                            "title": "In Patient",
+                                            "value": "InPatient",
+                                            "checked": "true"
+                                        },
+                                        {
+                                            "title": "Out Patient",
+                                            "value": "OutPatient"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "id": "patientdiv",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                              
+                                            "elements": [
+                                                {
+                                                    "name": "patientName",
+                                                    "id": "patientName",
+                                                    "type": "text",
+                                                    "className": "large capital",
+													"required":"true",
+                                                    "title": "Name"
+                                                }
+                                            ]
+                                        },
+                             
+                                {
+                                    "className": "five_sixth",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "age",
+                                                    "tabIndex": 3,
+                                                    "id": "age",
+                                                    "type": "text",
+                                                    "className": "large",
+													"readonly":"readonly",
+                                                    "title": "Age"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+											"style":"display:none",
+                                            "elements": [
+                                                {
+                                                    "name": "gender",
+                                                    "id": "gender",
+                                                    "type": "radio",
+													"readonly":"readonly",
+                                                    "title": "Gender",
+                                                    "value": [
+                                                        {
+                                                            "title": "Male",
+                                                            "value": "Male",
+                                                            "checked": "true",
+                                                            "tabIndex": 4
+                                                        },
+                                                        {
+                                                            "title": "Female",
+                                                            "value": "Female",
+                                                            "tabIndex": 5
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+										{
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "gender",
+                                                    "id": "gender",
+                                                    "type": "newlabel",
+													"readonly":"readonly",
+                                                    "title": "Gender"
+           
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "email",
+                                    "id": "email",
+                                    "type": "text",
+                                    "className": "large",
+									"readonly":"readonly",
+                                    "title": "E-mail",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "mobile",
+                                                    "id": "mobile",
+                                                    "type": "text",
+													"readonly":"readonly",
+                                                    "className": "large",
+                                                    "title": "Mobile Phone"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "patientPhone",
+                                                    "id": "patientPhone",
+													"readonly":"readonly",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "title": "Phone"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "id": "premisesDiv",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "referral",
+                                            "id": "referral",
+                                            "title": "Ref By ",
+                                            "type": "text",
+                                            "className": "large"
+                                        }
+                                    ]
+                                }
+                            
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "column-second",
+                            "id": "selectTest",
+                            "elements": [
+                                {
+                                    "name": "Name",
+                                    "id": "Name",
+                                    "type": "label",
+                                    "className": "large",
+									"required": "true",
+                                    "title": "Select Items/Services"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-one-fourth",
+                            "id": "Qty",
+                            "elements": [
+                                {
+                                    "name": "Qty",
+                                    "id": "Qty",
+                                    "type": "label",
+                                    "className": "small",
+                                    "title": "Qty"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth addtest",
+                            "id": "workBench",
+                            "elements": [
+                                {
+                                    "name": "workBench",
+                                    "id": "workBench",
+                                    "type": "combined",
+                                    "items": [
+                                        {
+                                            "name": "txtnewBill",
+                                            "tabIndex": 9,
+                                            "id": "txtnewBill",
+                                            "type": "text",
+											"required":"true",
+                                            "placeHolder": "Items/Services",
+                                            "style": "width:27%;"
+                                        },
+                                        {
+                                            "name": "quantity",
+                                            "tabIndex": 10,
+                                            "id": "quantity",
+                                            "type": "text",
+                                            "className": "small",
+                                            "style": "width:15%;",
+                                            "value": [
+                                                {
+                                                    "title": "Qty"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "button",
+                                            "content": {
+                                                "buttons": [
+                                                    {
+                                                        "name": "btnNewBillAdd",
+                                                        "id": "btnNewBillAdd",
+                                                        "title": "Add",
+                                                        "type": "button",
+                                                        "className": "stdbtn btn_black",
+                                                        "style": "opacity:1;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "table",
+                                    "content": {
+                                        "name": "billTable",
+                                        "idProperty": "billTable",
+                                        "className": "stdtable",
+                                        "style": "font-size: 12px;",
+                                        "colHeaders": [
+                                            {
+                                                "className": "head0",
+                                                "name": "Items/Services",
+                                                "style": "width: 45%;font-size: 12px;"
+                                            },
+                                            {
+                                                "className": "head1",
+                                                "name": "Qty",
+                                                "style": "width: 8%;font-size: 12px;"
+                                            },
+                                            {
+                                                "className": "head0",
+                                                "name": "Rate",
+                                                "image": "/netmd/images/rupee-symbel.png",
+                                                "style": "width: 10%;font-size: 12px;"
+                                            },
+											{
+                                                "className": "head1",
+                                                "name": "Tax",
+												"image": "/netmd/images/percentage.png",
+                                                "style": "width: 8%;font-size: 12px;"
+                                            },
+                                            {
+                                                "className": "head0",
+                                                "name": "Net Rate",
+                                                "image": "/netmd/images/rupee-symbel.png",
+                                                "style": "width: 12%;font-size: 12px;"
+                                            },
+                                            {
+                                                "className": "head0",
+                                                "name": "",
+                                                "style": "width: 5%"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "column-second",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "id": "disc",
+                                    "elements": [
+                                        {
+                                            "name": "addBillDiscount",
+                                            "id": "addBillDiscount",
+                                            "type": "combined",
+                                            "title": "Bill Discount",
+                                            "idforInner": "discountTypeInfo",
+                                            "items": [
+                                                {
+                                                    "name": "selectDiscount",
+                                                    "tabIndex": 11,
+                                                    "id": "selectDiscount",
+                                                    "type": "select",
+                                                    "className": "select",
+                                                    "style": "width: 60%;float: left;",
+                                                    "value": [
+                                                        {
+                                                            "title": "Select discount"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "discountValue",
+                                                    "id": "discountValue",
+                                                    "style": "width: 28%;",
+                                                    "type": "text"
+                                                },
+                                                {
+                                                    "name": "discountType",
+                                                    "id": "discountType",
+                                                    "style": "width: 2%;",
+                                                    "type": "label"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "id": "amountPaidDiv",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "amountPaid",
+                                                    "tabIndex": 14,
+                                                    "id": "amountPaid",
+                                                    "type": "text",
+                                                    "title": "Amount Paid",
+                                                    "className": "large",
+                                                    "required": true,
+                                                    "image": "/netmd/images/rupee-symbel.png"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "id": "BillBalDue",
+                                            "style": "display: none;",
+                                            "elements": [
+                                                {
+                                                    "name": "txtNewBillBalDue",
+                                                    "id": "txtNewBillBalDue",
+                                                    "type": "newlabel",
+                                                    "title": "ChangeBack",
+                                                    "value": "0.00",
+                                                    "className": "large",
+                                                    "titleimage": "/netmd/images/rupee-symbel.png"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "id": "billBalanceDue",
+                                            "style": "display: none;",
+                                            "elements": [
+                                                {
+                                                    "name": "lblNewBillBalDue",
+                                                    "id": "lblNewBillBalDue",
+                                                    "type": "newlabel",
+                                                    "title": "BalanceDue",
+                                                    "value": "0.00",
+                                                    "className": "large",
+                                                    "titleimage": "/netmd/images/rupee-symbel.png"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-middle",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    
+                                    "elements": [
+                                        {
+                                            
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five-sixth",
+                                    "id": "paymentStatusDiv",
+                                    "style": "display: none;",
+                                    "elements": [
+                                        {
+                                            "name": "paymentStatus",
+                                            "id": "paymentStatus",
+                                            "type": "newlabel",
+                                            "title": "PaymentStatus"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five-sixth",
+                                    "id": "currencyDiv",
+                                    "elements": [
+                                        {
+                                            "name": "txtNewBillCurrency",
+                                            "id": "txtNewBillCurrency",
+                                            "type": "text",
+                                            "tabIndex": 15,
+                                            "title": "Currency Serial Number (s)",
+                                            "className": "large"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-third",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "style": "text-align: right",
+                                            "elements": [
+                                                {
+                                                    "type": "newlabel",
+                                                    "title": "Grand Total"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-second",
+                                            "elements": [
+                                                {
+                                                    "type": "newlabel",
+                                                    "id": "grandTotal",
+                                                    "image": "/netmd/images/rupee-symbel.png",
+                                                    "value": "0.00",
+                                                    "style": "text-align: right;"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "style": "text-align: right",
+                                            "elements": [
+                                                {
+                                                    "type": "newlabel",
+                                                    "title": "Discount"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-second",
+                                            "elements": [
+                                                {
+                                                    "type": "newlabel",
+                                                    "id": "discount",
+                                                    "image": "/netmd/images/rupee-symbel.png",
+                                                    "value": "0.00",
+                                                    "style": "text-align: right;"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                     
+                                {
+                                    "className": "five_sixth",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "style": "text-align: right",
+                                            "elements": [
+                                                {
+                                                    "type": "newlabel",
+                                                    "title": "Net Total"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-second",
+                                            "elements": [
+                                                {
+                                                    "type": "newlabel",
+                                                    "id": "netTotal",
+                                                    "image": "/netmd/images/rupee-symbel.png",
+                                                    "value": "0.00",
+                                                    "style": "text-align: right;"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "id": "tablespec",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "notes",
+                                    "tabIndex": 16,
+                                    "id": "notes",
+                                    "type": "textarea",
+                                    "title": "Note",
+                                    "className": "large"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnSavePrintNewBill",
+                                                "id": "btnSavePrintNewBill",
+                                                "tabIndex": 17,
+                                                "title": "Save&Print",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;"
+                                            },
+                                            {
+                                                "name": "btnSaveNewBill",
+                                                "id": "btnSaveNewBill",
+                                                "tabIndex": 18,
+                                                "title": "Save",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;"
+                                            },
+                                            {
+                                                "name": "btnCancelNewBill",
+                                                "id": "btnCancelNewBill",
+                                                "tabIndex": 19,
+                                                "type": "button",
+                                                "title": "Cancel",
+                                                 "className": "stdbtn",
+                                                "style": "opacity: 1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

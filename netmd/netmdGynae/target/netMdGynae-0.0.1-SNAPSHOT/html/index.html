@@ -1,0 +1,218 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>NetMd</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		
+		<link href="/netmd/css/style.css" type="text/css" rel="stylesheet" />
+		<link href="/netmd/css/gynestyle.css" type="text/css" rel="stylesheet" />
+		<link href="/netmd/css/ui-lightness/jquery-ui-1.8.20.custom.css" type="text/css" rel="stylesheet" />
+		<link href="/netmd/css/fullcalendar.css" type="text/css" rel="stylesheet">
+		<link href="/netmd/css/jquery.timepicker.css"type="text/css" rel="stylesheet">		
+<!-- 		<link href="/netmd/css/bootstrap-3.0.3.min.css"type="text/css" rel="stylesheet"> -->	
+		<!-- <link href="/netmd/css/bootstrap-multiselect.css"type="text/css" rel="stylesheet">	
+		 -->
+		
+		<script src="/netmd/js/plugins/jquery.js"></script>
+		<script src="/netmd/js/plugins/jquery.form.js"></script>
+		<script src="/netmd/js/plugins/jquery.validate.min.js"></script>	
+		
+		<script type="text/javascript" src="/netmd/js/plugins/jquery-1.7.min.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+		<script src="/netmd/js/plugins/jquery.timepicker.js"></script>
+		<script src="/netmd/js/plugins/bootstrap.min.js"></script>
+		<script src="/netmd/js/plugins/bootstrap-multiselect.js"></script>
+		<script src="/netmd/js/classLoader.js" type="text/javascript"></script>	
+		<script type="text/javascript" src="/netmd/js/plugins/colorpicker.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/jquery.jgrowl.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/jquery.alerts.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/jquery.effects.core.min.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/jquery.effects.explode.min.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/fullcalendar.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/jquery.datetimepicker.js"></script>
+		<script type="text/javascript" src="/netmd/js/plugins/calendar.js"></script>
+		<script type="text/javascript" src="/netmd/js/custom/tables.js"></script>
+		<script type="text/javascript" src="/netmd/js/custom/general.js"></script>
+		<script type="text/javascript" src="/netmd/js/custom/elements.js"></script>
+		<script type="text/javascript" src="/netmd/js/custom/media.js"></script>
+		<script src="/netmd/js/custom/jquery.reveal.js" type="text/javascript"></script>  
+		<script src="/netmd/js/netmd/common/index.js" type="text/javascript"></script> 
+		<script type="text/javascript" src="/netmd/js/custom/notifier.js"></script> 	
+		<script type="text/javascript">
+			$j(document).ready(function() {
+
+				$j(window).load(function(){
+					$j('#dvLoading').fadeOut(200);
+				});
+				$j('#filter').hide();
+				$j('.filter-main').hide();
+				$j('#filter').click(function () {
+					$j('.filter-main').toggle(500);
+					$j('#filterWorkBench').hide();
+				});
+				//placeholder autohide methodon focus
+
+				$j('#docSelect').data('holder',$j('#docSelect').attr('placeholder'));
+					$j('#docSelect').focusin(function(){
+						$j(this).attr('placeholder','');
+					});
+					$j('#docSelect').focusout(function(){
+						$j(this).attr('placeholder',$j(this).data('holder'));
+					});
+				//Select all anchor tag with rel set to tooltip
+				$j('a[rel=tooltip]').mouseover(function(e) {
+					
+					//Grab the title attribute's value and assign it to a variable
+					var tip = $j(this).attr('title');	
+					
+					//Remove the title attribute's to avoid the native tooltip from the browser
+					$j(this).attr('title','800');
+					
+					//Append the tooltip template and its value
+					$j(this).append('<div id="tooltip"><div class="tipHeader"></div><div class="tipBody">' + tip + '</div><div class="tipFooter"></div></div>');		
+							
+					//Show the tooltip with faceIn effect
+					$j('#tooltip').fadeIn('500');
+					$j('#tooltip').fadeTo('10',0.8);
+					
+				}).mousemove(function(e) {
+				
+					//Keep changing the X and Y axis for the tooltip, thus, the tooltip move along with the mouse
+					$j('#tooltip').css('top', e.pageY + -150 );
+					$j('#tooltip').css('left', e.pageX + -250 );
+					
+				}).mouseout(function() {
+				
+					//Put back the title attribute's value
+					$j(this).attr('title',$j('.tipBody').html());
+				
+					//Remove the appended tooltip template
+					$j(this).children('div#tooltip').remove();
+					
+				});
+				$j('.leftmenu li').live('click',function() {
+					$j('.search-bar').hide();
+					$j('.leftmenu li').removeClass('current');
+					$j(this).closest('li').attr('class','current');
+					$j('.leftmenu li ul').slideUp();	
+				});
+				$j('.leftmenu li ul li').live('click',function() {
+					$j('.leftmenu li ul li').removeClass('current1');
+					$j(this).closest('li').attr('class','current1');
+				});
+				
+				$j.getScript("/netmd/js/framework/logout.js").done(function(script, textStatus) {
+				}) 
+		
+			});
+			//window.location.hash="no-back-button";
+			//window.location.hash="Again-No-back-button";//again because google chrome don't insert first hash into history
+			//window.onhashchange=function(){window.location.hash="no-back-button";}
+	</script>
+
+	</head>
+	<body>
+<!-- START OF MAIN HEADER -->
+	<div class="header">
+			<img src="/netmd/images/leftmenu/netmd-logo.gif" />
+		<div id="headleft" style="padding:0.7%;">
+			<div id="docSelText" style="padding-top: 1.2%;">
+			<label class="genTextHeight genTextwidth" style="font-weight:bold;font-size:17;" readonly>Dr </label>
+			<input type="text" id="docSelect" placeholder=" Enter a doctor to create schedule/appointment" style="font-size:14;font-weight:normal;">
+			<button type="button" id="docGoBtn" class="stdbtnDocSearch btn_black" style="font-weight:bold;font-size:17;">Go</button>
+			</div>	
+		</div>		
+		<div class="headright">
+			<div style="float:left; padding:10px; font-weight:bold;font-size: 12;" >Welcome <span id="useType"></span><span id="userName" class="userNameColor"></span></div>
+				<div class="wrapper-demo" id="dropdownOne">
+					<div id="dd" class="wrapper-dropdown-5" tabindex="1">Logout
+						<ul class="dropdown" id="dropdownTwo" style="z-index: 1000;">
+							<li id="btnMyProfile"><a href="#"><i class="icon-user"></i>My Profile</a></li>
+						<!-- 	<li id="btnContactUs"><a href="#"><i class="icon-cog"></i>Contact Us</a></li> -->
+							<li id="btnLogout"><a href="#" ><i class="icon-remove" ></i>Log out</a></li>
+						</ul>
+					</div>
+				</div>    			
+		</div>
+	</div>
+
+<!-- END OF MAIN  HEADER --> 
+	
+<!-- START OF GLOBAL TOOL BAR -->
+		<div id="dvLoading" class="dvLoading"></div>
+		<div class="global-bar-tab">
+			<div class="controlB">
+				<!--GlobalToolbar will load from json file-->
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="search-bar">
+			<div class="search">
+				<form><input autocomplete="off" id="testinput" placeholder="Search" type="text"></form>   
+			</div>
+		</div>
+		<!-- END OF GLOBAL TOOLBAR -->
+		<!-- START OF MAIN CONTENT -->
+		<div class="mainwrapper">
+			<div class="mainwrapperinner">
+				<div class="mainleft">
+					<div class="mainleftinner">
+						<div class="leftmenu">
+						<!--leftpaneToolbar will load from json file-->
+						</div>
+						<div id="togglemenuleft"><a></a></div>
+					</div>
+				</div>
+				<div class="maincontent">
+					<div class="maincontentinner">
+						<div class="content">
+							<div id="tabs">
+								<ul >
+									<li><a href="#tabs-1" style="display:none;"></a></li>
+									<h1 id="pageTitle"></h1>
+									<button class="stdbtn btn_black" id="filter" style="float:right;">Filter</button> 
+									<div id="pageToolBar-Container"></div>
+								</ul>            
+								<div class="filter-main" id="filterToolBar-Container"></div> 
+								<div class="error-main" id="errorDivHeader" style="display:none"><div id="errorDivData"></div></div> 
+								<div id="tabs-1"></div>                          
+								<div id="tabs-schedule">
+									<div id="calendar" class="fc">
+									</div>
+								</div>
+								<div id="tabs-appointment">
+									<div id="calendar" class="fc">
+									</div>
+								</div> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- 	<script type="text/javascript">
+		   $j.getScript("/netmd/js/plugins/calendar.js").done(function(script, textStatus) {
+				$j.getScript("/netmd/js/plugins/fullcalendar.min.js").done(function(script, textStatus) {
+				})
+			})	
+		</script> -->
+	<div id="BeeperBox" class="UIBeeper">
+         <div class="UIBeeper_Full">
+            <div class="Beeps">
+               <div class="UIBeep UIBeep_Top UIBeep_Bottom UIBeep_Selected" style="opacity: 1; ">
+               <!-- Below Is The Link To Which Bepper Will Point To (replace # with the required link) -->
+					<a class="UIBeep_NonIntentional" href="#">                     
+						 <span class="beeper_x">&nbsp;</span>
+						 <div class="UIBeep_Title">
+							This is a notification
+						 </div>
+					</a>
+               </div>
+            </div>
+        </div>
+    </div>
+	</body>
+	</html>

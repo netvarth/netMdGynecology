@@ -1,0 +1,11 @@
+{
+    "id": 2,
+    "roomNumber": "2",
+    "roomTypeId": "4",
+    "roomTypeName": "large",
+    "blockId": "2",
+    "blockName": "newblock",
+    "departmentId": "4",
+    "departmentName": "general",
+    "description": ""
+}

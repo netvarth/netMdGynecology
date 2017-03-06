@@ -1,0 +1,260 @@
+{
+    "name": "viewExpense",
+    "id": "viewExpense",
+    "content": [
+        {
+            "className": "sep-div",
+            "data": [
+                {
+                    "className": "five-sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-one-fourth",
+                                    "elements": [
+                                        {
+                                            "name": "id",
+                                            "id": "id",
+                                            "type": "newlabel",
+                                            "style": "margin-left:6%",
+                                            "title": "Id"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-three-fourth",
+                                    "elements": [
+                                        {
+                                            "name": "expenseName",
+                                            "id": "expenseName",
+                                            "type": "text",
+                                            "readonly": "readonly",
+                                            "className": "newBox large",
+                                            "title": "Expense Name"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "id": "viewHead",
+                                    "elements": [
+                                        {
+                                            "name": "lblhead",
+                                            "id": "lblhead",
+                                            "type": "newlabel",
+                                            "title": "Head Name"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-left",
+                                    "id": "editHead",
+                                    "style": "display:none",
+                                    "elements": [
+                                        {
+                                            "name": "head",
+                                            "id": "head",
+                                            "type": "select",
+                                            "className": "select",
+                                            "style": "width:100%",
+                                            "readonly": "readonly",
+                                            "title": "Select Head"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "description",
+                                            "id": "description",
+                                            "type": "textarea",
+                                            "readonly": "readonly",
+                                            "className": "newBox large",
+                                            "title": "Description",
+                                            "required": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five-sixth",
+                    "id": "paymentSection",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "paidAmount",
+                                            "id": "paidAmount",
+                                            "type": "newlabel",
+                                            "readonly": "readonly",
+                                            "image": "/netmd/images/rupee-symbel.png",
+											 "style": "margin-top:15%",
+                                            "title": "Amount Paid"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "paymentStatus",
+                                            "id": "paymentStatus",
+                                            "type": "newlabel",
+                                            "readonly": "readonly",
+											 "style": "margin-top:15%",
+                                            "title": "Payment Status"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "balance",
+                                            "id": "balance",
+                                            "type": "text",
+                                            "className": "newBox large",
+                                            "image": "/netmd/images/rupee-symbel.png",
+                                            "title": "Balance"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "style": "display:none;",
+                                    "id": "viewPaymentNote",
+                                    "elements": [
+                                        {
+                                            "name": "paymentNote",
+                                            "id": "paymentNote",
+                                            "type": "text",
+                                            "title": "Note",
+                                            "className": "newBox large"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five-sixth",
+                    "style": "margin-bottom:5px",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnExpenseEdit",
+                                                "title": "Edit",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;"
+                                            },
+                                            {
+                                                "name": "btnExpenseSave",
+                                                "title": "Save",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;display:none;"
+                                            },
+                                            {
+                                                "name": "btnExpenseCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;display:none;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+				{
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "label",
+                                    "title": "Payment Details",
+                                    "spanstyle": "font-size:15px;"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+		
+        {
+            "className": "sep-div",
+            "data": [
+                {
+                    "id": "paymenstListTableCont",
+                    "elements": [
+                        {
+                            "type": "table",
+                            "content": {
+                                "name": "paymentsTable",
+                                "idProperty": "paymentsTable",
+                                "className": "stdtable stdtablecb",
+                                "style": "border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+                                "colHeaders": [
+									{
+                                        "className": "head1",
+                                        "name": "Id",
+                                        "style": "width:10%"
+                                    },
+                                    {
+                                        "className": "head0",
+                                        "name": "Payment Date",
+                                        "style": "width:30%"
+                                    },
+									 {
+                                        "className": "head1",
+                                        "name": "payment Time",
+                                        "style": "width:30%"
+                                    },
+                                    {
+                                        "className": "head0",
+                                        "name": "Amount Paid",
+                                        "style": "width:30%",
+										"image": "/netmd/images/rupee-symbel.png"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

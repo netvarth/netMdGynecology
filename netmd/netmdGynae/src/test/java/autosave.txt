@@ -1,0 +1,19 @@
+{
+     "id";
+	 "patientId";
+	 "caseName";
+     "patientType";
+     "admittedDate";
+     "departmentId";
+     "departmentName";
+     "height";
+     "weight";
+     "bmi";
+     "hbCount";
+     "description";
+     "createdDate";
+     "globalId";
+     "status";
+     "actionName";
+     
+     }

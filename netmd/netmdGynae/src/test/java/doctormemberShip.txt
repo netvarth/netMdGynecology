@@ -1,0 +1,10 @@
+  {
+    "membership": [
+        {
+            "id": 0,
+            "doctorId": 7,
+            "membership": "docto association",
+            "actionName": "Add"
+        }
+    ]
+}

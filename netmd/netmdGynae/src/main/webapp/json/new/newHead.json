@@ -1,0 +1,104 @@
+{
+    "title": " Create Head",
+    "style": "width:40%;margin:0 30%",
+    "data": [
+        {
+            "name": "newHead",
+            "id": "newHead",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewHeadData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "name",
+                                            "id": "name",
+                                            "type": "text",
+                                            "className": "large ",
+                                            "title": "Name",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+											 "name": "parentHead",
+                                            "id": "parentHead",
+                                            "type": "select",
+                                            "className": "select",
+											"style":"width:100%",
+                                            "title": "Parent Head"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "description",
+                                    "id": "description",
+                                    "type": "textarea",
+                                    "className": "large ",
+                                    "title": "Description"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnHeadSave",
+                                                "id": "btnHeadSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1;"
+                                            },
+                                            {
+                                                "name": "btnHeadCancel",
+                                                "id": "btnHeadCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

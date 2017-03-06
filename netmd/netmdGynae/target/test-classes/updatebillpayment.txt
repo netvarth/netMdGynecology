@@ -1,0 +1,5 @@
+{
+    "billUid": "IP12",
+    "note": "",
+    "paidAmount": 450
+}

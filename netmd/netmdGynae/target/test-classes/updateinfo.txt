@@ -1,0 +1,21 @@
+{
+
+    "id"=
+	"globalId"=
+	firstName=
+	lastName=
+	dateOfBirth=
+	gender=
+	workHistory=
+	mobile=
+	phone=
+	email=
+	address=
+	workingPlaces=
+	designation=
+	specialization=
+	consultationInterval=
+    
+    }
+    
+    

@@ -1,0 +1,90 @@
+{
+    "title": "Edit Appointment",
+    "style": "width:35%;margin:0 30%",
+    "data": [
+        {
+            "name": "vwEditAppointmentForm",
+            "id": "vwEditAppointmentForm",
+            "content": [
+			 {
+					"className": "sep-div-view-One heading",
+					"style": "display:none",
+					"id": "errorDivHeader",
+					"data": [
+						{
+							"className": "five_sixth",
+							"id": "errorDivVwAppmtData"
+						}
+					]
+				},
+               
+                {
+                    "className": "sep-div-view ",
+                    "data": [
+                        {
+                            "className": "column-left",
+							"id":"appointmentselect",
+							 "style": "display:none;",
+                            "elements": [
+                                {
+                                    "name": "appPatient",
+                                    "id": "appPatient",
+									"type": "text",
+                                    "title": "Patient Name"
+									
+                                }
+                            ]
+                        },
+						{
+                            "className": "column-left",
+                            "id":"appointmentlabel",
+							"elements": [
+                                {
+                                    "name": "appointmentPatient",
+                                    "id": "appointmentPatient",
+									"type": "newlabel",
+                                    "title": "Patient Name"
+                                }
+                            ]
+                        }
+                       
+                    ]
+                },
+
+                {
+                    "className": "sep-div-view",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+											 {
+                                                "name": "appbtnEdit",
+                                                "id": "appbtnEdit",
+                                                "title": "Edit",
+                                                "type": "button",
+												"className": "stdbtn btn_black",
+                                                "style": "opacity:1; margin:2px"
+                                            },
+                                            {
+                                                "name": "appbtnDone",
+                                                "id": "appbtnDone",
+                                                "title": "Done",
+                                                "type": "button",
+												"className": "stdbtn btn_black",
+                                                "style": "display:none; opacity:1; margin:2px"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

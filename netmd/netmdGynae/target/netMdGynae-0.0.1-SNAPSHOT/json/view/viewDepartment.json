@@ -1,0 +1,88 @@
+{
+    "name": "viewDepartment",
+    "id": "viewDepartment",
+    "content": [
+        {
+            "className": "sep-div-view",
+            "data": [
+                {
+                    "className": "column-left",
+                    "elements": [
+                        {
+                            "name": "id",
+                            "id": "id",
+                            "type": "newlabel",
+                            "style": "margin-left:6%",
+                            "title": "Id"
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "elements": [
+                        {
+                            "name": "name",
+                            "id": "name",
+                            "type": "text",
+                            "readonly": "readonly",
+                            "className": "newBox large",
+                            "title": "Name"
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "name": "description",
+                            "id": "description",
+                            "type": "textarea",
+                            "readonly": "readonly",
+                            "className": "newBox large",
+                            "title": "Description"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "className": "sep-div-view",
+            "style": "margin-bottom:5px",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnDepartmentEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity: 1; float:left;"
+                                    },
+                                    {
+                                        "name": "btnDepartmentSave",
+                                        "title": "Save",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;display:none;"
+                                    },
+                                    {
+                                        "name": "btnDepartmentCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

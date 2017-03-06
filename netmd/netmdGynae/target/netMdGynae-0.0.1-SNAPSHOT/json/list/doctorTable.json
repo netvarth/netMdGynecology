@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "id": "referralTableCont",
+            "elements": [
+                {
+                    "type": "table",
+                    "content": {
+                        "name": "doctor",
+                        "idProperty": "doctor",
+                        "className": "stdtable stdtablecb",
+                        "style": "border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+                        "colHeaders": [
+                            {
+                                "className": "head1",
+                                "name": "No:",
+                                "style": "width:10%"
+                            },
+                            {
+                                "className": "head0",
+                                "name": "Name",
+                                "style": "width:20%"
+                            },
+                            {
+                                "className": "head1",
+                                "name": "Specialization",
+                                "style": "width:20%"
+                            },
+                            {
+                                "className": "head0",
+                                "name": "Mobile",
+                                "style": "width:15%"
+                            },
+                            {
+                                "className": "head1",
+                                "name": "Email",
+                                "style": "width:35%"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}

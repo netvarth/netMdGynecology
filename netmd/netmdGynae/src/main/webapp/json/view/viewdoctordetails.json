@@ -1,0 +1,1084 @@
+{
+    "name": "doctorViewForm",
+    "id": "doctorViewForm",
+    "content": [
+        {
+            "className": "sep-div-view-One heading",
+            "style": "display:none",
+            "id": "errorDivHeader",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "id": "errorDivViewdoctorData"
+                }
+            ]
+        },
+        {
+            "className": "sep-div-view-One heading",
+            "data": [
+                {
+                    "className": "sep-div-view-One-left",
+                    "id": "sepDivViewPinfoLeft"
+                },
+                {
+                    "className": "sep-div-view-One-centre",
+                    "id": "sepDivViewPinfoCentre",
+                    "elements": [
+                        {
+                            "type": "label",
+                            "title": "Personal Information",
+                            "spanstyle": "font-size:15px;"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view-One-right",
+                    "id": "sepDivViewPinfoRight"
+                }
+            ]
+        },
+        {
+            "className": "sep-div details",
+            "id": "referralsdiv",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "doctorid",
+                                            "id": "doctorid",
+                                            "tabIndex": 3,
+                                            "type": "newlabel",
+                                            "className": "newBox large capital",
+                                            "title": "Id"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "firstname",
+                                            "id": "firstname",
+                                            "tabIndex": 3,
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "First Name"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "lastname",
+                                    "id": "lastname",
+                                    "tabIndex": 3,
+                                    "type": "text",
+                                    "className": "newBox large capital",
+                                    "title": "Last Name"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "dateofbirth",
+                                                    "id": "dateofbirth",
+                                                    "type": "text",
+                                                    "className": "newBox large capital",
+                                                    "title": "Date Of Birth"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "id": "viewGender",
+                                            "elements": [
+                                                {
+                                                    "name": "lblViewDoctorGender",
+                                                    "id": "lblViewDoctorGender",
+                                                    "type": "newlabel",
+                                                    "title": "Gender"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "style": "display:none;",
+                                            "id": "lblDoctorEditGender",
+                                            "elements": [
+                                                {
+                                                    "name": "lblViewDoctorGenderOne",
+                                                    "id": "lblViewDoctorGenderOne",
+                                                    "type": "radio",
+                                                    "title": "Gender",
+                                                    "value": [
+                                                        {
+                                                            "title": "Male",
+                                                            "id": "lblViewDoctorGenderMale",
+                                                            "value": "Male"
+                                                        },
+                                                        {
+                                                            "title": "Female",
+                                                            "id": "lblViewDoctorGenderFemale",
+                                                            "value": "Female"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "landphone",
+                                                    "id": "landphone",
+                                                    "type": "text",
+                                                    "className": "newBox large capital",
+                                                    "title": "Phone"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "mobilephone",
+                                                    "id": "mobilephone",
+                                                    "type": "text",
+                                                    "className": "newBox large capital",
+                                                    "title": "Mobile"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "address",
+                                            "id": "address",
+                                            "type": "textarea",
+                                            "className": "newBox large",
+                                            "title": "Address",
+                                            "readonly": "readonly",
+                                            "style": "height:82px;padding:none;",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "specialization",
+                                            "id": "specialization",
+                                            "type": "text",
+                                            "className": "newBox large",
+                                            "title": "Specialization"
+                                        },
+                                        {
+                                            "name": "email",
+                                            "id": "email",
+                                            "type": "newlabel",
+                                            "readonly": true,
+                                            "required": "true",
+                                            "className": "newBox large",
+                                            "title": "Email"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "sep-div",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "type": "button",
+                                            "content": {
+                                                "buttons": [
+                                                    {
+                                                        "name": "doctorViewBtnEditOne",
+                                                        "id": "doctorViewBtnEditOne",
+                                                        "title": "Edit",
+                                                        "type": "button",
+                                                        "className": "stdbtn btn_black",
+                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;"
+                                                    },
+                                                    {
+                                                        "name": "doctorViewBtnSave",
+                                                        "id": "doctorViewBtnSave",
+                                                        "title": "Done",
+                                                        "type": "button",
+                                                        "className": "stdbtn btn_black",
+                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;display:none;"
+                                                    },
+                                                    {
+                                                        "name": "doctorViewBtnCancel",
+                                                        "id": "doctorViewBtnCancel",
+                                                        "title": "Cancel",
+                                                        "type": "button",
+                                                        "className": "stdbtn",
+                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;display:none;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "className": "sep-div-view-One",
+            "data": [
+                {
+                    "className": "123",
+                    "data": [
+                        {
+                            "className": "abc heading",
+                            "data": [
+                                {
+                                    "className": "sep-div-view-One-left",
+                                    "id": "sepDivViewExpLeft"
+                                },
+                                {
+                                    "className": "sep-div-view-One-centre",
+                                    "id": "sepDivViewExpCentre",
+                                    "elements": [
+                                        {
+                                            "type": "label",
+                                            "title": "Experience",
+                                            "spanstyle": "font-size:15px;"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div-view-One-right",
+                                    "id": "sepDivViewExpRight"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "sep-div details",
+                            "style": "display:none;",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "id": "workBenchOne",
+                                    "style": "display:none; margin-top:10px;",
+                                    "elements": [
+                                        {
+                                            "name": "workBenchOne",
+                                            "id": "workBenchOne",
+                                            "type": "combined",
+                                            "items": [
+                                                {
+                                                    "name": "designations",
+                                                    "id": "designations",
+                                                    "type": "text",
+                                                    "style": "width:20%;",
+                                                    "className": "small",
+                                                    "placeHolder": "Designation"
+                                                },
+                                                {
+                                                    "name": "worksAt",
+                                                    "id": "worksAt",
+                                                    "type": "text",
+                                                    "className": "small",
+                                                    "style": "width:20%;",
+                                                    "placeHolder": "Facility"
+                                                },
+                                                {
+                                                    "name": "fromDate",
+                                                    "id": "fromDate",
+                                                    "type": "text",
+                                                    "className": "small",
+                                                    "style": "width:20%;",
+                                                    "placeHolder": "From Date"
+                                                },
+                                                {
+                                                    "name": "toDate",
+                                                    "id": "toDate",
+                                                    "type": "text",
+                                                    "className": "small",
+                                                    "style": "width:20%;",
+                                                    "placeHolder": "To Date"
+                                                },
+                                                {
+                                                    "type": "button",
+                                                    "content": {
+                                                        "buttons": [
+                                                            {
+                                                                "name": "docExpBtn",
+                                                                "id": "docExpBtn",
+                                                                "title": "Add",
+                                                                "type": "button",
+                                                                "className": "stdbtn btn_black",
+                                                                "style": "opacity:1;padding:2px 3px 2px 3px;"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "type": "table",
+                                            "content": {
+                                                "name": "doctorExpTable",
+                                                "idProperty": "doctorExpTable",
+                                                "className": "stdtable",
+                                                "style": "width:97%;font-size:12px;",
+                                                "colHeaders": [
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "Designation",
+                                                        "style": "width:30%;"
+                                                    },
+                                                    {
+                                                        "className": "head1",
+                                                        "name": "Facility",
+                                                        "style": "width:15%;"
+                                                    },
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "From Date",
+                                                        "style": "width:15%;"
+                                                    },
+                                                    {
+                                                        "className": "head1",
+                                                        "name": "To Date",
+                                                        "style": "width:20%;"
+                                                    },
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "",
+                                                        "style": "width:10%;"
+                                                    },
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "",
+                                                        "style": "width:10%;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div",
+                                    "data": [
+                                        {
+                                            "className": "five_sixth",
+                                            "elements": [
+                                                {
+                                                    "type": "button",
+                                                    "content": {
+                                                        "buttons": [
+                                                            {
+                                                                "name": "doctorExpBtnEdit",
+                                                                "id": "doctorExpBtnEdit",
+                                                                "title": "Edit",
+                                                                "type": "button",
+                                                                "className": "stdbtn btn_black",
+                                                                "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;"
+                                                            },
+                                                            {
+                                                                "name": "doctorExpBtnSave",
+                                                                "id": "doctorExpBtnSave",
+                                                                "title": "Done",
+                                                                "type": "button",
+                                                                "className": "stdbtn btn_black",
+                                                                "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;display:none;"
+                                                            },
+                                                            {
+                                                                "name": "doctorExpBtnCancel",
+                                                                "id": "doctorExpBtnCancel",
+                                                                "title": "Cancel",
+                                                                "type": "button",
+                                                                "className": "stdbtn",
+                                                                "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;display:none;"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "456",
+                    "data": [
+                        {
+                            "className": "def heading",
+                            "data": [
+                                {
+                                    "className": "sep-div-view-One-left",
+                                    "id": "sepDivViewExpLeft"
+                                },
+                                {
+                                    "className": "sep-div-view-One-centre",
+                                    "id": "sepDivViewExpCentre",
+                                    "elements": [
+                                        {
+                                            "type": "label",
+                                            "title": "Qualification",
+                                            "spanstyle": "font-size:15px;"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div-view-One-right",
+                                    "id": "sepDivViewExpRight"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "sep-div details",
+                            "style": "display:none;",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "id": "workBenchTwo",
+                                    "style": "display:none; margin-top:10px;",
+                                    "elements": [
+                                        {
+                                            "name": "workBenchTwo",
+                                            "id": "workBenchTwo",
+                                            "type": "combined",
+                                            "items": [
+                                                {
+                                                    "name": "degrees",
+                                                    "id": "degrees",
+                                                    "type": "text",
+                                                    "placeHolder": "Degree",
+                                                    "style": "width:20%;",
+                                                    "className": "small"
+                                                },
+                                                {
+                                                    "name": "passoutDates",
+                                                    "id": "passoutDates",
+                                                    "type": "text",
+                                                    "className": "small",
+                                                    "style": "width:20%;",
+                                                    "placeHolder": "Passout Year"
+                                                },
+                                                {
+                                                    "name": "institutions",
+                                                    "id": "institutions",
+                                                    "type": "text",
+                                                    "className": "small",
+                                                    "style": "width:20%;",
+                                                    "placeHolder": "Institution"
+                                                },
+                                                {
+                                                    "type": "button",
+                                                    "content": {
+                                                        "buttons": [
+                                                            {
+                                                                "name": "docQualiBtn",
+                                                                "id": "docQualiBtn",
+                                                                "title": "Add",
+                                                                "type": "button",
+                                                                "className": "stdbtn btn_black",
+                                                                "style": "opacity:1;padding:2px 3px 2px 3px;"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "type": "table",
+                                            "content": {
+                                                "name": "doctorQualiTable",
+                                                "idProperty": "doctorQualiTable",
+                                                "className": "stdtable",
+                                                "style": "width:97%;font-size:12px;",
+                                                "colHeaders": [
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "Degree",
+                                                        "style": "width:20%;"
+                                                    },
+                                                    {
+                                                        "className": "head1",
+                                                        "name": "Passout Year",
+                                                        "style": "width:20%;"
+                                                    },
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "Institution",
+                                                        "style": "width:30%;"
+                                                    },
+                                                    {
+                                                        "className": "head1",
+                                                        "name": "",
+                                                        "style": "width:10%;"
+                                                    },
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "",
+                                                        "style": "width:10%;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div",
+                                    "data": [
+                                        {
+                                            "className": "sep-div",
+                                            "data": [
+                                                {
+                                                    "className": "five_sixth",
+                                                    "elements": [
+                                                        {
+                                                            "type": "button",
+                                                            "content": {
+                                                                "buttons": [
+                                                                    {
+                                                                        "name": "doctorQualiBtnEdit",
+                                                                        "id": "doctorQualiBtnEdit",
+                                                                        "title": "Edit",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn btn_black",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;"
+                                                                    },
+                                                                    {
+                                                                        "name": "doctorQualiBtnSave",
+                                                                        "id": "doctorQualiBtnSave",
+                                                                        "title": "Done",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn btn_black",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;display:none;"
+                                                                    },
+                                                                    {
+                                                                        "name": "doctorQualiBtnCancel",
+                                                                        "id": "doctorQualiBtnCancel",
+                                                                        "title": "Cancel",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;display:none;"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "789",
+                    "data": [
+                        {
+                            "className": "ghi heading",
+                            "data": [
+                                {
+                                    "className": "sep-div-view-One-left",
+                                    "id": "sepDivViewAchLeft"
+                                },
+                                {
+                                    "className": "sep-div-view-One-centre",
+                                    "id": "sepDivViewAchCentre",
+                                    "elements": [
+                                        {
+                                            "type": "label",
+                                            "title": "Achievements",
+                                            "spanstyle": "font-size:15px;"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div-view-One-right",
+                                    "id": "sepDivViewAchRight"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "sep-div details",
+                            "style": "display:none;",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "id": "workBenchAchievement",
+                                    "style": "display:none; margin-top:10px;",
+                                    "elements": [
+                                        {
+                                            "name": "workBenchTwo",
+                                            "id": "workBenchTwo",
+                                            "type": "combined",
+                                            "items": [
+                                                {
+                                                    "name": "achievements",
+                                                    "id": "achievements",
+                                                    "type": "text",
+                                                    "className": "small-2",
+                                                    "placeHolder": "Achievements"
+                                                },
+                                                {
+                                                    "type": "button",
+                                                    "content": {
+                                                        "buttons": [
+                                                            {
+                                                                "name": "doctorAchievementsBtnAdd",
+                                                                "id": "doctorAchievementsBtnAdd",
+                                                                "title": "Add",
+                                                                "type": "button",
+                                                                "className": "stdbtn btn_black",
+                                                                "style": "opacity:1;padding:2px 3px 2px 3px;"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "type": "table",
+                                            "content": {
+                                                "name": "doctorAchievementTable",
+                                                "idProperty": "doctorAchievementTable",
+                                                "className": "stdtable",
+                                                "style": "width:97%;font-size:12px;",
+                                                "colHeaders": [
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "Achievement",
+                                                        "style": "width:70%;"
+                                                    },
+                                                    {
+                                                        "className": "head1",
+                                                        "name": "",
+                                                        "style": "width:10%;"
+                                                    },
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "",
+                                                        "style": "width:10%;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div",
+                                    "data": [
+                                        {
+                                            "className": "sep-div",
+                                            "data": [
+                                                {
+                                                    "className": "five_sixth",
+                                                    "elements": [
+                                                        {
+                                                            "type": "button",
+                                                            "content": {
+                                                                "buttons": [
+                                                                    {
+                                                                        "name": "doctorAchievementsBtnEdit",
+                                                                        "id": "doctorAchievementsBtnEdit",
+                                                                        "title": "Edit",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn btn_black",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;"
+                                                                    },
+                                                                    {
+                                                                        "name": "doctorAchievementsBtnSave",
+                                                                        "id": "doctorAchievementsBtnSave",
+                                                                        "title": "Done",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn btn_black",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;display:none;"
+                                                                    },
+                                                                    {
+                                                                        "name": "doctorAchievementsBtnCancel",
+                                                                        "id": "doctorAchievementsBtnCancel",
+                                                                        "title": "Cancel",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;display:none;"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "000",
+                    "data": [
+                        {
+                            "className": "aaa heading",
+                            "data": [
+                                {
+                                    "className": "sep-div-view-One-left",
+                                    "id": "sepDivViewExpLeft"
+                                },
+                                {
+                                    "className": "sep-div-view-One-centre",
+                                    "id": "sepDivViewExpCentre",
+                                    "elements": [
+                                        {
+                                            "type": "label",
+                                            "title": "Expertise",
+                                            "spanstyle": "font-size: 15px;"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div-view-One-right",
+                                    "id": "sepDivViewExpRight"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "sep-div details",
+                            "style": "display: none;",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "id": "workBenchExpertise",
+                                    "style": "display:none; margin-top:10px;",
+                                    "elements": [
+                                        {
+                                            "name": "workBenchTwo",
+                                            "id": "workBenchTwo",
+                                            "type": "combined",
+                                            "items": [
+                                                {
+                                                    "name": "Expertise",
+                                                    "id": "Expertise",
+                                                    "type": "text",
+                                                    "className": "small-2",
+                                                    "placeHolder": "Expertise"
+                                                },
+                                                {
+                                                    "type": "button",
+                                                    "content": {
+                                                        "buttons": [
+                                                            {
+                                                                "name": "doctorExpertiseBtnAdd",
+                                                                "id": "doctorExpertiseBtnAdd",
+                                                                "title": "Add",
+                                                                "type": "button",
+                                                                "className": "stdbtn btn_black",
+                                                                "style": "opacity:1;padding:2px 3px 2px 3px;"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "type": "table",
+                                            "content": {
+                                                "name": "doctorExpertiseTable",
+                                                "idProperty": "doctorExpertiseTable",
+                                                "className": "stdtable",
+                                                "style": "width:97%;font-size:12px;",
+                                                "colHeaders": [
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "Expertise",
+                                                        "style": "width: 70%;"
+                                                    },
+                                                    {
+                                                        "className": "head1",
+                                                        "name": "",
+                                                        "style": "width: 10%;"
+                                                    },
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "",
+                                                        "style": "width: 10%;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div",
+                                    "data": [
+                                        {
+                                            "className": "sep-div",
+                                            "data": [
+                                                {
+                                                    "className": "five_sixth",
+                                                    "elements": [
+                                                        {
+                                                            "type": "button",
+                                                            "content": {
+                                                                "buttons": [
+                                                                    {
+                                                                        "name": "doctorExpertiseBtnEdit",
+                                                                        "id": "doctorExpertiseBtnEdit",
+                                                                        "title": "Edit",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn btn_black",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;"
+                                                                    },
+                                                                    {
+                                                                        "name": "doctorExpertiseBtnSave",
+                                                                        "id": "doctorExpertiseBtnSave",
+                                                                        "title": "Done",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn btn_black",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;display:none;"
+                                                                    },
+                                                                    {
+                                                                        "name": "doctorExpertiseBtnCancel",
+                                                                        "id": "doctorExpertiseBtnCancel",
+                                                                        "title": "Cancel",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;display:none;"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "111",
+                    "data": [
+                        {
+                            "className": "bbb heading",
+                            "data": [
+                                {
+                                    "className": "sep-div-view-One-left",
+                                    "id": "sepDivViewMemLeft"
+                                },
+                                {
+                                    "className": "sep-div-view-One-centre",
+                                    "id": "sepDivViewMemCentre",
+                                    "elements": [
+                                        {
+                                            "type": "label",
+                                            "title": "Memberships",
+                                            "spanstyle": "font-size: 15px;"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div-view-One-right",
+                                    "id": "sepDivViewMemRight"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "sep-div details",
+                            "style": "display: none;",
+                            "data": [
+							         {
+                                    "className": "five_sixth",
+                                    "id": "workBenchMemberShip",
+                                    "style": "display:none; margin-top:10px;",
+                                    "elements": [
+                                        {
+                                            "name": "workBenchTwo",
+                                            "id": "workBenchTwo",
+                                            "type": "combined",
+                                            "items": [
+                                                {
+												
+												   "name": "Membership",
+                                            "id": "Membership",
+                                            "type": "text",
+                                          
+                                          
+       
+                                                    "className": "small-2",
+                                                    "placeHolder": "Membership"
+                                                },
+                                                {
+                                                    "type": "button",
+                                                    "content": {
+                                                        "buttons": [
+                                                            {
+                                                                 "name": "doctorMembershipBtnAdd",
+                                                                        "id": "doctorMembershipBtnAdd",
+                                                                        "title": "Add",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn btn_black",
+                                                                "style": "opacity:1;padding:2px 3px 2px 3px;"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                               
+                 
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "type": "table",
+                                            "content": {
+                                                "name": "doctorMembershipTable",
+                                                "idProperty": "doctorMembershipTable",
+                                                "className": "stdtable",
+                                                "style": "width:97%;font-size:12px;",
+                                                "colHeaders": [
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "Memberships",
+                                                        "style": "width: 70%;"
+                                                    },
+                                                    {
+                                                        "className": "head1",
+                                                        "name": "",
+                                                        "style": "width: 10%;"
+                                                    },
+                                                    {
+                                                        "className": "head0",
+                                                        "name": "",
+                                                        "style": "width: 10%;"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "sep-div",
+                                    "data": [
+                                        {
+                                            "className": "sep-div",
+                                            "data": [
+                                                {
+                                                    "className": "five_sixth",
+                                                    "elements": [
+                                                        {
+                                                            "type": "button",
+                                                            "content": {
+                                                                "buttons": [
+                                                                    {
+                                                                        "name": "doctorMembershipBtnEdit",
+                                                                        "id": "doctorMembershipBtnEdit",
+                                                                        "title": "Edit",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn btn_black",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;"
+                                                                    },
+                                                                    {
+                                                                        "name": "doctorMembershipBtnSave",
+                                                                        "id": "doctorMembershipBtnSave",
+                                                                        "title": "Done",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn btn_black",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 50px 0px 0px;display:none;"
+                                                                    },
+                                                                    {
+                                                                        "name": "doctorMembershipBtnCancel",
+                                                                        "id": "doctorMembershipBtnCancel",
+                                                                        "title": "Cancel",
+                                                                        "type": "button",
+                                                                        "className": "stdbtn",
+                                                                        "style": "float: right;opacity: 1;padding:2px 3px 2px 3px; margin:20px 3px 0px 0px;display:none;"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "doctorId": 9,
+    "name": "rim",
+    "startDate": "2014-03-10",
+    "startTime": "06:30 am",
+    "endTime": "07:00 am",
+    "endDate": "2014-03-12",
+    "repeat": "Daily",
+    "noOfOccurances": 0,
+    "weeklySunThruSatList": [],
+    "status": "Working Hours"
+}

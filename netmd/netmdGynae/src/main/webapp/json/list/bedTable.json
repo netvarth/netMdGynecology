@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "id": "bedListTableCont",
+            "elements": [
+				{
+                    "type": "table",
+                    "content": {
+						"name" : "bed",
+						"idProperty" : "bed",
+						"className" :"stdtable stdtablecb",
+						"style":"border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+						"colHeaders" : [
+							{ "className" : "head0",	"name" : "Id","style":"width:8%"},
+							{ "className" : "head1",	"name" : "BedNo","style":"width:30%"},
+							{ "className" : "head0",	"name" : "BedType","style":"width:30%"}
+							
+						]
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "expenseName": "400",
+    "headId": 4,
+    "headName": "varun",
+    "totalAmount": 800,
+    "description": "special",
+    "paidAmount": 300
+}

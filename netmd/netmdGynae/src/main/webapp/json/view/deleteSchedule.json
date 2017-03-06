@@ -1,0 +1,70 @@
+{
+    "title": "Delete Schedule",
+    "style": "width:55%;margin:0 20%",
+    "data": [
+        {
+            "name":"DeleteScheduleForm",
+            "id": "DeleteScheduleForm",
+            "content": [
+                {
+                    "className": "sep-div-view ",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "deleteslot",
+                                    "id": "deleteslot",
+                                    "type": "radio",
+                                    "value": [
+                                        
+                                        {
+                                            "title": "This Schedule",
+                                            "value": "ThisSchedule",
+											 "checked": "true"
+                                        },
+										
+										{
+                                            "title": "This&Future Schedule",
+                                            "value": "This&FutureSchedule"
+                                        },
+										{
+                                            "title": "All Schedule",
+                                            "value": "AllSchedule"
+                                        }
+                                    ]
+                                }]}
+                            ]
+                        },
+						 {
+                    "className": "sep-div-view",
+                    "data": [
+						{
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnok",
+                                                "id": "btnok",
+                                                "title": "OK",
+                                                "type": "button",
+												"className": "stdbtn btn_black",
+                                                "style": "opacity:1; margin:2px"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+                
+            ]
+               
+        }
+      ]
+    }
+  

@@ -1,0 +1,86 @@
+{
+    "title": " Create Department",
+    "style": "width:40%;margin:0 30%",
+    "data": [
+        {
+            "name": "newDepartment",
+            "id": "newDepartment",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewDepartmentData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "name",
+                                    "id": "name",
+                                    "type": "text",
+                                    "className": "large",
+                                    "title": "Name",
+                                    "required": true
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "description",
+                                    "id": "description",
+                                    "type": "textarea",
+                                    "className": "large ",
+                                    "title": "Description"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnDepartmentSave",
+                                                "id": "btnDepartmentSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;"
+                                            },
+                                            {
+                                                "name": "btnDepartmentCancel",
+                                                "id": "btnDepartmentCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity: 1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

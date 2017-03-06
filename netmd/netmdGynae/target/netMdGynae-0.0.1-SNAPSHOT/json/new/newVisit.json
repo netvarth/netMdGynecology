@@ -1,0 +1,109 @@
+{
+    "title": "Create Visit",
+    "style": "width:60%;margin:0 20%",
+    "data": [
+        {
+            "name": "newVisitForm",
+            "id": "newVisitForm",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewVisit"
+                        }
+                    ]
+                },
+				{
+                    "className": "sep-div",
+                    "id": "patientCaseAddDiv",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+							  {
+                                 "className": "column-left",
+                                 "elements": [
+                                {
+                                    "name": "caseName",
+                                    "id": "caseName",
+                                    "tabIndex": 1,
+                                    "type": "select",
+                                    "className": "select",
+									"style": "width:60%;",
+                                    "title": "Case Name",
+									"required": true
+                                }
+								]
+								},
+								{
+                                 "className": "column-left",
+                                 "elements": [
+                                {
+                                    "name": "mrType",
+                                    "id": "mrType",
+                                    "tabIndex": 2,
+                                    "type": "text",
+									"readonly":"readonly",
+									"style": "width:60%;",
+                                    "title": "Medical Record Type",
+									"required": true
+                                }
+								]
+								}
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "medicalRecord",
+                                    "id": "medicalRecord",
+                                    "tabIndex": 3,
+                                    "type": "textarea",
+                                    "style": "height:100px;padding:none;float:left;",
+                                    "className": "large capital",
+                                    "title": "Visit Description",
+									"required": true
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnVisitCreate",
+                                                "id": "btnVisitCreate",
+												"tabIndex": 4,
+                                                "title": "Save",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1;margin:4px;float:left"
+                                            },
+											{
+                                                "name": "btnVisitClear",
+                                                "id": "btnVisitClear",
+												"tabIndex": 5,
+                                                "title": "Clear",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                               "style": "opacity:1; margin:4px;float:left"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

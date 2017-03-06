@@ -1,0 +1,136 @@
+{
+    "title": " Create Tax",
+    "style": "width:50%;margin:0 30%",
+    "data": [
+        {
+            "name": "newTax",
+            "id": "newTax",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewTaxData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "name",
+                                            "id": "name",
+                                            "type": "text",
+                                            "className": "large",
+                                            "title": "Name",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+									{
+                                            "className": "column-third ",
+                                            "elements": [
+                                                {
+                                                    "name": "value",
+                                                    "id": "value",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "title": "Value"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-last",
+                                            "elements": [
+                                                {
+                                                    "name": "calculationType",
+                                                    "id": "calculationType",
+                                                    "type": "radio",
+                                                    "title": "Calculation-Type",
+                                                    "value": [
+                                                        {
+                                                            "title": "Fixed",
+                                                            "value": "Fixed",
+                                                            "checked": "true"
+                                                        },
+                                                        {
+                                                            "title": "Percentage",
+                                                            "value": "Percentage"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                        
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "name": "description",
+                                            "id": "description",
+                                            "type": "textarea",
+                                            "className": "large",
+                                            "title": "Description"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnTaxSave",
+                                                "id": "btnTaxSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;"
+                                            },
+                                            {
+                                                "name": "btnTaxCancel",
+                                                "id": "btnTaxCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity: 1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

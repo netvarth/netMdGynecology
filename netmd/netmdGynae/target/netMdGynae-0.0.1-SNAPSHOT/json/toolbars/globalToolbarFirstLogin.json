@@ -1,0 +1,30 @@
+{
+    "buttons": [
+		
+		{
+            "title": "New Patient",
+            "className": "big-link",
+            "name": "ribbonNewPatient",
+			"id": "ribbonNewPatient",
+            "image": "/netmd/images/icon/dashboard/patient.png",
+			"url":"/netmd/ws/ui/patient/create"
+        },{
+            "title": "New Doctor",
+            "className": "big-link",
+            "name": "ribbonNewDoctor",
+			"id": "ribbonNewDoctor",
+            "image": "/netmd/images/icon/dashboard/doctor.png",
+			"url":"/netmd/ws/ui/doctor/create"
+        },
+		{
+            "title": "New Bill",
+            "className": "big-link",
+            "name": "ribbonNewBill",
+			"id": "ribbonNewBill",
+            "image": "/netmd/images/icon/dashboard/bill.png",
+			"url":"/netmd/ws/ui/bill/create"
+        }
+		
+		
+    ]
+}

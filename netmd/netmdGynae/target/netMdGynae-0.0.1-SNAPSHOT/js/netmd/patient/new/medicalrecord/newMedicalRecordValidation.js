@@ -1,0 +1,3 @@
+function validateNewReferral(){
+	return true;
+}

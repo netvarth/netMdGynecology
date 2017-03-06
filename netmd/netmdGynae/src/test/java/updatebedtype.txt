@@ -1,0 +1,8 @@
+{
+    "id": 2,
+    "type": "double",
+    "rent": "200.00",
+    "count": "2",
+    "taxId": "0",
+    "taxName": "Select tax Type"
+}

@@ -1,0 +1,190 @@
+{
+    "title": "My Profile",
+    "style": "width:80%;height:50%;margin:0 10%",
+    "data": [
+        {
+            "name": "doctorProfViewForm",
+            "id": "doctorProfViewForm",
+            "content": [
+                
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "firstname",
+                                                    "id": "firstname",
+                                                    "tabIndex": 3,
+                                                    "type": "text",
+                                                    "className": "newBox large capital",
+                                                    "title": "First Name"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "lastname",
+                                                    "id": "lastname",
+                                                    "tabIndex": 3,
+                                                    "type": "text",
+                                                    "className": "newBox large capital",
+                                                    "title": "Last Name"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "specialization",
+                                                    "id": "specialization",
+                                                    "type": "text",
+                                                    "className": "newBox large",
+                                                    "title": "specialization"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "data": [
+                                                {
+                                                    "className": "column-left",
+                                                    "elements": [
+                                                        {
+                                                            "name": "dateofbirth",
+                                                            "id": "dateofbirth",
+                                                            "type": "text",
+                                                            "className": "newBox large capital",
+                                                            "title": "Date Of Birth"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "className": "column-right",
+                                                    "id": "viewGender",
+                                                    "elements": [
+                                                        {
+                                                            "name": "lblViewDoctorGender",
+                                                            "id": "lblViewDoctorGender",
+                                                            "type": "newlabel",
+                                                            "title": "Gender"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "className": "column-right",
+                                                    "style": "display:none;",
+                                                    "id": "lblDoctorEditGender",
+                                                    "elements": [
+                                                        {
+                                                            "name": "lblViewDoctorGenderOne",
+                                                            "id": "lblViewDoctorGenderOne",
+                                                            "type": "radio",
+                                                            "title": "Gender",
+                                                            "value": [
+                                                                {
+                                                                    "title": "Male",
+                                                                    "id": "lblViewDoctorGenderMale",
+                                                                    "value": "Male"
+                                                                },
+                                                                {
+                                                                    "title": "Female",
+                                                                    "id": "lblViewDoctorGenderFemale",
+                                                                    "value": "Female"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "data": [
+                                                {
+                                                    "className": "column-left",
+                                                    "elements": [
+                                                        {
+                                                            "name": "landphone",
+                                                            "id": "landphone",
+                                                            "type": "text",
+                                                            "className": "newBox large capital",
+                                                            "title": "Phone"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "className": "column-right",
+                                                    "elements": [
+                                                        {
+                                                            "name": "mobilephone",
+                                                            "id": "mobilephone",
+                                                            "type": "text",
+                                                            "className": "newBox large capital",
+                                                            "title": "Mobile"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "data": [
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "address",
+                                                    "id": "address",
+                                                    "type": "textarea",
+                                                    "className": "newBox large",
+                                                    "title": "Address",
+                                                    "readonly": "readonly",
+                                                    "style": "height:82px;padding:none;",
+                                                    "required": true
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "email",
+                                                    "id": "email",
+                                                    "type": "newlabel",
+                                                    "readonly": true,
+                                                    "required": "true",
+                                                    "className": "newBox large",
+                                                    "title": "Email"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    
+                
+            ]
+        }
+    ]
+}

@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+	<bean id="generic.dao" class="com.nv.netmd.pl.impl.GenericDaoHibernateImpl">
+	</bean>
+	<bean id="authentication.service" class="com.nv.netmd.security.bl.impl.AuthenticationServiceImpl">
+		<property name="authenticationDao">
+			<ref bean="authentication.dao" />
+		</property>
+		<property name="authenticationValidator">
+			<ref bean="authentication.validator" />
+		</property>
+		<property name="enumList">
+			<list>
+				<value>com.nv.netmd.pl.entity.ActionNameEnum</value>
+				<value>com.nv.netmd.pl.entity.AppointmentStatusEnum</value>
+				<value>com.nv.netmd.pl.entity.CaseStatusEnum</value>
+				<value>com.nv.netmd.pl.entity.GenderEnum</value>
+				<value>com.nv.netmd.pl.entity.MedicalRecordTypeEnum</value>
+				<value>com.nv.netmd.pl.entity.NetmdUserTypeEnum</value>
+				<value>com.nv.netmd.pl.entity.OccuranceTypeEnum</value>
+				<value>com.nv.netmd.pl.entity.RepeatEnum</value>
+				<value>com.nv.netmd.pl.entity.ScheduleStatusEnum</value>
+				<value>com.nv.netmd.pl.entity.StatusEnum</value>
+				<value>com.nv.netmd.pl.entity.UserTypeEnum</value>
+				<value>com.nv.netmd.pl.entity.AvailabilityStatusEnum</value>
+				<value>com.nv.netmd.pl.entity.PayStatusEnum</value>
+				<value>com.nv.netmd.pl.entity.OriginEnum</value>
+				<value>com.nv.netmd.pl.entity.CalculationTypeEnum</value>
+				<value>com.nv.netmd.pl.entity.DiscountTypeEnum</value>
+				<value>com.nv.netmd.pl.entity.BillStatusEnum</value>
+				<value>com.nv.netmd.pl.entity.HeadTypeEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.BillPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.PatientPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.DoctorPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.ItemPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.DiscountPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.CasePropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.MessagePropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.RoomPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.DepartmentPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.RoomTypePropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.BedPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.BedTypePropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.TaxPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.BlockPropertyEnum</value>
+				<value>com.nv.netmd.util.filter.queryBuilder.SupportPropertyEnum</value>	
+				<value>com.nv.netmd.util.filter.queryBuilder.AntenatalPropertyEnum</value>		
+			</list>
+		</property>
+	</bean>
+
+	<bean id="authentication.validator"
+		class="com.nv.netmd.security.bl.validator.AuthenticationValidator"></bean>
+
+	<bean id="authentication.dao" class="com.nv.netmd.security.pl.impl.AuthenticationDaoImpl"></bean>
+
+	<bean id="filter.dao" class="com.nv.netmd.business.pl.impl.FilterDaoImpl"
+		parent="generic.dao">
+	</bean>
+
+	<bean id="doctor.Dao" class=" com.nv.netmd.business.pl.impl.DoctorDaoImpl"
+		parent="generic.dao">
+
+	</bean>
+
+	<bean id="doctorFilter.Service" class="com.nv.netmd.util.filter.list.DoctorList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="doctor.validator" class="com.nv.netmd.business.bl.validator.DoctorValidator"></bean>
+	<bean id="doctor.service" class="com.nv.netmd.business.bl.impl.DoctorServiceImpl">
+		<property name="doctorDao">
+			<ref bean="doctor.Dao" />
+		</property>
+		<property name="validator">
+			<ref bean="doctor.validator" />
+		</property>
+		<property name="doctorFilterService">
+			<ref bean="doctorFilter.Service" />
+		</property>
+
+	</bean>
+	<bean id="owner.service" class="com.nv.netmd.business.bl.impl.OwnerServiceImpl">
+		<property name="ownerDao">
+			<ref bean="owner.Dao" />
+		</property>
+
+	</bean>
+	<bean id="owner.Dao" class=" com.nv.netmd.business.pl.impl.OwnerDaoImpl"
+		parent="generic.dao">
+
+	</bean>
+	<bean id="medicalFilter.Service" class="com.nv.netmd.util.filter.list.MedicalRecordList">
+
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="caseFilter.Service" class="com.nv.netmd.util.filter.list.CaseList">
+	
+	    <property name="patientDao">
+			<ref bean="patient.dao" />
+		</property>
+		
+	</bean>
+	<bean id="patientFilter.Service" class="com.nv.netmd.util.filter.list.PatientList">
+	    
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="patient.validator" class="com.nv.netmd.business.bl.validator.PatientValidator"></bean>
+	<bean id="patient.service" class="com.nv.netmd.business.bl.impl.PatientServiceImpl">
+		<property name="patientDao">
+			<ref bean="patient.dao" />
+		</property>
+		<property name="patientValidator">
+			<ref bean="patient.validator" />
+		</property>
+		<property name="patientFilterService">
+			<ref bean="patientFilter.Service" />
+		</property>
+		<property name="caseFilterService">
+			<ref bean="caseFilter.Service" />
+		</property>
+		<property name="medicalFilterService">
+			<ref bean="medicalFilter.Service" />
+		</property>
+		<property name="questionnaireService">
+			<ref bean="questionnaire.Service" />
+		</property>
+	</bean>
+	
+	<bean id="questionnaire.Service" class="com.nv.netmd.business.bl.impl.QuestionnaireServiceImpl">
+	    <property name="questionDao">
+			<ref bean="question.dao" />
+		</property>
+	   <property name="questionnaireFilterService">
+			<ref bean="questionnaireFilter.Service" />
+		</property>
+	</bean>
+	<bean id="questionnaireFilter.Service" class="com.nv.netmd.util.filter.list.QuestionnaireList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	
+	<bean id="question.dao" class="com.nv.netmd.business.pl.impl.QuestionnaireDaoImpl"
+		parent="generic.dao"></bean>
+	<bean id="patient.dao" class="com.nv.netmd.business.pl.impl.PatientDaoImpl"
+		parent="generic.dao">
+	     <property name="questionDao">
+			<ref bean="question.dao" />
+		</property>
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+
+	<bean id="schedule.Validator" class="com.nv.netmd.business.bl.validator.ScheduleValidator"></bean>
+	<bean id="schedule.Service" class="com.nv.netmd.business.bl.impl.ScheduleServiceImpl">
+		<property name="scheduleDao">
+			<ref bean="schedule.Dao" />
+		</property>
+		<property name="scheduleValidator">
+			<ref bean="schedule.Validator" />
+		</property>
+	</bean>
+	<bean id="schedule.Dao" class="com.nv.netmd.business.pl.impl.ScheduleDaoImpl"
+		parent="generic.dao"></bean>
+
+	<bean id="appointment.Validator" class="com.nv.netmd.business.bl.validator.AppointmentValidator"></bean>
+	<bean id="appointment.Service" class="com.nv.netmd.business.bl.impl.AppointmentServiceImpl">
+		<property name="appointmentDao">
+			<ref bean="appointment.Dao" />
+		</property>
+		<property name="appointmentValidator">
+			<ref bean="appointment.Validator" />
+		</property>
+	</bean>
+	<bean id="appointment.Dao" class="com.nv.netmd.business.pl.impl.AppointmentDaoImpl"
+		parent="generic.dao"></bean>
+
+	<bean id="user.Validator" class="com.nv.netmd.business.bl.validator.UserValidator"></bean>
+	<bean id="user.Service" class="com.nv.netmd.business.bl.impl.UserServiceImpl">
+		<property name="userDao">
+			<ref bean="user.Dao" />
+		</property>
+		<property name="userValidator">
+			<ref bean="user.Validator" />
+		</property>
+	</bean>
+	<bean id="user.Dao" class="com.nv.netmd.business.pl.impl.UserDaoImpl"
+		parent="generic.dao"></bean>
+	<bean id="resultFilter.Service" class="com.nv.netmd.util.filter.list.ResultList">
+
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="result.Validator" class="com.nv.netmd.business.bl.validator.ResultValidator"></bean>
+	<bean id="result.Service" class="com.nv.netmd.business.bl.impl.ResultServiceImpl">
+		<property name="resultDao">
+			<ref bean="result.Dao" />
+		</property>
+		<property name="resultValidator">
+			<ref bean="result.Validator" />
+		</property>
+		<property name="resultFilterService">
+			<ref bean="resultFilter.Service" />
+		</property>
+	</bean>
+	<bean id="result.Dao" class="com.nv.netmd.business.pl.impl.ResultDaoImpl"
+		parent="generic.dao"></bean>
+
+	<bean id="queryBuilder.Factory" class="com.nv.netmd.util.filter.core.QueryBuilderFactory">
+		<property name="filterDao">
+			<ref bean="filter.dao" />
+		</property>
+		<property name="queryBuilderMap">
+			<map>
+				<entry key="doctor"
+					value="com.nv.netmd.util.filter.queryBuilder.DoctorQueryBuilder" />
+				<entry key="patient"
+					value="com.nv.netmd.util.filter.queryBuilder.PatientQueryBuilder" />
+				<entry key="case"
+					value="com.nv.netmd.util.filter.queryBuilder.CaseQueryBuilder" />
+				<entry key="medicalRecord"
+					value="com.nv.netmd.util.filter.queryBuilder.MedicalQueryBuilder" />
+				<entry key="message"
+					value="com.nv.netmd.util.filter.queryBuilder.MessageQueryBuilder" />
+				<entry key="result"
+					value="com.nv.netmd.util.filter.queryBuilder.ResultQueryBuilder" />
+				<entry key="block"
+					value="com.nv.netmd.util.filter.queryBuilder.BlockQueryBuilder" />
+				<entry key="department"
+					value="com.nv.netmd.util.filter.queryBuilder.DepartmentQueryBuilder" />
+				<entry key="bedType"
+					value="com.nv.netmd.util.filter.queryBuilder.BedTypeQueryBuilder" />
+				<entry key="bed"
+					value="com.nv.netmd.util.filter.queryBuilder.BedQueryBuilder" />
+				<entry key="room"
+					value="com.nv.netmd.util.filter.queryBuilder.RoomQueryBuilder" />
+				<entry key="roomType"
+					value="com.nv.netmd.util.filter.queryBuilder.RoomTypeQueryBuilder" />
+				<entry key="tax"
+					value="com.nv.netmd.util.filter.queryBuilder.TaxQueryBuilder" />
+				<entry key="item"
+					value="com.nv.netmd.util.filter.queryBuilder.ItemQueryBuilder" />
+				<entry key="support"
+					value="com.nv.netmd.util.filter.queryBuilder.SupportQueryBuilder" />
+				<entry key="bill"
+					value="com.nv.netmd.util.filter.queryBuilder.BillQueryBuilder" />
+				<entry key="discount"
+					value="com.nv.netmd.util.filter.queryBuilder.DiscountQueryBuilder" />
+				<entry key="advance"
+					value="com.nv.netmd.util.filter.queryBuilder.AdvanceQueryBuilder" />
+				<entry key="head"
+					value="com.nv.netmd.util.filter.queryBuilder.AccountHeadQueryBuilder" />
+				<entry key="expense"
+					value="com.nv.netmd.util.filter.queryBuilder.ExpenseQueryBuilder" />
+				<entry key="settings"
+					value="com.nv.netmd.util.filter.queryBuilder.SettingsQueryBuilder" />
+				<entry key="questionnaire"
+					value="com.nv.netmd.util.filter.queryBuilder.AntenatalQueryBuilder" />
+			</map>
+		</property>
+
+	</bean>
+
+	<bean id="filter.Factory" class="com.nv.netmd.util.filter.core.FilterFactory">
+		<property name="filterMap">
+			<map>
+				<entry key="eq" value="com.nv.netmd.util.filter.filters.EqualFilter" />
+				<entry key="neq" value="com.nv.netmd.util.filter.filters.NotEqualFilter" />
+				<entry key="like" value="com.nv.netmd.util.filter.filters.LikeFilter" />
+				<entry key="gt"
+					value="com.nv.netmd.util.filter.filters.GreaterThanFilter" />
+				<entry key="ge"
+					value="com.nv.netmd.util.filter.filters.GreaterThanOrEqualFilter" />
+				<entry key="le"
+					value="com.nv.netmd.util.filter.filters.LessThanOrEqualFilter" />
+				<entry key="lt" value="com.nv.netmd.util.filter.filters.LessThanFilter" />
+			</map>
+		</property>
+	</bean>
+	<bean id="task.Scheduler" class="com.nv.netmd.common.NetMdTaskScheduler">
+		<property name="syncService" ref="sync.service"></property>
+		 <property name="pingUrl">
+			<value>${ping.url}</value>
+		</property> 
+	</bean>
+
+	<bean id="sync.service" class="com.nv.netmd.sync.bl.impl.SyncServiceImpl">
+		<property name="syncDao">
+			<ref bean="sync.Dao" />
+		</property>
+		<property name="syncValidator">
+			<ref bean="sync.Validator" />
+		</property>
+		<property name="doctorDao">
+			<ref bean="doctor.Dao" />
+		</property>
+		<property name="patientDao">
+			<ref bean="patient.dao" />
+		</property>
+		<property name="scheduleDao">
+			<ref bean="schedule.Dao" />
+		</property>
+		<property name="appointmentDao">
+			<ref bean="appointment.Dao" />
+		</property>
+		<property name="appointmentService">
+			<ref bean="appointment.Service" />
+		</property>
+		<property name="patientService">
+			<ref bean="patient.service" />
+		</property>
+		<property name="doctorService">
+			<ref bean="doctor.service" />
+		</property>
+		<property name="scheduleService">
+			<ref bean="schedule.Service" />
+		</property>
+		<property name="resultService">
+			<ref bean="result.Service" />
+		</property>
+		<property name="billDao">
+			<ref bean="bill.dao" />
+		</property>
+		<property name="questionDao">
+			<ref bean="question.dao" />
+		</property>
+		
+	</bean>
+	<bean id="sync.Dao" class="com.nv.netmd.sync.pl.impl.SyncDaoImpl"
+		parent="generic.dao">
+		<property name="serverUrl">
+			<value>${server.url}</value>
+		</property>
+	</bean>
+	<bean id="sync.Validator" class="com.nv.netmd.sync.bl.validator.SyncValidator"></bean>
+	<bean id="messageFilter.Service" class="com.nv.netmd.util.filter.list.MessageList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+
+	<bean id="message.Service" class="com.nv.netmd.business.bl.impl.MessageServiceImpl">
+		<property name="messageFilterService">
+			<ref bean="messageFilter.Service" />
+		</property>
+		<property name="messageDao">
+			<ref bean="message.Dao" />
+		</property>
+	</bean>
+	<bean id="message.Dao" class="com.nv.netmd.business.pl.impl.MessageDaoImpl"
+		parent="generic.dao">
+	</bean>
+
+	<bean id="permission.service" class="com.nv.netmd.security.permission.impl.NetmdPermissions"
+		init-method="init">
+		<property name="authenticationDao">
+			<ref bean="authentication.dao" />
+		</property>
+
+		<property name="enumList">
+			<list>
+				<value>com.nv.netmd.security.permission.impl.PatientEnum</value>
+
+			</list>
+		</property>
+	</bean>
+
+	<bean id="department.Service" class="com.nv.netmd.settings.bl.impl.DepartmentServiceImpl">
+		<property name="departmentValidator">
+			<ref bean="department.validator" />
+		</property>
+		<property name="departmentDao">
+			<ref bean="department.dao" />
+		</property>
+		<property name="departmentFilterService">
+			<ref bean="departmentFilter.Service" />
+		</property>
+	</bean>
+	<bean id="departmentFilter.Service" class="com.nv.netmd.util.filter.list.DepartmentList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="department.validator" class="com.nv.netmd.settings.bl.validator.DepartmentValidator"></bean>
+	<bean id="department.dao" class="com.nv.netmd.settings.pl.impl.DepartmentDaoImpl"
+		parent="generic.dao">
+	</bean>
+
+	<bean id="block.Service" class="com.nv.netmd.settings.bl.impl.BlockServiceImpl">
+		<property name="blockValidator">
+			<ref bean="block.validator" />
+		</property>
+		<property name="blockDao">
+			<ref bean="block.dao" />
+		</property>
+		<property name="blockFilterService">
+			<ref bean="blockFilter.Service" />
+		</property>
+	</bean>
+	<bean id="support.Service" class="com.nv.netmd.settings.bl.impl.SupportServiceImpl">
+		<property name="supportValidator">
+			<ref bean="support.validator" />
+		</property>
+		<property name="supportDao">
+			<ref bean="support.dao" />
+		</property>
+		<property name="supportFilterService">
+			<ref bean="supportFilter.Service" />
+		</property>
+	</bean>
+	<bean id="support.validator" class="com.nv.netmd.settings.bl.validator.SupportValidator">
+	</bean>
+	<bean id="support.dao" class="com.nv.netmd.settings.pl.impl.SupportDaoImpl"></bean>
+
+	<bean id="supportFilter.Service" class="com.nv.netmd.util.filter.list.SupportList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="bed.Service" class="com.nv.netmd.settings.bl.impl.BedServiceImpl">
+		<property name="bedValidator">
+			<ref bean="bed.validator" />
+		</property>
+		<property name="bedDao">
+			<ref bean="bed.dao" />
+		</property>
+		<property name="bedTypeFilterService">
+			<ref bean="bedTypeFilter.Service" />
+		</property>
+		<property name="bedFilterService">
+			<ref bean="bedFilter.Service" />
+		</property>
+	</bean>
+	<bean id="bed.validator" class="com.nv.netmd.settings.bl.validator.BedValidator">
+	</bean>
+	<bean id="bed.dao" class="com.nv.netmd.settings.pl.impl.BedDaoImpl"></bean>
+
+	<bean id="bedTypeFilter.Service" class="com.nv.netmd.util.filter.list.BedTypeList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+
+	<bean id="bedFilter.Service" class="com.nv.netmd.util.filter.list.BedList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="block.validator" class="com.nv.netmd.settings.bl.validator.BlockValidator"></bean>
+	<bean id="block.dao" class="com.nv.netmd.settings.pl.impl.BlockDaoImpl"
+		parent="generic.dao">
+	</bean>
+	<bean id="blockFilter.Service" class="com.nv.netmd.util.filter.list.BlockList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="room.Service" class="com.nv.netmd.settings.bl.impl.RoomServiceImpl">
+		<property name="roomValidator">
+			<ref bean="room.validator" />
+		</property>
+		<property name="roomDao">
+			<ref bean="room.dao" />
+		</property>
+		<property name="roomTypeFilterService">
+			<ref bean="roomTypeFilter.Service" />
+		</property>
+		<property name="roomFilterService">
+			<ref bean="roomFilter.Service" />
+		</property>
+
+	</bean>
+	<bean id="room.validator" class="com.nv.netmd.settings.bl.validator.RoomValidator"></bean>
+	<bean id="room.dao" class="com.nv.netmd.settings.pl.impl.RoomDaoImpl"
+		parent="generic.dao">
+	</bean>
+	<bean id="roomTypeFilter.Service" class="com.nv.netmd.util.filter.list.RoomTypeList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="roomFilter.Service" class="com.nv.netmd.util.filter.list.RoomList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="tax.Service" class="com.nv.netmd.settings.bl.impl.TaxServiceImpl">
+		<property name="taxValidator">
+			<ref bean="tax.validator" />
+		</property>
+		<property name="taxDao">
+			<ref bean="tax.dao" />
+		</property>
+		<property name="taxFilterService">
+			<ref bean="taxFilter.Service" />
+		</property>
+	</bean>
+	<bean id="taxFilter.Service" class="com.nv.netmd.util.filter.list.TaxList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	<bean id="tax.validator" class="com.nv.netmd.settings.bl.validator.TaxValidator"></bean>
+	<bean id="tax.dao" class="com.nv.netmd.settings.pl.impl.TaxDaoImpl"
+		parent="generic.dao">
+	</bean>
+
+	<bean id="item.Service" class="com.nv.netmd.settings.bl.impl.ItemServiceImpl">
+		<property name="itemValidator">
+			<ref bean="item.validator" />
+		</property>
+		<property name="itemDao">
+			<ref bean="item.dao" />
+		</property>
+		<property name="itemFilterService">
+			<ref bean="itemFilter.Service" />
+		</property>
+	</bean>
+	<bean id="item.validator" class="com.nv.netmd.settings.bl.validator.ItemValidator"></bean>
+	<bean id="item.dao" class="com.nv.netmd.settings.pl.impl.ItemDaoImpl"
+		parent="generic.dao">
+	</bean>
+	<bean id="itemFilter.Service" class="com.nv.netmd.util.filter.list.ItemList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+
+	<bean id="bill.Service" class="com.nv.netmd.billing.bl.impl.BillManager">
+		<property name="billValidator">
+			<ref bean="bill.validator" />
+		</property>
+		<property name="billDao">
+			<ref bean="bill.dao" />
+		</property>
+		<property name="taxService">
+			<ref bean="tax.Service" />
+		</property>
+		<property name="discountService">
+			<ref bean="discount.Service" />
+		</property>
+		<property name="billFilterService">
+			<ref bean="billFilter.Service" />
+		</property>
+
+	</bean>
+	<bean id="advance.Service" class="com.nv.netmd.billing.bl.impl.AdvanceManager">
+		<property name="validator">
+			<ref bean="advance.validator" />
+		</property>
+		<property name="advanceDao">
+			<ref bean="advance.dao" />
+		</property>
+		<property name="advanceFilterService">
+			<ref bean="advanceFilter.Service" />
+		</property>
+
+
+	</bean>
+	<bean id="advance.validator" class="com.nv.netmd.billing.bl.validator.AdvanceValidator"></bean>
+	<bean id="advance.dao" class="com.nv.netmd.billing.pl.impl.AdvanceDaoImpl"></bean>
+	<bean id="advanceFilter.Service" class="com.nv.netmd.util.filter.list.AdvanceList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+
+
+	<bean id="head.Service" class="com.nv.netmd.settings.bl.impl.HeadServiceImpl">
+		<property name="headValidator">
+			<ref bean="head.validator" />
+		</property>
+		<property name="headDao">
+			<ref bean="head.dao" />
+		</property>
+		<property name="headFilterService">
+			<ref bean="headFilter.Service" />
+		</property>
+
+	</bean>
+	<bean id="head.validator" class="com.nv.netmd.settings.bl.validator.HeadValidator"></bean>
+	<bean id="head.dao" class="com.nv.netmd.settings.pl.impl.HeadDaoImpl"></bean>
+	<bean id="headFilter.Service" class="com.nv.netmd.util.filter.list.HeadList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+
+
+
+
+	<bean id="expense.Service" class="com.nv.netmd.settings.bl.impl.ExpenseServiceImpl">
+		<property name="expenseValidator">
+			<ref bean="expense.validator" />
+		</property>
+		<property name="expenseDao">
+			<ref bean="expense.dao" />
+		</property>
+		<property name="expenseFilterService">
+			<ref bean="expenseFilter.Service" />
+		</property>
+	</bean>
+	<bean id="expense.validator" class="com.nv.netmd.settings.bl.validator.ExpenseValidator"></bean>
+	<bean id="expense.dao" class="com.nv.netmd.settings.pl.impl.ExpenseDaoImpl"></bean>
+	<bean id="expenseFilter.Service" class="com.nv.netmd.util.filter.list.ExpenseList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	
+	
+	<bean id="settings.Service" class="com.nv.netmd.settings.bl.impl.SettingsServiceImpl">
+		<property name="settingsValidator">
+			<ref bean="settings.validator" />
+		</property>
+		<property name="settingsDao">
+			<ref bean="settings.dao" />
+		</property>
+		<property name="settingsFilterService">
+			<ref bean="settingsFilter.Service" />
+		</property>
+	</bean>
+	<bean id="settings.validator" class="com.nv.netmd.settings.bl.validator.SettingsValidator"></bean>
+	<bean id="settings.dao" class="com.nv.netmd.settings.pl.impl.SettingsDaoImpl">
+	</bean>
+	<bean id="settingsFilter.Service" class="com.nv.netmd.util.filter.list.SettingsList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+
+	<bean id="bill.validator" class="com.nv.netmd.billing.bl.validator.BillValidator"></bean>
+	<bean id="bill.dao" class="com.nv.netmd.billing.pl.impl.BillDaoImpl"
+		parent="generic.dao">
+	</bean>
+
+	<bean id="discount.Service" class="com.nv.netmd.discount.bl.impl.DiscountServiceImpl">
+		<property name="discountValidator">
+			<ref bean="discount.validator" />
+		</property>
+		<property name="discountDao">
+			<ref bean="discount.dao" />
+		</property>
+		<property name="discountFilterService">
+			<ref bean="discountFilter.Service" />
+		</property>
+	</bean>
+	<bean id="discount.validator" class="com.nv.netmd.discount.bl.validator.DiscountValidator"></bean>
+	<bean id="discount.dao" class="com.nv.netmd.discount.pl.impl.DiscountDaoImpl"
+		parent="generic.dao">
+	</bean>
+	<bean id="discountFilter.Service" class="com.nv.netmd.util.filter.list.DiscountList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+
+	<bean id="billFilter.Service" class="com.nv.netmd.util.filter.list.BillList">
+		<property name="queryBuilderFactory">
+			<ref bean="queryBuilder.Factory" />
+		</property>
+		<property name="filterFactory">
+			<ref bean="filter.Factory" />
+		</property>
+	</bean>
+	
+	<bean id="qa.sync.listener" class="com.nv.netmd.questionnaire.QuestionAnswerSyncHandler">
+	    <property name="url">
+			<value>${sync.url}</value>
+		</property> 
+		<property name="questionDao">
+			<ref bean="question.dao" />
+		</property> 
+	</bean>
+	
+<!-- 	<bean id="sync.agent" class="com.nv.netmd.sync.SynchronizationAgent"> -->
+<!-- 	    <property name="syncIntervel"> -->
+<!-- 			<value>${sync.intervel}</value> -->
+<!-- 		</property>  -->
+<!-- 	</bean> -->
+	
+	<bean id="sync.agent" class="com.nv.netmd.sync.SynchronizationAgent" init-method="start">
+	    <property name="syncListeners">
+		    <list>
+		       <ref bean="qa.sync.listener"/>    
+		    </list>  
+	    </property>  
+	   <property name="questionDao">
+			<ref bean="question.dao" />
+		</property> 
+	     <property name="syncIntervel">
+			<value>${sync.intervel}</value>
+		</property> 
+		 <property name="pingUrl">
+			<value>${ping.url}</value>
+		</property> 
+	</bean>
+	
+</beans>		
+	

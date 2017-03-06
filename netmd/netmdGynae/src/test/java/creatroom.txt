@@ -1,0 +1,7 @@
+{
+    "roomNumber": "1",
+    "roomTypeId": 4,
+    "blockId": 2,
+    "departmentId": 4,
+    "description": ""
+}

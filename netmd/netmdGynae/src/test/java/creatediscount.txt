@@ -1,0 +1,7 @@
+{
+    "name": "sanu",
+    "description": "",
+    "discType": "OnDemand",
+    "discValue": 0,
+    "calculationType": "Percentage"
+}

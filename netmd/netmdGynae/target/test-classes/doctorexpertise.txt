@@ -1,0 +1,10 @@
+{
+    "expertise": [
+        {
+            "id": 0,
+            "doctorId": 6,
+            "expertise": "ortho",
+            "actionName": "Add"
+        }
+    ]
+}	

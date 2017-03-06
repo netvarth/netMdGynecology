@@ -1,0 +1,10 @@
+{
+    "billUid": "IP12",
+    "billDiscountList": [
+        {
+            "discountId": 2,
+            "discountValue": "15.00",
+            "actionName": "Add"
+        }
+    ]
+}

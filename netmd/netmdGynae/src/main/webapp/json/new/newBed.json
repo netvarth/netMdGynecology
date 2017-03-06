@@ -1,0 +1,123 @@
+{
+    "title": " Create Bed",
+    "style": "width:40%;margin:0 30%",
+    "data": [
+        {
+            "name": "newBed",
+            "id": "newBed",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewBedData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "bedNo",
+                                            "id": "bedNo",
+                                            "type": "text",
+                                            "className": "large",
+                                            "title": "Bed No: ",
+											"required":"true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "roomNo",
+                                            "id": "roomNo",
+                                            "type": "text",
+                                            "className": "large",
+                                            "title": "Room No: ",
+											"required":"true"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "bedtype",
+                                            "id": "bedtype",
+                                            "type": "select",
+                                            "className": "select",
+                                            "style": "width:100%",
+                                            "title": "Bed-Type",
+											"required":"true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "description",
+                                            "id": "description",
+                                            "type": "textarea",
+                                            "className": "large",
+                                            "title": "Description"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnBedSave",
+                                                "id": "btnBedSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;"
+                                            },
+                                            {
+                                                "name": "btnBedCancel",
+                                                "id": "btnBedCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity: 1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

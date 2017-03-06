@@ -1,0 +1,25 @@
+{
+    "data": [
+        {
+            "id": "patientListTableCont",
+            "elements": [
+				{
+                    "type": "table",
+                    "content": {
+                        "name" : "patient",
+						"idProperty" : "patient",
+						"className" :"stdtable stdtablecb",
+						"style":"border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+						"colHeaders" : [
+							{ "className" : "head1",	"name" : "No:", "style":"width:10%"},
+							{ "className" : "head0",	"name" : "Name", "style":"width:20%"},
+							{ "className" : "head1",	"name" : "Mobile/Phone", "style":"width:20%"},
+							{ "className" : "head0",	"name" : "Email", "style":"width:30%"}
+							
+						]
+                    }
+                }
+            ]
+        }
+    ]
+}

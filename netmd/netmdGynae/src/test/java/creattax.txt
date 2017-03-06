@@ -1,0 +1,6 @@
+{
+    "name": "sruthi s nair",
+    "calculationType": "Fixed",
+    "taxVal": 56,
+    "description": ""
+}

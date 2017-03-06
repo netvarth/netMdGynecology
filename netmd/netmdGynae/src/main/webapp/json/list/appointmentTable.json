@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "id": "appointmentTableCont",
+            "elements": [
+				{
+                    "type": "table",
+                    "content": {
+                        "name" : "appointment",
+						"idProperty" : "appointment",
+						"className" :"stdtable stdtablecb",
+						"style":"border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+						"colHeaders" : [
+							{ "className" : "head1",	 "style":"width:10%"},
+							{ "className" : "head1",	 "style":"width:90%"}
+							
+						]
+                    }
+                }
+            ]
+        }
+    ]
+} 

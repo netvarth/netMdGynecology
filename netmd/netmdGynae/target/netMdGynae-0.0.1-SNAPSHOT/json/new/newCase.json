@@ -1,0 +1,268 @@
+{
+    "title": "Create Case",
+    "style": "width:80%;margin:0 10%",
+    "data": [
+        {
+            "name": "newCase",
+            "id": "newCase",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewCase"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "id": "patientCaseAddDiv",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "patientName",
+                                            "id": "patientName",
+                                            "type": "text",
+                                            "className": "large capital",
+                                            "title": "Patient Name"
+                                        }
+                                    ]
+                                },
+								    {
+                                    "className": "column-left",
+									"style":"display:none",
+                                    "elements": [
+                                        {
+                                            "name": "patientId",
+                                            "id": "patientId",
+                                            "type": "newlabel",
+                                            "className": "",
+                                            "title": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "patientType",
+                                                    "id": "patientType",
+                                                    "type": "radio",
+                                                    "title": "Patient Type",
+                                                    "value": [
+                                                        {
+                                                            "title": "In Patient",
+                                                            "value": "InPatient",
+                                                            "checked": "true"
+                                                        },
+                                                        {
+                                                            "title": "Out Patient",
+                                                            "value": "OutPatient"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+											"id":"admittedDate",
+                                            "elements": [
+                                                {
+                                                    "name": "date",
+                                                    "id": "date",
+                                                    "type": "text",
+                                                    "className": "",
+                                                    "title": "Admitted Date"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "case",
+                                            "id": "case",
+                                            "tabIndex": 1,
+                                            "type": "text",
+											"required":"true",
+                                            "className": "large capital",
+                                            "title": "Case"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "department",
+                                            "id": "department",
+                                            "tabIndex": 2,
+                                            "type": "select",
+											"required":"true",
+                                            "className": "select",
+                                            "title": "Department"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "id": "question",
+                    "style": "display:none",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "questionnaire"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "id": "general",
+                    "style": "display:none",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "generalDetails",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "height",
+                                                    "id": "height",
+													"tabIndex": 3,
+                                                    "type": "text",
+													"className": "medium",
+                                                    "title": "Height (meters)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "weight",
+                                                    "id": "weight",
+                                                    "tabIndex": 4,
+                                                    "type": "text",
+                                                    "className": "medium",
+                                                    "title": "Weight (Kg)"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "bmi",
+                                                    "id": "bmi",
+                                                    "type": "newlabel",
+													"className": "medium",
+                                                    "title": "BMI"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "hb",
+                                                    "id": "hb",
+                                                    "tabIndex": 6,
+                                                    "type": "text",
+                                                   "className": "medium",
+                                                    "title": "Hb Count"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "five_sixth",
+                                    "id": "desc",
+                                    "style": "display:none",
+                                    "elements": [
+                                        {
+                                            "name": "description",
+                                            "id": "description",
+                                            "tabIndex": 7,
+                                            "type": "textarea",
+                                            "style": "height: 100px;padding: none;float: left;",
+                                            "className": "largecapital",
+                                            "title": "Description",
+                                            "required": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnCaseSave",
+                                                "id": "btnCaseSave",
+                                                "tabIndex": 4,
+                                                "title": "Save",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;margin: 4px;float: left"
+                                            },
+                                            {
+                                                "name": "btnCaseCancel",
+                                                "id": "btnCaseCancel",
+                                                "title": "Clear",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity: 1;margin: 4px;float: left"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

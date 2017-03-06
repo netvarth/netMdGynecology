@@ -1,0 +1,145 @@
+{
+    "title": " Create Room",
+    "style": "width:40%;margin:0 30%",
+    "data": [
+        {
+            "name": "newRoom",
+            "id": "newRoom",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewRoomData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        
+                                                                                {
+                                            "name": "roomNo",
+                                            "id": "roomNo",
+                                            "type": "text",
+                                            "className": "large",
+                                            "title": "Room No: ",
+											"required":"true"
+                                      
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+									{
+                                            "name": "type",
+                                            "id": "type",
+                                            "type": "select",
+                                            "className": "select",
+											"style":"width:100%",
+                                            "title": "Type",
+											"required":"true"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+									{
+                                            "name": "department",
+                                            "id": "department",
+                                            "type": "select",
+                                            "className": "select",
+											"style":"width:100%",
+                                            "title": "Department"
+                                        }
+                                       
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "block",
+                                            "id": "block",
+                                            "type": "select",
+                                            "className": "select",
+											"style":"width:100%",  
+											"title": "Block",
+											"required":"true"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "name": "description",
+                                            "id": "description",
+                                            "type": "textarea",
+                                            "className": "large",
+                                            "title": "Description"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnRoomSave",
+                                                "id": "btnRoomSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;"
+                                            },
+                                            {
+                                                "name": "btnRoomCancel",
+                                                "id": "btnRoomCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity: 1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

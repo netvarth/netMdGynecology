@@ -1,0 +1,7 @@
+{
+    "id": 4,
+    "type": "large",
+    "rent": "200.00",
+    "count": "1",
+    "noOfBeds": "3"
+}

@@ -1,0 +1,14 @@
+{
+    "firstName": "vinu",
+    "lastName": "5",
+    "phone": "24356",
+    "mobile": "0976433",
+    "dob": "2013-03-06",
+    "gender": "Male",
+    "email": "vinu@gmail.com",
+    "age": 1,
+    "address": "erty5rugfh",
+    "bloodGroup": "B",
+    "rh": "positive",
+    "medicalHistory": []
+}

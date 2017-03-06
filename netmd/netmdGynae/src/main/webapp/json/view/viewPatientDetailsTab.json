@@ -1,0 +1,43 @@
+[
+    {
+        "name": "PersonalInfo",
+        "title": "Personal Details",
+        "id": "personalInfoTab",
+        "content": [
+            {}
+        ]
+    },
+    {
+        "name": "Cases",
+        "title": "Cases",
+        "id": "casesInfoTab",
+        "content": [
+            {}
+        ]
+    },
+    {
+        "name": "Visits",
+        "title": "Visits",
+        "id": "visitsInfoTab",
+        "content": [
+            {
+			}
+        ]
+    },
+    {
+        "name": "Medical Records",
+        "title": "Medical Records",
+        "id": "medicalRecordInfoTab",
+        "content": [
+            {}
+        ]
+    },
+    {
+        "name": "Labs",
+        "title": "Lab Tests",
+        "id": "labsInfoTab",
+        "content": [
+            {}
+        ]
+    }
+]

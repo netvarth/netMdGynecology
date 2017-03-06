@@ -1,0 +1,507 @@
+{
+    "name": "viewPatient",
+    "id": "viewPatient",
+    "content": [
+        {
+            "className": "sep-div-view",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "type": "newlabel",
+                                    "title": "Patient Details",
+                                    "style": "font-size:14px;font-weight:bold;text-decoration:underline;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "column-left",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "firstName",
+                                    "id": "firstName",
+                                    "type": "text",
+									"readonly":"readonly",
+                                    "className": "newBox large capital",
+                                    "title": "First Name",
+                                    "required": true
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "lastName",
+                                    "id": "lastName",
+                                    "tabIndex": 3,
+                                    "type": "text",
+									"readonly":"readonly",
+                                    "className": "newBox large capital",
+                                    "title": "Last Name",
+									"required": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "phone",
+                                    "id": "phone",
+                                    "type": "text",
+									"readonly":"readonly",
+                                    "className": "newBox large capital",
+                                    "title": "Phone"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "mobile",
+                                    "id": "mobile",
+                                    "type": "text",
+									"readonly":"readonly",
+                                    "className": "newBox large capital",
+                                    "title": "Mobile"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "dob",
+                                            "id": "dob",
+                                            "type": "text",
+											"readonly":"readonly",
+                                            "className": "newBox large capital",
+                                            "title": "DOB"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "id": "viewGender",
+                                    "elements": [
+                                        {
+                                            "name": "lblGender",
+                                            "id": "lblGender",
+                                            "type": "newlabel",
+                                            "title": "Gender",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "style": "display:none;",
+                                    "id": "editGender",
+                                    "elements": [
+                                        {
+                                            "name": "lblEditGender",
+                                            "id": "lblEditGender",
+                                            "type": "radio",
+                                            "title": "Gender",
+                                            "value": [
+                                                {
+                                                    "title": "Male",
+                                                    "id": "male",
+                                                    "value": "Male"
+                                                },
+                                                {
+                                                    "title": "Female",
+                                                    "id": "female",
+                                                    "value": "Female"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "email",
+                                    "id": "email",
+                                    "type": "text",
+									"readonly":"readonly",
+                                    "className": "newBox large",
+                                    "title": "Email"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "age",
+                                            "id": "age",
+                                            "type": "text",
+											"readonly":"readonly",
+                                            "className": "newBox large capital",
+                                            "title": "Age"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "id": "viewEducation",
+                                    "elements": [
+                                        {
+                                            "name": "educationlbl",
+                                            "id": "educationlbl",
+                                            "type": "newlabel",
+                                            "className": "newBox large capital",
+                                            "title": "Education"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "id": "editEducation",
+                                    "style": "display:none",
+                                    "elements": [
+                                        {
+                                            "name": "selectEducation",
+                                            "id": "selectEducation",
+                                            "type": "combined",
+                                            "title": "Education",
+                                            "items": [
+                                                {
+                                                    "name": "education",
+                                                    "id": "education",
+                                                    "type": "select",
+                                                    "className": "select",
+                                                    "value": [
+                                                        {
+                                                            "title": "Select",
+                                                            "id": "select"
+                                                        },
+                                                        {
+                                                            "title": "None"
+                                                        },
+                                                        {
+                                                            "title": "Primary"
+                                                        },
+                                                        {
+                                                            "title": "Secondary"
+                                                        },
+                                                        {
+                                                            "title": "HigherSecondary"
+                                                        },
+                                                        {
+                                                            "title": "Graduate"
+                                                        },
+                                                        {
+                                                            "title": "Others"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+								  {
+                    "className": "five_sixth",
+                    "data": [
+                                {
+                                    "className": "column-left",
+                                    "id": "viewBloodGrp",
+                                    "elements": [
+                                        {
+                                            "name": "bloodGrouplbl",
+                                            "id": "bloodGrouplbl",
+                                            "type": "newlabel",
+                                            "title": "Blood Group"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-left",
+                                    "id": "editBloodGrp",
+                                    "style": "display:none",
+                                    "elements": [
+                                        {
+                                            "name": "selectBloodGrp",
+                                            "id": "selectBloodGrp",
+                                            "type": "combined",
+                                            "title": "Blood Group",
+                                            "items": [
+                                                {
+                                                    "name": "bloodGroup",
+                                                    "id": "bloodGroup",
+                                                    "type": "select",
+                                                    "className": "select",
+                                                    "value": [
+                                                        {
+                                                            "title": "Select",
+                                                            "id": "select"
+                                                        },
+                                                        {
+                                                            "title": "A"
+                                                        },
+                                                        {
+                                                            "title": "B"
+                                                        },
+                                                        {
+                                                            "title": "O"
+                                                        },
+                                                        {
+                                                            "title": "AB"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "id": "viewRh",
+                                    "elements": [
+                                        {
+                                            "name": "rhlbl",
+                                            "id": "rhlbl",
+                                            "type": "newlabel",
+                                            "title": "Rh"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "id": "editRh",
+                                    "style": "display:none",
+                                    "elements": [
+                                        {
+                                            "name": "rhSign",
+                                            "id": "rhSign",
+                                            "type": "combined",
+                                            "title": "Rh",
+                                            "items": [
+                                                {
+                                                    "name": "rh",
+                                                    "id": "rh",
+                                                    "type": "select",
+                                                    "className": "select",
+                                                    "value": [
+                                                        {
+                                                            "title": "Select",
+                                                            "id": "select"
+                                                        },
+                                                        {
+                                                            "title": "+ve",
+                                                            "id": "Positive"
+                                                        },
+                                                        {
+                                                            "title": "-ve",
+                                                            "id": "Negative"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }]
+						},
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "address",
+                                    "id": "address",
+                                    "type": "textarea",
+                                    "className": "newBox large",
+                                    "title": "Address",
+									"readonly":"readonly",
+                                    "style": "height:82px;padding:none;",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "type": "newlabel",
+                                    "title": "Medical History",
+                                    "style": "font-size:14px;font-weight:bold;text-decoration:underline;"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "allergies",
+                                    "id": "allergies",
+                                    "type": "textarea",
+									"readonly":"readonly",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large capital",
+                                    "title": "Allergies"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "familyHistory",
+                                    "id": "familyHistory",
+                                    "type": "textarea",
+									"readonly":"readonly",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large capital",
+                                    "title": "Family History"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "ailment",
+                                    "id": "ailment",
+                                    "type": "textarea",
+									"readonly":"readonly",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large capital",
+                                    "title": "Ailment",
+                                    "required": true
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "diagnosis",
+                                    "id": "diagnosis",
+                                    "type": "textarea",
+									"readonly":"readonly",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large",
+                                    "title": "Diagonosis",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "chronicDiseases",
+                                    "id": "chronicDiseases",
+                                    "type": "textarea",
+									"readonly":"readonly",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large capital",
+                                    "title": "Chronic Diseases"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "className": "sep-div-view",
+            "style": "margin-bottom:5px",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnPatientEdit",
+                                        "id": "btnPatientEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;margin:4px;float:right"
+                                    },
+                                    {
+                                        "name": "btnPatientSave",
+                                        "id": "btnPatientSave",
+                                        "title": "Done",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;margin:4px;float:right;display:none;"
+                                    },
+                                    {
+                                        "name": "btnPatientCancel",
+                                        "id": "btnPatientCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;margin:4px;float:right;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="netmdPU">
+		<class>com.nv.netmd.pl.entity.BedTbl</class>
+		<class>com.nv.netmd.pl.entity.BedTypeTbl</class>
+		<class>com.nv.netmd.pl.entity.BlockTbl</class>
+		<class>com.nv.netmd.pl.entity.DepartmentTbl</class>
+		<class>com.nv.netmd.pl.entity.DoctorEducationalQualificationTbl</class>
+		<class>com.nv.netmd.pl.entity.DoctorPracticeExperienceTbl</class>
+		<class>com.nv.netmd.pl.entity.DoctorScheduleTbl</class>
+		<class>com.nv.netmd.pl.entity.DoctorTbl</class>
+		<class>com.nv.netmd.pl.entity.LoginTbl</class>
+		<class>com.nv.netmd.pl.entity.NetmdTbl</class>
+		<class>com.nv.netmd.pl.entity.PatientAppointmentTbl</class>
+		<class>com.nv.netmd.pl.entity.PatientMedicalHistoryTbl</class>
+		<class>com.nv.netmd.pl.entity.PatientTbl</class>
+		<class>com.nv.netmd.pl.entity.ResultTbl</class>
+		<class>com.nv.netmd.pl.entity.SeriesTbl</class>
+		<class>com.nv.netmd.pl.entity.SyncTbl</class>
+		<class>com.nv.netmd.pl.entity.CaseTbl</class>
+		<class>com.nv.netmd.pl.entity.DoctorAchievementTbl</class>
+		<class>com.nv.netmd.pl.entity.DoctorExpertiseTbl</class>
+		<class>com.nv.netmd.pl.entity.DoctorMembershipTbl</class>
+		<class>com.nv.netmd.pl.entity.MedicalRecordTbl</class>
+		<class>com.nv.netmd.pl.entity.NetmdBranchTbl</class>
+		<class>com.nv.netmd.pl.entity.NetmdUserTbl</class>	
+		<class>com.nv.netmd.pl.entity.RoleGroupPermTbl</class>
+		<class>com.nv.netmd.pl.entity.RoleTbl</class>	
+		<class>com.nv.netmd.pl.entity.RoomTbl</class>
+		<class>com.nv.netmd.pl.entity.RoomTypeTbl</class>
+		<class>com.nv.netmd.pl.entity.SeriesTbl</class>
+		<class>com.nv.netmd.pl.entity.SupportTbl</class>
+		<class>com.nv.netmd.pl.entity.SyncTbl</class>
+		<class>com.nv.netmd.pl.entity.TaxTbl</class>	
+		<class>com.nv.netmd.pl.entity.ItemTbl</class>	
+		<class>com.nv.netmd.pl.entity.BillBedTbl</class>
+		<class>com.nv.netmd.pl.entity.BillDiscountTbl</class>
+		<class>com.nv.netmd.pl.entity.BillHistoryTbl</class>
+		<class>com.nv.netmd.pl.entity.BillItemTbl</class>
+		<class>com.nv.netmd.pl.entity.BillPaymentTbl</class>
+		<class>com.nv.netmd.pl.entity.BillSupportTbl</class>
+		<class>com.nv.netmd.pl.entity.BillTbl</class>
+		<class>com.nv.netmd.pl.entity.SequenceTbl</class>		
+		<properties>
+		    
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+		</properties>
+	</persistence-unit>
+</persistence>
+

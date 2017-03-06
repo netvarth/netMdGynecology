@@ -1,0 +1,185 @@
+/**
+ * BlockResource.java
+ * @author Sreeram T G 
+ *
+ * Version 1.0 Jul 26, 2013
+ *
+ * Copyright (c) 2013 Netvarth Technologies, Inc.
+ * All rights reserved.
+ *
+ */
+package com.nv.netmd.settings.rs.ui;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import com.nv.netmd.exception.ServiceException;
+import com.nv.netmd.rs.dto.BlockDTO;
+import com.nv.netmd.rs.dto.ErrorDTO;
+import com.nv.netmd.rs.dto.FilterDTO;
+import com.nv.netmd.rs.dto.Parameter;
+import com.nv.netmd.rs.dto.BlockListResponseDTO;
+import com.nv.netmd.rs.dto.ResponseDTO;
+import com.nv.netmd.settings.bl.service.BlockService;
+
+/**
+ *
+ *
+ * @author Sreeram T G
+ */
+@Controller
+@RequestMapping("ui/block/")
+public class BlockResource {
+	private BlockService blockService;
+	@RequestMapping(value = "create", method = RequestMethod.POST)
+	@ResponseBody
+	public ResponseDTO create(@RequestBody BlockDTO block){
+		ResponseDTO response = new ResponseDTO();
+		try {
+			response = blockService.create(block);			
+
+		} catch (ServiceException e) {
+
+			List<Parameter> parameters = e.getParamList();
+			ErrorDTO error = new ErrorDTO();
+			error.setErrCode(e.getError().getErrCode());
+			error.setParams(parameters);
+			error.setDisplayErrMsg(e.isDisplayErrMsg());
+			response.setError(error);
+			response.setSuccess(false);
+
+		}
+		return response;
+		
+	}
+	
+	@RequestMapping(value = "update", method = RequestMethod.POST)
+	@ResponseBody
+	public ResponseDTO update(@RequestBody BlockDTO block){
+		ResponseDTO response = new ResponseDTO();
+		try {
+			response = blockService.update(block);			
+
+		} catch (ServiceException e) {
+
+			List<Parameter> parameters = e.getParamList();
+			ErrorDTO error = new ErrorDTO();
+			error.setErrCode(e.getError().getErrCode());
+			error.setParams(parameters);
+			error.setDisplayErrMsg(e.isDisplayErrMsg());
+			response.setError(error);
+			response.setSuccess(false);
+
+		}
+		return response;
+		
+	}
+	
+	@RequestMapping(value = "view/{id}", method = RequestMethod.GET)
+	@ResponseBody
+	public BlockDTO view(@PathVariable int id) {
+		BlockDTO response=new BlockDTO();
+		try {
+			response = blockService.view(id);
+		} catch (ServiceException e) {
+
+			List<Parameter> parameters = e.getParamList();
+			ErrorDTO error = new ErrorDTO();
+			error.setErrCode(e.getError().getErrCode());
+			error.setParams(parameters);
+			error.setDisplayErrMsg(e.isDisplayErrMsg());
+			response.setError(error);
+			response.setSuccess(false);
+
+		}
+		return response;
+	}
+	@RequestMapping(value = "delete/{id}", method = RequestMethod.GET)
+	@ResponseBody
+	public ResponseDTO delete(@PathVariable int id) {
+		ResponseDTO response=new ResponseDTO();
+		try {
+			response = blockService.delete(id);
+		} catch (ServiceException e) {
+
+			List<Parameter> parameters = e.getParamList();
+			ErrorDTO error = new ErrorDTO();
+			error.setErrCode(e.getError().getErrCode());
+			error.setParams(parameters);
+			error.setDisplayErrMsg(e.isDisplayErrMsg());
+			response.setError(error);
+			response.setSuccess(false);
+
+		}
+		return response;
+	}
+	/**
+	 * block list
+	 * 
+	 * @param filterDTO
+	 * @return BlockListResponseDTO
+	 */
+	@RequestMapping(value = "list", method = RequestMethod.POST)
+	@ResponseBody
+	public BlockListResponseDTO getBlockList(
+			@RequestBody FilterDTO filterDTO) {
+		BlockListResponseDTO response = new BlockListResponseDTO();
+		try {
+			response = blockService.list(filterDTO);
+		} catch (ServiceException e) {
+
+			List<Parameter> parameters = e.getParamList();
+			ErrorDTO error = new ErrorDTO();
+			error.setErrCode(e.getError().getErrCode());
+			error.setParams(parameters);
+			error.setDisplayErrMsg(e.isDisplayErrMsg());
+			response.setError(error);
+			response.setSuccess(false);
+
+		}
+		return response;
+	}
+	/**
+	 * get block by name
+	 * 
+	 * 
+	 * @return BlockListResponseDTO
+	 */
+	@RequestMapping(value = "getBlocks", method = RequestMethod.GET)
+	@ResponseBody
+	public BlockListResponseDTO getBlocks() {
+		BlockListResponseDTO response = new BlockListResponseDTO();
+		try {
+			response = blockService.getBlocks();
+		} catch (ServiceException e) {
+
+			List<Parameter> parameters = e.getParamList();
+			ErrorDTO error = new ErrorDTO();
+			error.setErrCode(e.getError().getErrCode());
+			error.setParams(parameters);
+			error.setDisplayErrMsg(e.isDisplayErrMsg());
+			response.setError(error);
+			response.setSuccess(false);
+
+		}
+		return response;
+	}
+	/**
+	 * @return the blockService
+	 */
+	public BlockService getBlockService() {
+		return blockService;
+	}
+
+	/**
+	 * @param blockService the blockService to set
+	 */
+	public void setBlockService(BlockService blockService) {
+		this.blockService = blockService;
+	}
+}

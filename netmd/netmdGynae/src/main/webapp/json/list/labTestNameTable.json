@@ -1,0 +1,41 @@
+{
+    "className": "sep-div",
+    "id": "patientPersonalDiv",
+    "data": [
+        {
+            "className": "sep-div",
+            "id": "patientResultToolbarDiv"
+        },
+        {
+            "className": "sep-div",
+            "data": [
+                {
+                    "data": [
+                        {
+                            "id": "labResultTestTableCont",
+                            "elements": [
+                                {
+                                    "type": "table",
+                                    "content": {
+                                        "name": "labTestTable",
+                                        "idProperty": "labTestTable",
+                                        "className": "stdtable stdtablecb",
+                                        "style": "border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+                                        "colHeaders": [
+                                            {
+                                                "className": "head1",
+                                                "name": "Test Names",
+                                                "style": "width:100%"
+                                            }
+											
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

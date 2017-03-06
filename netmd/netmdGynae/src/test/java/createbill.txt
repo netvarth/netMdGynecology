@@ -1,0 +1,17 @@
+{
+    "patientId": 13,
+    "referralName": "",
+    "origin": "InPatient",
+    "grandTotal": "12.00",
+    "amountPaid": "12.00",
+    "item": [
+        {
+            "netRate": 12,
+            "itemId": 3,
+            "quantity": 1
+        }
+    ],
+    "bed": [],
+    "notes": "",
+    "support": []
+}

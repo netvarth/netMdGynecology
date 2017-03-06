@@ -1,0 +1,12 @@
+{
+     "id"=;
+	 "doctorId"=;
+	 "patientId"=;
+     "caseId"=;
+	 "caseName"=;
+     "doctorName"=;
+	 "type"=;
+	 "date"=;
+     "medicalRecord"=;
+	 "actionName"=;
+	 }

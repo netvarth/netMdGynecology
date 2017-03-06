@@ -1,0 +1,40 @@
+{	
+	"buttons":	[
+		{
+			"name" 	: 	"firstName",
+			"title"	:	"Referral Name",
+			"className":  "generalType",
+			"type":"text" 			
+		},
+		{
+			"name" 	: 	"specialization",
+			"title"	:	"Specialization",
+			"className":  "generalType" ,
+			"type":"text" 			
+		},
+		{
+			"name" 	: 	"email",
+			"title"	:	"Email",
+			"className":  "generalType",
+			"type":"text" 			
+		},
+		{
+			"name" 	: 	"mobile",
+			"title"	:	"Mobile",
+			"className":  "generalType",
+			"type":"text" 			
+		},
+		{
+			"name" 	: 	"status",
+			"title"	:	"Status",
+			"className":  "generalType",
+			"type":"text" 			
+		},
+		{
+			"name" 	: 	"address",
+			"title"	:	"Address",
+			"className":  "generalType",
+			"type":"text" 			
+		}
+	]
+}

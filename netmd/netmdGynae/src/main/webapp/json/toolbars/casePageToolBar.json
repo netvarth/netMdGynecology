@@ -1,0 +1,27 @@
+{
+    "buttons": [
+	    {   "name": "back",
+            "title": "back to PatientList"
+        },
+        {
+            "name": "createMedicalRecord",
+            "title": "createMedicalRecord"
+        },
+        {
+            "name": "listMedicalRecord",
+            "title": "listMedicalRecord"
+        },
+        {
+            "name": "delete",
+            "title": "Delete"
+        },
+        {
+            "name": "view",
+            "title": "view"
+        },
+        {
+            "name": "new",
+            "title": "New"
+        }
+    ]
+}

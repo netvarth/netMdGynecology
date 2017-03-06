@@ -1,0 +1,46 @@
+[
+    {
+        "testResult": [
+            {
+                "testLayout": "General",
+                "testName": "TC",
+                "analysis": [
+                    {
+                        "analysisType": "",
+                        "resultContent": [
+                            {
+                                "title": "",
+                                "resultParams": [
+                                    {
+                                        "values": [
+                                            {
+                                                "headerLabel": "Patient's Value",
+                                                "values": [
+                                                    {
+                                                        "displayType": "text",
+                                                        "unit": "/Cu.mm",
+                                                        "value": "5500"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "headerLabel": "Normal Range",
+                                                "values": [
+                                                    {
+                                                        "unit": "/Cu.mm",
+                                                        "value": "5000 - 10000"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "remarks": "low\n"
+            }
+        ]
+    }
+]

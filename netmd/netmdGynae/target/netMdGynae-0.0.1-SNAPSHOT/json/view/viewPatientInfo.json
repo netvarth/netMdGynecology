@@ -1,0 +1,430 @@
+{
+    "className": "sep-div box-content",
+    "id": "patientPersonalDiv",
+    "data": [
+		{
+            "className": "sep-div-view-Two heading",
+            "data": [
+                {
+                    "className": "sep-div-view-One-left",
+                    "id": "sepDivViewPersonalLeft" 
+                },
+                {
+                    "className": "sep-div-view-One-centre",
+                    "id": "sepDivViewPersonalCentre",
+                    "elements": [
+                        {
+                            "type": "label",
+                            "title": "Personal Info",
+                            "spanstyle": "font-size:15px;"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view-One-right",
+                    "id": "sepDivViewPersonalRight"
+                }
+            ]
+        },
+        {
+            "className": "sep-div details",
+			"style":"padding-left:10px;",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "patientid",
+                                            "id": "patientid",
+                                            "type": "newlabel",
+                                            "required": true,
+                                            "className": "newBox large capital",
+                                            "title": "Id"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "viewPatientFirstName",
+                                            "id": "viewPatientFirstName",
+                                            "type": "newlabel",
+                                            "className": "newBox large capital",
+                                            "title": "First Name",
+                                            "required": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "viewPatientLastName",
+                                            "id": "viewPatientLastName",
+                                            "tabIndex": 3,
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "Last Name"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [ 
+										{
+                                    "name": "viewPatientEmrNum",
+                                    "id": "viewPatientEmrNum",
+                                    "type": "text",
+                                    "className": "newBox large capital",
+                                    "title": "Emergency Number"
+                                }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "viewPatientAge",
+                                            "id": "viewPatientAge",
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "Age"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "id": "viewGender",
+                                    "elements": [
+                                        {
+                                            "name": "lblViewPatientGender",
+                                            "id": "lblViewPatientGender",
+                                            "type": "newlabel",
+                                            "title": "Gender",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "style": "display:none;",
+                                    "id": "lblPatientEditGender",
+                                    "elements": [
+                                        {
+                                            "name": "lblViewPatientGenderOne",
+                                            "id": "lblViewPatientGenderOne",
+                                            "type": "radio",
+                                            "title": "Gender",
+                                            "value": [
+                                                {
+                                                    "title": "Male",
+                                                    "id": "lblViewPatientGenderMale",
+                                                    "value": "Male"
+                                                },
+                                                {
+                                                    "title": "Female",
+                                                    "id": "lblViewPatientGenderFemale",
+                                                    "value": "Female"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "viewPatientPhone",
+                                            "id": "viewPatientPhone",
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "Phone"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "viewPatientMobile",
+                                            "id": "viewPatientMobile",
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "Mobile"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                            "name": "viewPatientEmail",
+                                            "id": "viewPatientEmail",
+                                            "type": "newlabel",
+                                            "readonly": true,
+                                            "className": "newBox large",
+                                            "title": "Email",
+                                            "required": true
+                                        }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "viewPatientAddress",
+                                    "id": "viewPatientAddress",
+                                    "type": "textarea",
+                                    "className": "newBox large",
+                                    "title": "Address",
+                                    "style": "height:82px;padding:none;",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "className": "sep-div-view-Two heading",
+            "data": [
+                {
+                    "className": "sep-div-view-One-left",
+                    "id": "sepDivViewMedicalLeft" 
+                },
+                {
+                    "className": "sep-div-view-One-centre",
+                    "id": "sepDivViewMedicalCentre",
+                    "elements": [
+                        {
+                            "type": "label",
+                            "title": "Medical Info",
+                            "spanstyle": "font-size:15px;"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div-view-One-right",
+                    "id": "sepDivViewMedicalRight"
+                }
+            ]
+        },
+        {
+            "className": "sep-div details",
+            "id": "medicalInfoDiv",
+			 "style": "display:none;padding-left:10px;",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "viewPatientHeight",
+                                            "id": "viewPatientHeight",
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "Height"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "viewPatientWeight",
+                                            "id": "viewPatientWeight",
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "Weight"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "viewPatientBloodGroup",
+                                            "id": "viewPatientBloodGroup",
+                                            "type": "text",
+                                            "className": "newBox large capital",
+                                            "title": "Blood Group"
+                                        }
+                                    ]
+                                }
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "viewPatientAllergies",
+                                    "id": "viewPatientAllergies",
+                                    "type": "textarea",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large capital",
+                                    "title": "Allergies"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "viewPatientFamilyHistory",
+                                    "id": "viewPatientFamilyHistory",
+                                    "type": "textarea",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large capital",
+                                    "title": "Family History"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "viewPatientAilment",
+                                    "id": "viewPatientAilment",
+                                    "type": "textarea",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large capital",
+                                    "title": "Ailment",
+                                    "required": true
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "viewPatientDiagonosis",
+                                    "id": "viewPatientDiagonosis",
+                                    "type": "textarea",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large",
+                                    "title": "Diagonosis",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "viewPatientChronicDiseases",
+                                    "id": "viewPatientChronicDiseases",
+                                    "type": "textarea",
+                                    "style": "height:82px;padding:none;",
+                                    "className": "newBox large capital",
+                                    "title": "Chronic Diseases"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "className": "sep-div",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "patientViewBtnEditOne",
+                                        "id": "patientViewBtnEditOne",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;margin:4px;float:right"
+                                    },
+                                    {
+                                        "name": "patientViewBtnSave",
+                                        "id": "patientViewBtnSave",
+                                        "title": "Done",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;margin:4px;float:right;display:none;"
+                                    },
+                                    {
+                                        "name": "patientViewBtnCancel",
+                                        "id": "patientViewBtnCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;margin:4px;float:right;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

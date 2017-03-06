@@ -1,0 +1,51 @@
+{
+    "className": "sep-div",
+    "id": "patientPersonalDiv",
+    "data": [
+	    {
+            "className": "sep-div",
+            "id": "medReportToolbarDiv"
+        },
+        {
+            "className": "sep-div",
+            "data": [
+                {
+                    "data": [
+                        {
+                            "id": "medicalReportTableTableCont",
+                            "elements": [
+                                {
+                                    "type": "table",
+                                    "content": {
+                                        "name": "medRecordTbl",
+                                        "idProperty": "medRecordTbl",
+                                        "className": "stdtable stdtablecb",
+                                        "style": "border-spacing:0;border-collapse:collapse; border:0;font-size: 12px;",
+                                        "colHeaders": [
+                                            {
+                                                "className": "head1",
+                                                "name": "Id",
+                                                "style": "width:20%"
+                                            },
+											{
+                                                "className": "head0",
+                                                "name": "Type",
+                                                "style": "width:20%"
+                                            },
+											{
+                                                "className": "head1",
+                                                "name": "Description",
+                                                "style": "width:60%"
+                                            }
+                                            
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

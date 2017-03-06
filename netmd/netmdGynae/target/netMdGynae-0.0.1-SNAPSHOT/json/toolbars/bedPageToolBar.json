@@ -1,0 +1,23 @@
+{
+    "buttons": [
+		 {	
+			  "name":"home",
+			  "title":"Home"
+	   },
+	   {
+            "name": "delete",
+            "title": "Delete"
+         
+        },
+        {
+            "name": "view",
+            "title": "view"
+          
+        },
+        {
+            "name": "new",
+            "title": "New"
+          
+        }
+    ]
+}

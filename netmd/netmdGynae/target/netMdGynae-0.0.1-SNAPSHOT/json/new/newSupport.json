@@ -1,0 +1,131 @@
+{
+    "title": " Create Service",
+    "style": "width:50%;margin:0 30%",
+    "data": [
+        {
+            "name": "newSupport",
+            "id": "newSupport",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewSupportData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "name",
+                                            "id": "name",
+                                            "type": "text",
+                                            "className": "large",
+                                            "title": "Name",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "className": "column-right",
+                                    "data": [
+                                        
+                                        {
+                                            "className": "column-one-verysmall",
+                                            "elements": [
+                                                {
+												
+													"name": "price",
+                                                    "id": "price",
+                                                    "type": "text",
+                                                    "className": "large",
+													"image": "/netmd/images/rupee-symbel.png",
+                                                    "title": "Price"
+                                                    
+                                                }
+                                            ]
+                                        },
+										{
+                                            "className": "column-three-fourth",
+                                            "elements": [
+                                                {
+												"name": "tax",
+                                                    "id": "tax",
+                                                    "type": "select",
+                                                    "className": "select",
+                                                    "style": "width:100%",
+                                                    "title": "Select tax"
+                                                    
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "five_sixth",
+                                    "elements": [
+                                        {
+                                            "name": "description",
+                                            "id": "description",
+                                            "type": "textarea",
+                                            "className": "large",
+                                            "title": "Description"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnSupportSave",
+                                                "id": "btnSupportSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity: 1;"
+                                            },
+                                            {
+                                                "name": "btnSupportCancel",
+                                                "id": "btnSupportCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity: 1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

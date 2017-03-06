@@ -1,0 +1,13 @@
+
+ {
+    "billUid": "IP12",
+    "item": [
+        {
+            "itemId": "3",
+            "quantity": 13,
+            "actionName": "Add"
+        }
+    ],
+    "bed": [],
+    "support": []
+}

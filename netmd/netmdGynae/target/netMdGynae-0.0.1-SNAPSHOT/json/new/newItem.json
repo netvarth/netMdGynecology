@@ -1,0 +1,141 @@
+{
+    "title": " Create Item",
+    "style": "width:40%;margin:0 30%",
+    "data": [
+        {
+            "name": "newItem",
+            "id": "newItem",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "style": "display:none",
+                    "id": "errorDivHeader",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "id": "errorDivNewItemData"
+                        }
+                    ]
+                },
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+                                        {
+                                            "name": "name",
+                                            "id": "name",
+                                            "type": "text",
+                                            "className": "large",
+                                            "title": "Item",
+                                            "required": true
+                                        }
+                                    ]
+                                },
+								{
+                                    "className": "column-right",
+                                    "data": [
+                                        {
+                                            "className": "column-left",
+                                            "elements": [
+                                                {
+                                                    "name": "price",
+                                                    "id": "price",
+                                                    "type": "text",
+                                                    "className": "large",
+													"image": "/netmd/images/rupee-symbel.png",
+                                                    "title": "Price"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "className": "column-right",
+                                            "elements": [
+                                                {
+                                                    "name": "quantity",
+                                                    "id": "quantity",
+                                                    "type": "text",
+                                                    "className": "large",
+                                                    "title": "Quantity"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                               
+                            ]
+                        },
+						{
+                            "className": "five_sixth",
+                            "data": [
+                                {
+                                    "className": "column-left",
+                                    "elements": [
+									{
+                                            "name": "tax",
+                                            "id": "tax",
+                                            "type": "select",
+                                            "className": "select",
+											"style":"width:100%",
+                                            "title": "Select tax"
+                                        }
+                                    ]
+                                },
+                                {
+                                     "className": "column-right",
+                                    "elements": [
+                                        {
+                                            "name": "description",
+                                            "id": "description",
+                                            "type": "textarea",
+                                            "className": "large",
+                                            "title": "Description",
+                                            "required": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },				
+                {
+                    "className": "sep-div",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "type": "button",
+                                    "content": {
+                                        "buttons": [
+                                            {
+                                                "name": "btnItemSave",
+                                                "id": "btnItemSave",
+                                                "title": "Create",
+                                                "type": "button",
+                                                "className": "stdbtn btn_black",
+                                                "style": "opacity:1;"
+                                            },
+                                            {
+                                                "name": "btnItemCancel",
+                                                "id": "btnItemCancel",
+                                                "title": "Cancel",
+                                                "type": "button",
+                                                "className": "stdbtn",
+                                                "style": "opacity:1;"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

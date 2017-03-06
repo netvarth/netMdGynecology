@@ -1,0 +1,71 @@
+{
+    "buttons": [
+        {
+            "title": "Dashboard",
+            "className": "dashboard",
+            "id":"leftPaneDashBoard",
+            "name": "leftPaneDashBoard"         
+        },
+		 {
+            "title": "Bills",
+			"id": "leftPaneBills",
+			"className": "bill",
+            "name": "leftPaneBills"
+        },
+        {
+            "title": "Doctors",
+			"id": "leftPaneReferrals",
+			"className": "doctor",
+            "name": "leftPaneReferrals",
+            "url":"/netmd/ws/ui/doctor/list"
+        },
+        {
+            "title": "My Profile",
+            "id": "leftPaneMyProfile",
+            "className": "doctor",
+            "name": "leftPaneMyProfile"
+           
+        },
+        {
+            "title": "Schedules",
+			"id": "leftPaneSchedules",
+			"className": "schedule",
+            "name": "leftPaneSchedules"
+           
+		},
+        {
+            "title": "Patients",
+			"id": "leftPanePatients",
+			"className": "patient",
+            "name": "leftPanePatients",
+            "url":"/netmd/ws/ui/doctor/list"
+        },
+		{
+            "title": "Cases",
+			"id": "leftPaneCaseList",
+			"className": "caseList",
+            "name": "leftPaneCaseList"
+        },
+		{
+            "title": "Appointments",
+			"id": "leftPaneAppointments",
+			"className": "appointment",
+            "name": "leftPaneAppointments"
+           
+        },
+		{
+            "title": "Accounts",
+			"id": "leftPaneAccounts",
+			"className": "accounts",
+            "name": "leftPaneAccounts"
+            
+        },
+		{
+            "title": "Settings",
+			"id": "leftPaneSettings",
+			"className": "settings",
+            "name": "leftPaneSettings"
+            
+        }
+    ]
+}

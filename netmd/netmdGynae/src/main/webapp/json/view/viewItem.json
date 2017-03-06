@@ -1,0 +1,160 @@
+{
+    "name": "viewItem",
+    "id": "viewItem",
+    "content": [
+        {
+            "className": "sep-div-view",
+            "data": [
+                {
+                    "className": "column-left",
+                    "data": [
+                        {
+                            "className": "column-one-fourth",
+                            "elements": [
+                                {
+                                    "name": "id",
+                                    "id": "id",
+                                    "type": "newlabel",
+                                    "style": "margin-left:6%",
+                                    "title": "Id"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-three-fourth",
+                            "elements": [
+                                {
+                                    "name": "name",
+                                    "id": "name",
+                                    "type": "text",
+                                    "readonly": "readonly",
+                                    "className": "newBox large",
+                                    "title": "Item"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "data": [
+                        {
+                            "className": "column-first",
+                            "elements": [
+                                {
+                                    "name": "price",
+                                    "id": "price",
+                                    "type": "text",
+                                    "readonly": "readonly",
+                                    "className": "newBox large",
+									"image": "/netmd/images/rupee-symbel.png",
+                                    "title": "Price"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-second",
+                            "elements": [
+                                {
+                                    "name": "quantity",
+                                    "id": "quantity",
+                                    "type": "text",
+                                    "readonly": "readonly",
+                                    "className": "newBox large",
+                                    "title": "Quantity"
+                                }
+                            ]
+                        }
+                      
+                    ]
+                },
+				{
+                    "className": "five_sixth",
+                    "data": [
+					{
+								"className": "column-left",
+								"id":"viewTax",
+								"elements": [
+									{
+										"name": "lbltax",
+										"id": "lbltax",
+										"type": "newlabel",
+										"title": "Tax"
+									}
+								]	
+								},
+								{
+								"className": "column-left",
+								"id":"editTax",
+								"style":"display:none",
+								"elements": [
+									{
+										"name": "tax",
+										"id": "tax",
+										"type": "select",
+										"className": "select",
+										"style":"width:100%",
+										"readonly": "readonly",
+										"title": "Select tax"
+									}
+								]	
+								},
+                                {
+                                "className": "column-right",
+                                "elements": [
+										{
+                                            "name": "description",
+                                            "id": "description",
+                                            "type": "textarea",
+                                            "readonly": "readonly",
+											"className": "newBox large",
+                                            "title": "Description",
+                                            "required": false
+                                        }
+                                    ]
+                                }
+                            ]
+                 }
+            ]
+        },
+        {
+            "className": "sep-div-view",
+            "style": "margin-bottom:5px",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnItemEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity: 1; float:left;"
+                                    },
+                                    {
+                                        "name": "btnItemSave",
+                                        "title": "Save",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;display:none;"
+                                    },
+                                    {
+                                        "name": "btnItemCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

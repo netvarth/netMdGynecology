@@ -1,0 +1,10 @@
+{	
+	"buttons":	[
+		{
+			"name" 	: 	"firstName",
+			"title"	:	"Patient Name",
+			"className":  "generalType" ,
+			"type":"text" 			
+		}
+	]
+}

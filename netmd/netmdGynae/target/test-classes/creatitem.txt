@@ -1,0 +1,8 @@
+{
+    "name": "para",
+    "price": 12,
+    "quantity": 50,
+    "taxId": 2,
+    "taxName": "sruthi s nair",
+    "description": ""
+}

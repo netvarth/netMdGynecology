@@ -1,0 +1,30 @@
+{
+    "title": "Contact Us",
+    "style": "width:60%;margin:0 20%",
+    "data": [
+        {
+            "name": "contactUsForm",
+            "id": "contactUsForm",
+            "content": [
+                {
+                    "className": "sep-div",
+                    "id": "referralsdiv",
+                    "data": [
+                        {
+                            "className": "five_sixth",
+                            "elements": [
+                                {
+                                    "name": "contact",
+                                    "id": "contact",
+                                    "type": "text",
+                                    "className": "newBox large capital",
+                                    "title": "Netvarth Technologies , Museum Cross Lane , Chembukkavu , Thrissur , Kerala , Phone: +91 487-232-5650 , Email: info@netvarth.com, Web: www.netvarth.com"		  
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

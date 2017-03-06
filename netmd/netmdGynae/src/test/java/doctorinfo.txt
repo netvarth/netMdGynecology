@@ -1,0 +1,20 @@
+{
+    "firstName": "Joshi",
+    "lastName": "",
+    "dateOfBirth": "",
+    "gender": "Male",
+    "workHistory": "",
+    "mobile": "",
+    "phone": "",
+    "email": "jo@ymail.com",
+    "address": "",
+    "workingPlaces": "",
+    "designation": "",
+    "specialization": "vhgh",
+    "consultationInterval": "",
+    "login": {
+        "password": "",
+        "userName": "jo@ymail.com",
+        "userType": "doctor"
+    }
+}

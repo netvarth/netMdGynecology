@@ -1,0 +1,202 @@
+{
+    "title": "New Questionnaire",
+    "name": "newGynaQuestionnaire",
+    "id": "newGynaQuestionnaire",
+    "data": [
+        {
+            "question": "Total antenatals registered?",
+            "id": "anteRegisered",
+            "qstnNmbr": 1,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "How many had BP and Protein checked?",
+            "id": "proteinChk",
+            "qstnNmbr": 2,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "Total preeclampsia patients?",
+            "id": "preeclampsia",
+            "qstnNmbr": 3,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "How many were treated as oral anti hypertensive?",
+            "id": "antihypertensive",
+            "qstnNmbr": 4,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "How many had severe hypertension?",
+            "id": "hypertension",
+            "qstnNmbr": 5,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "How many had parenteral anti hypersensitives started within 10 min?",
+            "id": "hypersensitives",
+            "qstnNmbr": 6,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "How many had HELLP syndrome?",
+            "id": "HELLP",
+            "qstnNmbr": 7,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "How many received treatment for HELLP?",
+            "id": "HELLPtreatment",
+            "qstnNmbr": 8,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "Total cases of Eclampsia+Severe pre-eclampsia?",
+            "id": "EclampsiaAndPreEclampsia",
+            "qstnNmbr": 9,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "How many were treated with MgSO4",
+            "id": "MgSO4",
+            "qstnNmbr": 10,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "How many were referred out for pl.prev.accreta?",
+            "id": "plprevaccreta",
+            "qstnNmbr": 11,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "How many cases had Cerebro Vascular Accidents?",
+            "id": "cerebrovascularaccidents",
+            "qstnNmbr": 12,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "Any severe morbidity not entered in the labour register?",
+            "id": "morbidity",
+            "qstnNmbr": 13,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "String",
+                    "className": "",
+                    "correlationRule": null
+                }
+            ]
+        },
+        {
+            "question": "Any maternal death not entered in the Labour register with primary cause?",
+            "id": "AntenatalMaternalDeath",
+            "qstnNmbr": 14,
+            "answer": [
+                {
+                    "format": null,
+                    "type": "select",
+                    "className": "select",
+                    "correlationRule": null,
+                    "attribute": [
+                        {
+                            "option": "YES"
+                        },
+                        {
+                            "option": "NO"
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+            "className": "sep-div",
+			"style":"dispaly:none;",
+            "id": "maternalDeathDetails"
+        }
+    ]
+}

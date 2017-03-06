@@ -1,0 +1,146 @@
+{
+    "name": "viewBedType",
+    "id": "viewBedType",
+    "content": [
+        {
+            "className": "sep-div-view",
+            "data": [
+                {
+                    "className": "column-left",
+                    "data": [
+                        {
+                            "className": "column-one-fourth",
+                            "elements": [
+                                {
+                                    "name": "id",
+                                    "id": "id",
+                                    "type": "newlabel",
+                                    "style": "margin-left:6%",
+                                    "title": "Id"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-three-fourth",
+                            "elements": [
+                                {
+                                    "name": "type",
+                                    "id": "type",
+                                    "type": "text",
+                                    "readonly": "readonly",
+                                    "className": "newBox large",
+                                    "title": "Type"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "column-right",
+                    "data": [
+                        {
+                            "className": "column-left",
+                            "elements": [
+                                {
+                                    "name": "rent",
+                                    "id": "rent",
+                                    "type": "text",
+									"readonly": "readonly",
+                                     "className": "newBox large",
+									 "image": "/netmd/images/rupee-symbel.png",
+                                    "title": "Rent"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-right",
+                            "elements": [
+                                {
+                                    "name": "count",
+                                    "id": "count",
+                                    "type": "text",
+                                    "readonly": "readonly",
+                                    "className": "newBox large",
+                                    "title": "Count"
+                                }
+                            ]
+                        }
+                    ]
+                },
+				{
+                    "className": "five_sixth",
+                    "data": [
+					{
+								"className": "column-left",
+								"id":"viewTax",
+								"elements": [
+									{
+										"name": "lbltax",
+										"id": "lbltax",
+										"type": "newlabel",
+										"title": "Tax"
+									}
+								]	
+								},
+								{
+								"className": "column-left",
+								"id":"editTax",
+								"style":"display:none",
+								"elements": [
+									{
+										"name": "tax",
+										"id": "tax",
+										"type": "select",
+										"className": "select",
+										"style":"width:100%",
+										"readonly": "readonly",
+										"title": "Select tax"
+									}
+								]	
+								}
+                                
+                            ]
+                 }
+            ]
+        },
+        {
+            "className": "sep-div-view",
+            "style": "margin-bottom:5px",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnBedTypeEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity: 1; float:left;"
+                                    },
+                                    {
+                                        "name": "btnBedTypeSave",
+                                        "title": "Save",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;display:none;"
+                                    },
+                                    {
+                                        "name": "btnBedTypeCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

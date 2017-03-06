@@ -1,0 +1,153 @@
+{
+    "name": "viewMedicalRecord",
+    "id": "viewMedicalRecord",
+    "content": [
+        {
+            "className": "sep-div",
+            "data": [
+                {
+                    "className": "five-sixth",
+                    "data": [
+                        {
+                            "className": "column-first",
+                            "elements": [
+                                {
+                                    "name": "patientName",
+                                    "id": "patientName",
+                                    "type": "newlabel",
+                                    "title": "Patient Name"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-second",
+                            "elements": [
+                                {
+                                    "name": "caseName",
+                                    "id": "caseName",
+                                    "type": "newlabel",
+                                    "title": "Case"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-third",
+                            "id": "viewDoctor",
+                            "elements": [
+                                {
+                                    "name": "doctorlbl",
+                                    "id": "doctorlbl",
+                                    "tabIndex": 2,
+                                    "type": "newlabel",
+                                    "className": "newBox",
+                                    "title": "Doctor"
+                                }
+                            ]
+                        },
+                        {
+                            "className": "column-third",
+                            "id": "editDoctor",
+                            "style": "display:none;",
+                            "elements": [
+                                {
+                                    "name": "doctor",
+                                    "id": "doctor",
+                                    "tabIndex": 2,
+                                    "type": "text",
+                                    "className": "large",
+                                    "style": "width:60%;",
+                                    "title": "Doctor",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "id": "viewMedicalRecordType",
+                    "elements": [
+                        {
+                            "name": "medicalRecordTypelbl",
+                            "id": "medicalRecordTypelbl",
+                            "type": "newlabel",
+                            "className": "newBox",
+                            "title": "Medical Record Type"
+                        }
+                    ]
+                },
+                {
+                    "className": "five_sixth",
+                    "id": "editMedicalRecordType",
+                    "style": "display:none",
+                    "elements": [
+                        {
+                            "name": "medicalRecordType",
+                            "id": "medicalRecordType",
+                            "type": "select",
+                            "className": "select",
+                            "style": "width:60%;",
+                            "title": "Medical Record Type",
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    " className": "five-sixth",
+                    "elements": [
+                        {
+                            "name": "medicalRecord",
+                            "id": "medicalRecord",
+                            "type": "textarea",
+                            "style": "height:100px;",
+                            "className": "newBox large capital",
+                            "title": "medicalRecord"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "className": "sep-div-view",
+            "style": "margin-bottom:5px",
+            "data": [
+                {
+                    "className": "five_sixth",
+                    "elements": [
+                        {
+                            "type": "button",
+                            "content": {
+                                "buttons": [
+                                    {
+                                        "name": "btnMedicalRecordEdit",
+                                        "id": "btnMedicalRecordEdit",
+                                        "title": "Edit",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;margin:4px;float:right"
+                                    },
+                                    {
+                                        "name": "btnMedicalRecordSave",
+                                        "id": "btnMedicalRecordSave",
+                                        "title": "Done",
+                                        "type": "button",
+                                        "className": "stdbtn btn_black",
+                                        "style": "opacity:1;margin:4px;float:right;display:none;"
+                                    },
+                                    {
+                                        "name": "btnMedicalRecordCancel",
+                                        "id": "btnMedicalRecordCancel",
+                                        "title": "Cancel",
+                                        "type": "button",
+                                        "className": "stdbtn",
+                                        "style": "opacity:1;margin:4px;float:right;display:none;"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

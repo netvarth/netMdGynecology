@@ -1,0 +1,695 @@
+{
+    "id": 0,
+    "patientId": "8",
+    "patientType": "InPatient",
+    "admittedDate": null,
+    "caseName": "Obstetrics",
+    "departmentId": "7",
+    "departmentName": "Obstetrics",
+    "questionAnswerDTO": {
+        "departmentId": "7",
+        "answerSetId": 0,
+        "answerDTO": [
+            {
+                "questionKey": "slNo",
+                "questionIndex": "slNo",
+                "answer": "234"
+            },
+            {
+                "questionKey": "ipNumber",
+                "questionIndex": "ipNumber",
+                "answer": "43324"
+            },
+            {
+                "questionKey": "unit",
+                "questionIndex": "unit",
+                "answer": ""
+            },
+            {
+                "questionKey": "doctorIncharge",
+                "questionIndex": "doctorIncharge",
+                "answer": "Nithesh Mohanan"
+            },
+            {
+                "questionKey": "name",
+                "questionIndex": "name",
+                "answer": "Nisha Mohanan"
+            },
+            {
+                "questionKey": "age",
+                "questionIndex": "age",
+                "answer": "26"
+            },
+            {
+                "questionKey": "height",
+                "questionIndex": "height",
+                "answer": ""
+            },
+            {
+                "questionKey": "weight",
+                "questionIndex": "weight",
+                "answer": ""
+            },
+            {
+                "questionKey": "bodymassIndex",
+                "questionIndex": "bodymassIndex",
+                "answer": ""
+            },
+            {
+                "questionKey": "husbandName",
+                "questionIndex": "husbandName",
+                "answer": ""
+            },
+            {
+                "questionKey": "address",
+                "questionIndex": "address",
+                "answer": ""
+            },
+            {
+                "questionKey": "phoneNumber",
+                "questionIndex": "phoneNumber",
+                "answer": ""
+            },
+            {
+                "questionKey": "dateofAdmissionHospital",
+                "questionIndex": "dateofAdmissionHospital",
+                "answer": ""
+            },
+            {
+                "questionKey": "previousCS",
+                "questionIndex": "previousCS",
+                "answer": ""
+            },
+            {
+                "questionKey": "sameHospital",
+                "questionIndex": "sameHospital",
+                "answer": ""
+            },
+            {
+                "questionKey": "otherHospital",
+                "questionIndex": "otherHospital",
+                "answer": ""
+            },
+            {
+                "questionKey": "lmp",
+                "questionIndex": "lmp",
+                "answer": ""
+            },
+            {
+                "questionKey": "confinementDate",
+                "questionIndex": "confinementDate",
+                "answer": ""
+            },
+            {
+                "questionKey": "prevSurgeryDescription",
+                "questionIndex": "prevSurgeryDescription",
+                "answer": ""
+            },
+            {
+                "questionKey": "others",
+                "questionIndex": "others",
+                "answer": ""
+            },
+            {
+                "questionKey": "labourDescription",
+                "questionIndex": "labourDescription",
+                "answer": ""
+            },
+            {
+                "questionKey": "inductionDesc",
+                "questionIndex": "inductionDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "inductionTypeDesc",
+                "questionIndex": "inductionTypeDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "indDelInterval",
+                "questionIndex": "indDelInterval",
+                "answer": ""
+            },
+            {
+                "questionKey": "dateTimeDelivery",
+                "questionIndex": "dateTimeDelivery",
+                "answer": ""
+            },
+            {
+                "questionKey": "DeliveryTime",
+                "questionIndex": "DeliveryTime",
+                "answer": "12:30 am"
+            },
+            {
+                "questionKey": "babyWeight",
+                "questionIndex": "babyWeight_0",
+                "answer": ""
+            },
+            {
+                "questionKey": "oxytoxinDesc",
+                "questionIndex": "oxytoxinDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "otherOxytoxinDesc",
+                "questionIndex": "otherOxytoxinDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "thirdStageDuration",
+                "questionIndex": "thirdStageDuration",
+                "answer": ""
+            },
+            {
+                "questionKey": "thirdStageDesc",
+                "questionIndex": "thirdStageDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "manualRmlDesc",
+                "questionIndex": "manualRmlDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "placentalWght",
+                "questionIndex": "placentalWght",
+                "answer": ""
+            },
+            {
+                "questionKey": "plwghtDesc",
+                "questionIndex": "plwghtDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "hypotensionDesc",
+                "questionIndex": "hypotensionDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "amtFluids",
+                "questionIndex": "amtFluids",
+                "answer": ""
+            },
+            {
+                "questionKey": "amtFluidsDesc",
+                "questionIndex": "amtFluidsDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "fourthStageDesc",
+                "questionIndex": "fourthStageDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "prblmNotedDesc",
+                "questionIndex": "prblmNotedDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "bloodLoss",
+                "questionIndex": "bloodLoss",
+                "answer": ""
+            },
+            {
+                "questionKey": "bldlosDesc",
+                "questionIndex": "bldlosDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "prbcwholebld",
+                "questionIndex": "prbcwholebld",
+                "answer": ""
+            },
+            {
+                "questionKey": "FFP",
+                "questionIndex": "FFP",
+                "answer": ""
+            },
+            {
+                "questionKey": "platelets",
+                "questionIndex": "platelets",
+                "answer": ""
+            },
+            {
+                "questionKey": "icuAdminDesc",
+                "questionIndex": "icuAdminDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "plprevAclocalDesc",
+                "questionIndex": "plprevAclocalDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "plprevAcRefDesc",
+                "questionIndex": "plprevAcRefDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "cerebroVasPrbDesc",
+                "questionIndex": "cerebroVasPrbDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "sevMatMorbidilityDesc",
+                "questionIndex": "sevMatMorbidilityDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "anyOtherDesc",
+                "questionIndex": "anyOtherDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "indication",
+                "questionIndex": "indication",
+                "answer": ""
+            },
+            {
+                "questionKey": "robsonclassDesc",
+                "questionIndex": "robsonclassDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "remarks",
+                "questionIndex": "remarks",
+                "answer": ""
+            },
+            {
+                "questionKey": "specialPoints",
+                "questionIndex": "specialPoints",
+                "answer": ""
+            },
+            {
+                "questionKey": "conductedBy",
+                "questionIndex": "conductedBy",
+                "answer": "Nithesh Mohanan"
+            },
+            {
+                "questionKey": "conductedByDesc",
+                "questionIndex": "conductedByDesc",
+                "answer": ""
+            },
+            {
+                "questionKey": "bookedUnbooked",
+                "questionIndex": "bookedUnbooked",
+                "answer": "Unbooked"
+            },
+            {
+                "questionKey": "bloodgroup",
+                "questionIndex": "bloodgroup",
+                "answer": "B"
+            },
+            {
+                "questionKey": "rh",
+                "questionIndex": "rh",
+                "answer": "-ve"
+            },
+            {
+                "questionKey": "education",
+                "questionIndex": "education",
+                "answer": "Primary"
+            },
+            {
+                "questionKey": "religion",
+                "questionIndex": "religion",
+                "answer": "select"
+            },
+            {
+                "questionKey": "isTribal",
+                "questionIndex": "isTribal",
+                "answer": "select"
+            },
+            {
+                "questionKey": "tribal",
+                "questionIndex": "tribal",
+                "answer": "select"
+            },
+            {
+                "questionKey": "gestationWeek",
+                "questionIndex": "gestationWeek",
+                "answer": "select"
+            },
+            {
+                "questionKey": "gestationDay",
+                "questionIndex": "gestationDay",
+                "answer": "select"
+            },
+            {
+                "questionKey": "gravidity",
+                "questionIndex": "gravidity",
+                "answer": "select"
+            },
+            {
+                "questionKey": "parity",
+                "questionIndex": "parity",
+                "answer": "select"
+            },
+            {
+                "questionKey": "abortion",
+                "questionIndex": "abortion",
+                "answer": "select"
+            },
+            {
+                "questionKey": "livingChildren",
+                "questionIndex": "livingChildren",
+                "answer": "select"
+            },
+            {
+                "questionKey": "molarPregnancy",
+                "questionIndex": "molarPregnancy",
+                "answer": "select"
+            },
+            {
+                "questionKey": "ectopicPregnancy",
+                "questionIndex": "ectopicPregnancy",
+                "answer": "select"
+            },
+            {
+                "questionKey": "lcb",
+                "questionIndex": "lcb",
+                "answer": "select"
+            },
+            {
+                "questionKey": "multiplePregnancy",
+                "questionIndex": "multiplePregnancy",
+                "answer": "select"
+            },
+            {
+                "questionKey": "multiplePregnancyType",
+                "questionIndex": "multiplePregnancyType",
+                "answer": "select"
+            },
+            {
+                "questionKey": "anemia",
+                "questionIndex": "anemia",
+                "answer": "select"
+            },
+            {
+                "questionKey": "gestationalDiabetes",
+                "questionIndex": "gestationalDiabetes",
+                "answer": "select"
+            },
+            {
+                "questionKey": "diabetesMellitus",
+                "questionIndex": "diabetesMellitus",
+                "answer": "select"
+            },
+            {
+                "questionKey": "heartDisease",
+                "questionIndex": "heartDisease",
+                "answer": "select"
+            },
+            {
+                "questionKey": "heartRelatedDisease",
+                "questionIndex": "heartRelatedDisease",
+                "answer": "select"
+            },
+            {
+                "questionKey": "mildHyperTension",
+                "questionIndex": "mildHyperTension",
+                "answer": "select"
+            },
+            {
+                "questionKey": "antiMildHyper",
+                "questionIndex": "antiMildHyper",
+                "answer": "select"
+            },
+            {
+                "questionKey": "severeHyper",
+                "questionIndex": "severeHyper",
+                "answer": "select"
+            },
+            {
+                "questionKey": "antiSevereHyper",
+                "questionIndex": "antiSevereHyper",
+                "answer": "select"
+            },
+            {
+                "questionKey": "detectionTreatmentInterval",
+                "questionIndex": "detectionTreatmentInterval",
+                "answer": "select"
+            },
+            {
+                "questionKey": "help",
+                "questionIndex": "help",
+                "answer": "select"
+            },
+            {
+                "questionKey": "IsReceivedBloodProducts",
+                "questionIndex": "IsReceivedBloodProducts",
+                "answer": "select"
+            },
+            {
+                "questionKey": "IsReceivedICU",
+                "questionIndex": "IsReceivedICU",
+                "answer": "select"
+            },
+            {
+                "questionKey": "IsReceivedInduction",
+                "questionIndex": "IsReceivedInduction",
+                "answer": "select"
+            },
+            {
+                "questionKey": "eclampsia",
+                "questionIndex": "eclampsia",
+                "answer": "select"
+            },
+            {
+                "questionKey": "isMgso4",
+                "questionIndex": "isMgso4",
+                "answer": "select"
+            },
+            {
+                "questionKey": "previousSurgery",
+                "questionIndex": "previousSurgery",
+                "answer": "select"
+            },
+            {
+                "questionKey": "isCerclage",
+                "questionIndex": "isCerclage",
+                "answer": "select"
+            },
+            {
+                "questionKey": "cerclageType",
+                "questionIndex": "cerclageType",
+                "answer": "select"
+            },
+            {
+                "questionKey": "islabourInduced",
+                "questionIndex": "islabourInduced",
+                "answer": "select"
+            },
+            {
+                "questionKey": "induction",
+                "questionIndex": "induction",
+                "answer": ""
+            },
+            {
+                "questionKey": "inductionType",
+                "questionIndex": "inductionType",
+                "answer": ""
+            },
+            {
+                "questionKey": "outCome",
+                "questionIndex": "outCome",
+                "answer": "select"
+            },
+            {
+                "questionKey": "episiotomy",
+                "questionIndex": "episiotomy",
+                "answer": "Midline Episiotomy"
+            },
+            {
+                "questionKey": "numberOfbaby",
+                "questionIndex": "numberOfbaby",
+                "answer": "select"
+            },
+            {
+                "questionKey": "babyGender",
+                "questionIndex": "babyGender_0",
+                "answer": "select"
+            },
+            {
+                "questionKey": "babyApgaronemin",
+                "questionIndex": "babyApgaronemin_0",
+                "answer": "select"
+            },
+            {
+                "questionKey": "babyApgarfivemin",
+                "questionIndex": "babyApgarfivemin_0",
+                "answer": "select"
+            },
+            {
+                "questionKey": "babyPresentation",
+                "questionIndex": "babyPresentation_0",
+                "answer": "select"
+            },
+            {
+                "questionKey": "babyDeliveryType",
+                "questionIndex": "babyDeliveryType_0",
+                "answer": "select"
+            },
+            {
+                "questionKey": "oxytoxinBolus",
+                "questionIndex": "oxytoxinBolus",
+                "answer": "select"
+            },
+            {
+                "questionKey": "extraOxytoxinUsed",
+                "questionIndex": "extraOxytoxinUsed",
+                "answer": "select"
+            },
+            {
+                "questionKey": "otherOxytoxinUsed",
+                "questionIndex": "otherOxytoxinUsed",
+                "answer": ""
+            },
+            {
+                "questionKey": "manualRml",
+                "questionIndex": "manualRml",
+                "answer": "select"
+            },
+            {
+                "questionKey": "isHypotension",
+                "questionIndex": "isHypotension",
+                "answer": "select"
+            },
+            {
+                "questionKey": "isfourthStageMon",
+                "questionIndex": "isfourthStageMon",
+                "answer": "select"
+            },
+            {
+                "questionKey": "prblmNoted",
+                "questionIndex": "prblmNoted",
+                "answer": "select"
+            },
+            {
+                "questionKey": "bloodProduct",
+                "questionIndex": "bloodProduct",
+                "answer": "select"
+            },
+            {
+                "questionKey": "icuAdminSameHsp",
+                "questionIndex": "icuAdminSameHsp",
+                "answer": "select"
+            },
+            {
+                "questionKey": "isALSAmbulance",
+                "questionIndex": "isALSAmbulance",
+                "answer": "select"
+            },
+            {
+                "questionKey": "alsAmbulanceDesc",
+                "questionIndex": "alsAmbulanceDesc",
+                "answer": "select"
+            },
+            {
+                "questionKey": "fetalCongAnomali",
+                "questionIndex": "fetalCongAnomali_0",
+                "answer": "select"
+            },
+            {
+                "questionKey": "fetalNICU",
+                "questionIndex": "fetalNICU_0",
+                "answer": "select"
+            },
+            {
+                "questionKey": "fetalstillbirth",
+                "questionIndex": "fetalstillbirth_0",
+                "answer": "select"
+            },
+            {
+                "questionKey": "fetalNeonatalDeath",
+                "questionIndex": "fetalNeonatalDeath_0",
+                "answer": "select"
+            },
+            {
+                "questionKey": "plprevAclocal",
+                "questionIndex": "plprevAclocal",
+                "answer": "select"
+            },
+            {
+                "questionKey": "plprevAcReffered",
+                "questionIndex": "plprevAcReffered",
+                "answer": "select"
+            },
+            {
+                "questionKey": "perinealTear",
+                "questionIndex": "perinealTear",
+                "answer": "select"
+            },
+            {
+                "questionKey": "perinealTearType",
+                "questionIndex": "perinealTearType",
+                "answer": "select"
+            },
+            {
+                "questionKey": "cerebroVasPrb",
+                "questionIndex": "cerebroVasPrb",
+                "answer": "select"
+            },
+            {
+                "questionKey": "sevMatMorbidility",
+                "questionIndex": "sevMatMorbidility",
+                "answer": "select"
+            },
+            {
+                "questionKey": "maternalDeath",
+                "questionIndex": "maternalDeath",
+                "answer": "select"
+            },
+            {
+                "questionKey": "maternalDeathType",
+                "questionIndex": "maternalDeathType",
+                "answer": "select"
+            },
+            {
+                "questionKey": "anyOther",
+                "questionIndex": "anyOther",
+                "answer": "select"
+            },
+            {
+                "questionKey": "deliveryType",
+                "questionIndex": "deliveryType",
+                "answer": "Induced"
+            },
+            {
+                "questionKey": "deliveryName",
+                "questionIndex": "deliveryName",
+                "answer": ""
+            },
+            {
+                "questionKey": "robsonclass",
+                "questionIndex": "robsonclass",
+                "answer": "select"
+            },
+            {
+                "questionKey": "AntiBioticsUsed",
+                "questionIndex": "AntiBioticsUsed",
+                "answer": "select"
+            },
+            {
+                "questionKey": "Prophylactic",
+                "questionIndex": "Prophylactic",
+                "answer": ""
+            },
+            {
+                "questionKey": "Therapeutic",
+                "questionIndex": "Therapeutic",
+                "answer": ""
+            },
+            {
+                "questionKey": "totalDaysofAntibioticUse",
+                "questionIndex": "totalDaysofAntibioticUse",
+                "answer": "select"
+            },
+            {
+                "questionKey": "muscleRelaxants",
+                "questionIndex": "muscleRelaxants",
+                "answer": ""
+            }
+        ]
+    }
+}
